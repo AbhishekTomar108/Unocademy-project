@@ -1,0 +1,1428 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    position: fixed;
+    background: white;
+    z-index: 2;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: auto;    
+}
+
+
+.header h1{
+    color: #e95454;
+}
+
+.header-btn{
+    width: 70vw;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 2%;
+}
+
+button{
+    font-weight: 700;
+    height: 40px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    background: transparent;
+    
+}
+
+#write-to-us-btn{
+    color: #e95454;
+    border: 1px solid #e95454;
+}
+
+#call-us-btn{
+    background: #e95454;
+    color: white;
+    border: none;
+}
+
+#chat-btn{
+    display: flex;
+    align-items: center;
+    border-color: #3FC350;
+    color: #3FC350 !important;
+    border: 1px solid #3FC350;
+}
+
+.icon{
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-repeat: no-repeat;
+}
+
+.whatsapp-icon{
+    height: 21px;
+    width: 21px;
+    margin-right: 6px;
+    background-position: -922px -238px;
+}
+
+.banner-at-point{
+    width: 80vw;
+    margin: auto;
+}
+
+.banner{
+    height: 540px;
+    padding-top: 88px;
+    margin-top: -16px;
+    background: #f7fafe;
+}
+.banner-at-point ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.banner-at-point li{
+    position: relative;
+    line-height: 16px;
+    padding-right: 26px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+}
+.banner-at-point li::after{
+    position: absolute;
+    content: "";
+    top: 4px;
+    right: 10px;
+    color: #ffffff;
+    background-image: url(https://d2o2utebsixu4k.cloudfront.net/assets/icons/osl-sprite.svg);
+    width: 6px;
+    height: 10px;
+    background-position: -2px -19px;
+}
+
+.banner-at-point li:last-child{
+    padding-right: 0;
+    font-weight: 400;
+}
+
+.banner-at-point li:last-child::after{
+    background-image:none;
+}
+
+.banner-lower-box{
+    padding-top: 20px;
+    width: 72vw;
+    margin: auto;
+    display: flex;
+}
+
+.banner-lower-box .lower-box-left
+{
+    max-width: 50%;
+}
+.banner-lower-box .lower-box-left h2{
+    font-size: 16px;
+}
+.banner-lower-box .lower-box-left h1{
+    font-weight: 500;
+}
+
+.banner-lower-box span{
+font-weight: 700;
+display: block;
+color: #111111;
+}
+
+#price-text{
+    display: inline-block;
+}
+
+.banner-lower-box .lower-box-left p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #666666;
+    font-weight: 400;
+    max-width: 375px;
+}
+
+.banner-lower-box .lower-box-left p strong{
+    display: block;
+    font-size: 12px;
+}
+
+
+
+.cohort-text{
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 14px;
+}
+
+.limited-text{
+    font-weight: 400;
+    color: #51565e;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+}
+
+.btn-group{
+    display: flex;
+    column-gap: 20px;
+}
+
+#curriculum-btn{
+    color: #e95454;
+    border: 1px solid #e95454;
+    display: flex;
+    column-gap: 10px;
+}
+
+#apply-btn{
+    background: #e95454;
+    color: white;
+    border: none;
+}
+
+.lower-box-right{
+    width: 518px;
+    height: 400px;
+    margin-left: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.video-thumbnail{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.lower-box-right a{
+    top: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+}
+
+.lower-box-right span{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.placement-container{
+    
+    width: 72vw;
+    margin: 30px auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.05);
+    border-radius: 12px;
+    position: relative;
+    bottom: 71px;
+    padding: 80px 70px 60px;
+}
+
+.placement-box{
+    display: flex;
+    column-gap: 30%;
+    
+}
+
+.placement-box-left h1{
+    margin: 0;
+    font-weight: 500;
+}
+
+.placement-box-right{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 60%;
+    row-gap: 40%;
+}
+
+.placement-box-right b{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111111;
+    line-height: 32px;
+}
+
+.placement-box-right span{
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.company{
+    padding: 60px 30px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 90px;
+}
+
+.company h2{
+position: absolute;
+background: #ffffff;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 4px 10px;
+line-height: 22px;
+top: -2px;
+margin: 0;
+font-weight: 400;
+font-size: 20px;
+color: #666666;
+white-space: nowrap;
+}
+
+.company-logo-moving{
+margin-left: auto;
+margin-right: auto;
+position: relative;
+overflow: hidden;
+list-style: none;
+padding: 0;
+z-index: 1;
+}
+
+.company-logo-moving ul{
+    padding: 0;
+    left: -25px;
+    display: flex;
+    height: 25px;
+    position: relative;
+    list-style: none;
+
+}
+
+.company-logo-moving ul li{
+    position: relative;
+    height: 25px;
+    width: 144.667px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    transition-property: transform;
+}
+
+.company-logo-moving ul li img{
+display: inline-block;
+height: 25px;
+position: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+left: 50%;
+}
+
+.icon{
+    background-repeat: no-repeat;
+}
+
+.tech-mahindra{
+    background-position: -774px -2969px;
+    width: 97px;
+}
+
+
+.bootcamp {
+    padding: 80px 0;
+    border-radius: 10px;
+    background: #f7fafe;
+}
+
+ .uplift-text{
+    margin-bottom: 50px;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.course-summary{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    width:72vw;
+    margin: auto;
+    padding: 70px 70px 5px;
+    background: #ffffff;
+    box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.05);
+    border-radius: 12px;
+    margin-bottom: 70px;
+}
+
+.benefit-thumb {
+    margin-bottom: 65px;
+    height: 167px;
+}
+
+.benefit-thumb img{
+height: 45px;
+width: 46px;
+display: inline-block;
+}
+
+.benefit-thumb p {
+    max-width: 264px;
+    margin-top: 15px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.icons {
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-benefit-1 {
+    background-position: 0 -226px;
+}
+.icon-benefit-2 {
+    background-position: -77px -226px;
+}
+.icon-benefit-3 {
+    background-position: -154px -226px;
+}
+.icon-benefit-4 {
+    background-position: -231px -226px;
+}
+.icon-benefit-5 {
+    background-position: -308px -226px;
+}
+.icon-benefit-6 {
+    background-position: -385px -226px;
+}
+
+.bootcamp .btn-group{
+    display: flex;
+    justify-content: center;
+    column-gap: 2%;
+}
+
+.certificate{
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.certificate h2{
+    text-align: center;
+    width: 36vw;
+    margin: 0 auto 50px auto;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.certificate img{
+    width: 60vw;
+}
+
+.creator h2
+{
+    text-align: center;
+    width: 36vw;
+    margin: 0 auto 50px auto;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.program-thumb{
+height: 340px;
+background: #FFFFFF;
+box-shadow: 0px 4px 18px rgba(24, 39, 75, 0.05);
+border-radius: 14px;
+margin-top: 60px;
+margin-bottom: 20px;
+}
+
+.creator-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 14px 14px 0 0;
+    display: block;
+}
+
+.program-thumb-content {
+    padding: 15px;
+    border: 0.5px solid #EDEDED;
+    border-radius: 0 0 14px 14px;
+    height: 140px;
+    border-top: 0 none;
+}
+
+.program-thumb-content h4 {
+    font-size: 16px;
+    line-height: 18px;
+    color: #111111;
+    margin-bottom: 10px;
+    height: 18px;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.program-thumb-content p {
+    font-size: 12px;
+    line-height: 13px;
+    color: #111111;
+    font-weight: 400;
+    height: 26px;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+
+.program-thumb-content .company-name {
+    font-size: 11px;
+    line-height: 12px;
+    text-align: right;
+    color: #666;
+    font-weight: 400;
+    font-style: italic;
+    height: auto;
+    margin-bottom: 4px;
+    overflow: visible;
+}
+
+.program-thumb-content ul{
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.program-thumb-content ul li {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.icon-linkedin-small {
+    background-position: -506px -242px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icons{
+    background-repeat: no-repeat;
+}
+
+.creator-img-block{
+position: relative;
+width: 72vw;
+margin: auto;
+height: 100%;
+z-index: 1;
+display: flex;
+column-gap: 7%;
+transition-property: transform;
+box-sizing: content-box;
+}
+
+.curriculum{
+    padding: 80px 0;
+    background: #F7FAFE;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+
+.curriculum h2{
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111111;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.curriculum-list
+{
+    width: 72vw;
+    margin: auto;
+}
+
+.curriculum-list ul{
+display: flex;
+list-style: none;
+column-gap: 5%;
+}
+
+.curriculum-list ul li{
+    padding: 0;
+    border: 0 none;
+    background: transparent;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #111111;
+    position: relative;
+    height: 50px;
+}
+
+.module-container{
+    width: 63vw;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.module-badge {
+    background: #F7F7F7;
+    border: 0.6px solid #D9D9D9;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 9px;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #111111;
+}
+
+.curi-title {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.curi-title h3 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.curi-title span {
+    display: inline-flex;
+    padding: 5px 10px;
+    background: #CFFDDB;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    color: #52855F;
+    margin-left: 15px;
+}
+
+.module-container p {
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.topics-covered {
+    margin-top: 40px;
+}
+
+.topics-covered h4 {
+    position: relative;
+}
+
+.topics-covered h4:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d9d9d9;
+}
+
+.topics-covered h4 span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #111111;
+    background: #ffffff;
+    padding-right: 13px;
+    position: relative;
+}
+
+.topics-covered ul {
+    margin-top: 32px;
+    list-style: none;
+    padding: 0;
+}
+
+.topics-covered ul li {
+    position: relative;
+    padding-left: 31px;
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.topics-covered ul li:before {
+    content: '';
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite.svg);
+    position: absolute;
+    left: 0;
+    background-position: -598px -244px;
+    width: 14px;
+    height: 11px;
+    top: 3px;
+}
+
+.curi-btn{
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.project h2{
+    max-width: 446px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.project-card{
+    display: flex;
+    width: 85vw;
+    margin: auto;
+}
+.project-thumb {
+    width: 350px;
+    margin-right: 60px;
+    height: 476px;
+    background: #F7FAFE;
+    border: 1px solid #EEF1FF;
+    border-radius: 12px;
+    padding: 45px 40px 40px;
+    margin-bottom: 58px;
+    margin-top: 70px;
+}
+
+.project-thumb img {
+    height: 60px;
+    width: 60px;
+}
+
+.project-thumb .proj-title {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.project-thumb .proj-name {
+    font-size: 30px;
+    line-height: 33px;
+    height: 33px;
+    overflow: hidden;
+    color: #111111;
+    margin-top: 45px;
+    font-weight: 500;
+}
+
+.project-thumb p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #666666;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.project-thumb ul{
+    list-style: none;
+    padding: 0;
+}
+
+.project-thumb ul li {
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 4px;
+    padding: 0 16px;
+    font-size: 12px;
+    line-height: 25px;
+    color: #666666;
+    font-weight: 400;
+    background: #ffffff;
+    border-radius: 139px;
+    margin-top: 10px;
+}
+
+.technologies h2{
+font-size: 30px;
+line-height: 45px;
+font-weight: 500;
+color: #111111;
+margin-bottom: 70px;
+text-align: center!important;
+}
+
+.technologies ul {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technologies ul li {
+    display: inline-flex;
+    height: 54px;
+    align-items: center;
+    background: #F7F7F7;
+    border: 0.9px solid #D9D9D9;
+    border-radius: 46px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #111111;
+    margin-right: 25px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 63px;
+}
+
+.technologies ul li i {
+    height: 54px;
+    width: 54px;
+    margin-right: 10px;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+
+.apply-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.advantage{
+    margin-top: 100px;
+}
+
+.advantage h2{
+    max-width: 694px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.table-responsive {
+    display: block;
+    width: 85vw;
+    margin: 50px auto 0 auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
+    border-radius: 8px;
+    padding: 5px;
+    background: #ffffff;
+}
+
+.custom-table {
+    position: relative;
+    width: 100%;
+    border: 0 none;
+    box-shadow: none;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.table {
+    /* width: 100%;
+    margin-bottom: 1rem; */
+    color: #212529;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.custom-table thead th {
+    background-color: #f7fafe;
+    vertical-align: middle;
+    height: 72px;
+    border-bottom: none !important;
+    color: #111;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    border: 0 none;
+}
+
+.custom-table.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: #ffffff;
+}
+
+.custom-table tbody tr:first-child td {
+    border-top: 0;
+}
+
+.custom-table tbody .first-column {
+    width: 45%;
+}
+
+.custom-table tbody td .title {
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 0px;
+}
+
+.custom-table tbody td {
+    padding: 0px 27px;
+    vertical-align: middle;
+    border-color: #eee;
+    height: 72px;
+    border: 0 none;
+}
+
+.custom-table tbody td {
+    padding: 0px 27px;
+    vertical-align: middle;
+    border-color: #eee;
+    height: 72px;
+    border: 0 none;
+}
+
+.custom-table.table-striped tbody tr:nth-of-type(2n) {
+    background-color: #f7f7f7;
+}
+
+.custom-table.table-striped tbody tr:nth-of-type(2n+1) td:last-child {
+    background-color: #cffddb;
+}
+
+.custom-table.table-striped tbody tr:nth-of-type(2n) td:last-child {
+    background-color: #e2ffec;
+}
+
+.icons {
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-wrong {
+    background-position: -391px -785px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+.icon-tick {
+    background-position: -472px -784px;
+    width: 19px;
+    height: 14px;
+    display: inline-block;
+}
+
+.advantage ul {
+    width: 85vw;
+    margin: 20px auto 0 auto;
+    padding-left: 20px;
+    list-style: disc;
+    margin-top: 20px;
+}
+
+.advantage ul li {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.admission {
+    margin-top: 100px;
+    padding: 80px 0;
+    background: #f7fafe;
+}
+
+.section-heading {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111111;
+    margin-bottom: 70px;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.admission ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.admission ul li {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.admission ul li:before {
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 100px;
+    width: 1px;
+    background: #d9d9d9;
+    position: absolute;
+}
+
+.admission ul li .count {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.admission ul li .content {
+    display: block;
+    max-width: 158px;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 400;
+    color: #111111;
+    margin-top: 25px;
+}
+
+.admission ul li:last-child::before{
+    height: 0;
+}
+
+.pricing h2{
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111111;
+    text-align: center!important;
+}
+
+.pricing-summary{
+    height: 154px;
+    width: 85vw;
+    margin: 100px auto 0 auto;
+}
+/* 
+.pricing-summary .summary-1{
+    margin-bottom: 50px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
+    border-radius: 8px;
+} */
+
+.price-thumb{
+    margin-bottom: 50px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
+    border-radius: 8px;
+    column-gap: 20%;
+    padding-left: 40px;
+    display: flex;
+    height: 154px;
+    align-items: center;
+}
+
+.price-thumb span{
+    
+    font-size: 20px;
+    line-height: 22px;
+    color: #111111;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.price-thumb .thumb-3 span{
+    margin-right: 40px;
+}
+.thumb-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb-2 strong{
+    text-decoration: line-through;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+    display: block;
+    font-weight: 400;
+}
+
+.thumb-3 span::before{
+    background-position: -1px -787px;
+    content: '';
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 66vw;
+    top: 50%;
+    width: 10px;
+    height: 7px;
+    transform: translateY(-50%);
+}
+
+.thumb-3 button{
+    background: #e95454 !important;
+    color: white;
+}
+
+.summary-2 .price-thumb{
+column-gap: 5%;
+}
+
+.summary-2 .thumb-1{
+    width: 20vw;    
+}
+
+.summary-2 .thumb-2{
+display: grid;
+grid-template-columns: 55% 50%;
+}
+
+.summary-2 .thumb-3 span{
+margin-left: 25px;
+}
+
+.reviews{
+    column-gap: 5%;
+    width: 85vw;
+    margin: 0 auto 0 auto;
+    display: flex;
+}
+
+
+    .learner {
+        margin-top: 300px;
+        background: #f7fafe;
+        height: 500px;
+        padding: 15px;
+    
+}
+.review-thumb {
+    background: #FFFFFF;
+    border-radius: 0;
+    padding: 20px 40px;
+    width: 478px;
+}
+
+.review-thumb .media {
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.review-thumb .media-body {
+    padding-left: 35px;
+}
+
+.align-self-center {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+}
+
+.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.review-title {
+    display: flex;
+    height: 22px;
+    align-items: center;
+}
+
+.review-thumb .media-body h3 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    display: inline-flex;
+}
+
+.review-title a {
+    display: inline-flex;
+    align-self: center;
+    margin-left: 13px;
+    text-decoration: none;
+    outline: 0 none;
+}
+
+.icon-review-linkedin {
+    width: 16px;
+    height: 16px;
+    background-position: -189px -3175px;
+    display: inline-block;
+}
+
+.icons {
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-repeat: no-repeat;
+}
+
+.stars-list {
+    display: flex;
+    margin-top: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.stars-list i {
+    display: inline-flex;
+    margin-right: 13px;
+}
+
+.icon-star {
+    background-position: -121px -3174px;
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+}
+
+.review-thumb .review-img img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+.review-thumb p {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #111111;
+}
+
+.review-thumb p a {
+    font-weight: 600;
+    color: #111111;
+    text-decoration: underline;
+}
+
+.section-heading {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111111;
+    margin-bottom: 70px;
+}
+
+.faq .faq-summary {
+    padding: 0;
+}
+
+.faq-summary .faq-list.faq-collection {
+    padding: 0;
+    box-shadow: none;
+}
+
+.faq-summary .faq-list:last-child {
+    margin-bottom: 0;
+}
+
+.faq-summary .faq-list {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(24, 39, 75, 0.05);
+    border-radius: 8px;
+    padding: 40px 57px;
+    margin-bottom: 80px;
+}
+
+.faq-summary .faq-list.faq-collection .card {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px 1px rgb(12 23 32 / 10%);
+    border-radius: 4px;
+    padding: 0 0;
+    border: none;
+    margin-bottom: 24px;
+}
+
+.faq-summary .card {
+    border: 0;
+    border-bottom: 1px solid rgba(181,181,181,0.45);
+    background-color: #ffffff;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.faq-summary .card .card-header {
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.faq-summary .faq-list.faq-collection .card .card-header .card-link {
+    padding: 20px 30px;
+}
+
+.faq-summary .card .card-header .card-link {
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    color: #111111;
+    position: relative;
+    line-height: 30px;
+    padding: 38px 38px 15px 0;
+    transition: all 0.3s;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: 0 none;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.faq-summary .faq-list.faq-collection .card .card-header .card-link:before {
+    top: 19px;
+    right: 80px;
+}
+
+.faq-summary .card .card-header .card-link.collapsed:before {
+    background-position: -701px -774px;
+}
+
+.faq-summary .card .card-header .card-link:before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: 0;
+    pointer-events: none;
+    background-position: -603px -773px;
+    width: 37px;
+    height: 37px;
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite.svg);
+}
+
+.question{
+    width: 85vw;
+    margin: 100px auto 0 auto;
+}
+
+.faq-summary .faq-list.faq-collection .card .card-body {
+    padding: 0 30px 20px 30px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.faq-summary .faq-list.faq-collection .card .card-body h4 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #111111;
+    position: relative;
+    line-height: 30px;
+}
+
+.faq-summary .faq-list.faq-collection .card .card-body p {
+    margin: 5px 0 18px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+    font-size: 14px;
+}
+
+.row{
+display: flex;
+width: 85vw;
+margin: auto;
+column-gap: 5%;
+}
+
+.view-btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.view-btn button{
+    color: #e95454 !important;
+    border: 1px solid #e95454;
+}

@@ -1,0 +1,335 @@
+.icons {
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-linux {
+    background-position: 0 -350px;
+}
+
+.icon-github {
+    background-position: -158px -350px;
+}
+
+.icon-html {
+    background-position: -317px -350px;
+}
+
+.icon-css {
+    background-position: -476px -350px;
+}
+
+.icon-js {
+    background-position: -635px -350px;
+}
+
+.icon-microsoft {
+    background-position: -794px -350px;
+}
+
+.icon-vscode {
+    background-position: -953px -350px;
+}
+
+.icon-prettier {
+    background-position: 0 -446px;
+}
+
+.icon-babel {
+    background-position: -158px -446px;
+}
+
+.icon-webpack {
+    background-position: -317px -446px;
+}
+
+.icon-parcel {
+    background-position: -476px -446px;
+}
+
+.icon-react {
+    background-position: -635px -446px;
+}
+
+.icon-react-router {
+    background-position: -794px -446px;
+}
+
+.icon-redux {
+    background-position: -953px -461px;
+}
+
+.icon-node {
+    background-position: -32px -3158px;
+}
+
+.icon-mongodb {
+    background-position: -158px -542px;
+}
+
+.icon-mongodb-atlas {
+    background-position: -317px -542px;
+}
+
+.icon-jest {
+    background-position: -476px -542px;
+}
+
+.icon-heroku {
+    background-position: -635px -542px;
+}
+
+.icon-mongoose {
+    background-position: -794px -542px;
+}
+
+.icon-cypress {
+    background-position: 0 -542px;
+}
+
+.icon-swagger {
+    background-position: -953px -542px;
+}
+
+.icon-aws {
+    background-position: 0 -639px;
+}
+
+.icon-netlify {
+    background-position: -158px -639px;
+}
+
+.icon-beanstalk {
+    background-position: -317px -639px;
+}
+
+.icon-elastic {
+    background-position: -476px -639px;
+}
+.media-presence-container .section-heading {
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111111;
+}
+
+
+.media-presence-block {
+    color: #000;
+    background: #F7FAFE;
+    border-radius: 12px;
+    display: flex;
+    padding: 33px 33px;
+    position: relative;
+    height: 271px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.media-presence-block .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+    min-height: 150px;
+}
+
+.media-presence-block .media-img {
+    margin-bottom: 0;
+    max-height: 50px;
+}
+
+.got-a-ques-summary {
+    background: #f7fafe;
+    min-height: 272px;
+    max-height: 272px;
+}
+
+.got-a-ques-summary .container {
+    position: relative;
+    min-height: 272px;
+}
+
+.got-a-ques-summary img {
+    position: absolute;
+    bottom: 0;
+    left: 153px;
+}
+
+
+.got-a-ques-content {
+    padding: 52px 0;
+}
+
+.offset-md-6{
+    margin-left: 60vw;
+}
+
+
+.got-a-ques-btn .btn-default {
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.got-a-ques-btn {
+    display: flex;
+    column-gap: 5%;
+}
+
+.btn-default {
+    background: transparent !important;
+    box-shadow: none;
+    border-radius: 4px;
+    height: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #e95454 !important;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    border: 1px solid #e95454;
+    padding: 12px 18px;
+    line-height: 15px;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.whatsapp-btn {
+    border-color: #3FC350;
+    color: #3FC350 !important;
+}
+
+ .icon-whatsapp {
+    height: 21px;
+    width: 21px;
+    margin-right: 6px;
+    background-position: -923px -237px;
+}
+
+.icons {
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-repeat: no-repeat;
+}
+
+.last{
+    margin-top: 150px;
+}
+
+footer {
+    background: #000000;
+}
+
+.footer-summary {
+    padding: 0 70px;
+}
+
+.top-footer {
+    padding: 45px 0;
+}
+
+footer .row-second {
+    column-gap: 35px;
+    position: absolute;
+    left: 60vw;
+    color: white;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+footer .row ul{
+    list-style:none;
+    padding: 0;
+    line-height: 30px;
+}
+
+footer .row ul li a{
+ color: white;
+}
+
+.footer-summary .social-icons {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-summary .social-icons a {
+    margin-right: 25px;
+}
+
+.bottom-footer {
+    padding: 9px 0 60px;
+}
+
+.bottom-footer p {
+    font-size: 12px;
+    line-height: 13px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer-summary .social-icons i {
+    display: inline-block;
+}
+
+.icon-footer-fb {
+    background-position: 0 -890px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-footer-tw {
+    background-position: -49px -892px;
+    width: 25px;
+    height: 20px;
+}
+
+.icon-footer-in {
+    background-position: -99px -890px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-footer-yt {
+    background-position: -148px -890px;
+    width: 20px;
+    height: 24px;
+}
+
+.company-logo-moving i
+{
+display:inline-block;
+height: 25px;
+position: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+left: 50%;
+}
+
+.icon-tech-mahindra{
+    background-position: -774px -2969px;
+    width: 97px;
+}
+
+.icons {
+    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-ugam {
+    background-position: -35px -3063px;
+    width: 46px;
+}
+
+.icon-careers-360 {
+    background-position: -211px -3064px;
+    width: 72px;
+}
