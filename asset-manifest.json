@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Unocademy-project/static/css/main.4bfac083.css",
+    "main.js": "/Unocademy-project/static/js/main.1c44bb5f.js",
+    "static/js/787.a65a3956.chunk.js": "/Unocademy-project/static/js/787.a65a3956.chunk.js",
+    "static/media/Wipro_Primary_Logo_Color_RGB.svg.png": "/Unocademy-project/static/media/Wipro_Primary_Logo_Color_RGB.svg.37cb66a1d877eec0aae3.png",
+    "static/media/Axis_Bank_logo.svg.png": "/Unocademy-project/static/media/Axis_Bank_logo.svg.bf0e205138aa604459a4.png",
+    "static/media/Cognizant's_logo.svg.png": "/Unocademy-project/static/media/Cognizant's_logo.svg.30ecd2e65e876debc8fb.png",
+    "static/media/Tech_Mahindra_New_Logo.svg.png": "/Unocademy-project/static/media/Tech_Mahindra_New_Logo.svg.3ff76785c195182574fb.png",
+    "static/media/IBM_logo.svg.png": "/Unocademy-project/static/media/IBM_logo.svg.8dce07a1c64c2dc904ff.png",
+    "index.html": "/Unocademy-project/index.html",
+    "main.4bfac083.css.map": "/Unocademy-project/static/css/main.4bfac083.css.map",
+    "main.1c44bb5f.js.map": "/Unocademy-project/static/js/main.1c44bb5f.js.map",
+    "787.a65a3956.chunk.js.map": "/Unocademy-project/static/js/787.a65a3956.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bfac083.css",
+    "static/js/main.1c44bb5f.js"
+  ]
+}
