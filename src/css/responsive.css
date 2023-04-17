@@ -1,0 +1,89 @@
+@media only screen and (max-width: 767px){
+
+.nav{
+    background-color: grey;
+}
+
+.header{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.header h1{
+    font-size: 1.5rem;
+}
+
+#write-to-us-btn{
+    display: none;
+ 
+}
+
+
+.banner-at-point{
+    margin-left: 2%;
+}
+
+.banner-lower-box{
+    width: 100%;
+    flex-direction: column;
+}
+
+.banner-lower-box .lower-box-left{
+    margin: 0 auto;
+}
+
+.lower-box-right{
+    width: fit-content;
+    margin: auto;
+}
+
+.btn-group{
+    margin-top: 12px;
+    width: fit-content;
+}
+
+.placement-container{
+    width: 65vw;
+    padding-left: 2%;
+}
+
+.placement-box{
+    flex-direction: column;
+}
+
+.placement-box-right{
+    column-gap: 30%;
+}
+
+.company{
+    padding: 15px 20px;
+}
+
+.company h2{
+    font-size: 12px;
+}
+
+.uplift-text{
+    font-size: 20px;
+}
+
+.course-summary{
+padding: 15px 25px;
+grid-template-columns: 40% 40%;
+column-gap: 20%;
+row-gap: 70px;
+}
+
+h3{
+    font-size: 10px;
+}
+
+.curriculum{
+    margin-top: 50px;
+}
+
+.curriculum-list{
+    width: 100%;
+    overflow-x: hidden;
+}
+}

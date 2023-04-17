@@ -13,14 +13,7 @@ const Creator = () => {
                                     <h4> Sachin Bhatnagar </h4>
                                     <p> Program Director - Full-Stack </p>
                                     <p class="company-name">Knowledgehut upGrad</p>
-                                    <ul>
-                                        <li>
-                                            Ex - 20+ Years
-                                        </li>
-                                        <li>
-                                           <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small"/> 
-                                        </li>
-                                    </ul>
+                                  
                                 </div>
                             </div>
 

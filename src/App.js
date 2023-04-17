@@ -25,7 +25,6 @@ function App() {
   <Banner/>
   <PlacementStat/>
   <Bootcamp/>
-  <Certificate/>
   <Creator/>
   <Curriculum/>
   <Project/>

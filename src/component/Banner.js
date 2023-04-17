@@ -26,17 +26,17 @@ const Banner = () => {
                 <span className='limited-text'>Limited no. of seats available</span>
                 </p>
 
-            <div className='btn-group'>
-                <button id='curriculum-btn'><img src="https://www.upgrad.com/bootcamps/images/download.svg"/>Download Curriculum</button>
-                <button id='apply-btn'>Apply Now</button>
-                </div>
+                {/*  */}
             </div>
             <div className='lower-box-right'>
             <img class="video-thumbnail" src="https://www.upgrad.com/bootcamps/images/bnr-thumb.png"/>
             
-            <a href="javascript:void(0);" data-toggle="modal" data-target=".banner-video" class="video-btn" data-src="https://bootcamps.upgrad.com/bootcamps/videos/FSD_India_course_intro_video_upgrad.mp4"> <span> <img src="https://www.upgrad.com/bootcamps/images/bnr-play.png"/> </span> </a>
             </div>
         </div>
+        <div className='btn-group'>
+                <button id='curriculum-btn'><img src="https://www.upgrad.com/bootcamps/images/download.svg"/>Download Curriculum</button>
+                <button id='apply-btn'>Apply Now</button>
+                </div>
         </div>
   )
 }

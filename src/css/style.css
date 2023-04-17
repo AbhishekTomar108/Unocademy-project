@@ -4,26 +4,29 @@ body{
 }
 
 .nav{
+    margin-top: 16px;
+    width: 100vw;
     position: fixed;
     background: white;
     z-index: 2;
-    width: 100%;
 }
 
 .header{
     display: flex;
     align-items: center;
-    width: 80vw;
-    margin: auto;    
+    padding-right: 10%;
+    justify-content: space-between;
+    padding-left: 10%;      
 }
 
 
 .header h1{
     color: #e95454;
+    margin-top: 10px;
 }
 
 .header-btn{
-    width: 70vw;
+    
     display: flex;
     justify-content: flex-end;
     column-gap: 2%;
@@ -34,6 +37,7 @@ button{
     height: 40px;
     padding: 12px 18px;
     border-radius: 5px;
+    min-width: fit-content;
     background: transparent;
     
 }
@@ -70,13 +74,12 @@ button{
 }
 
 .banner-at-point{
-    width: 80vw;
-    margin: auto;
+    width: 100%;
+    margin-left:10%;
 }
 
 .banner{
-    height: 540px;
-    padding-top: 88px;
+    padding: 88px 10px 70px 10px;
     margin-top: -16px;
     background: #f7fafe;
 }
@@ -173,6 +176,8 @@ color: #111111;
 }
 
 .btn-group{
+    width: 72vw;
+    margin: -50px auto 0 auto;
     display: flex;
     column-gap: 20px;
 }
@@ -191,7 +196,7 @@ color: #111111;
 }
 
 .lower-box-right{
-    width: 518px;
+    width: 578px;
     height: 400px;
     margin-left: auto;
     border-radius: 10px;
@@ -227,9 +232,8 @@ transform: translate(-50%,-50%);
 }
 
 .placement-container{
-    
+    margin: 40px auto 0 auto;
     width: 72vw;
-    margin: 30px auto;
     background: #FFFFFF;
     box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.05);
     border-radius: 12px;
@@ -272,6 +276,7 @@ transform: translate(-50%,-50%);
 }
 
 .company{
+    width: 100%;
     padding: 60px 30px;
     border: 1px solid #dddddd;
     border-radius: 12px;
@@ -349,9 +354,9 @@ left: 50%;
 }
 
  .uplift-text{
-    margin-bottom: 50px;
-    width: 30vw;
-    margin: auto;
+    max-width: 511px;
+    font-size: 30px;
+    margin: 0 auto 70px;
     text-align: center;
     font-weight: 500;
 }
@@ -431,7 +436,7 @@ display: inline-block;
 
 .certificate h2{
     text-align: center;
-    width: 36vw;
+    max-width: 571px;
     margin: 0 auto 50px auto;
     line-height: 40px;
     font-size: 30px;
@@ -536,6 +541,7 @@ margin-bottom: 20px;
 }
 
 .creator-img-block{
+overflow: hidden;
 position: relative;
 width: 72vw;
 margin: auto;
