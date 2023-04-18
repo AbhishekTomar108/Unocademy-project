@@ -581,10 +581,11 @@ box-sizing: content-box;
 .curriculum-list ul{
 display: flex;
 list-style: none;
-column-gap: 5%;
+column-gap: 7%;
 }
 
 .curriculum-list ul li{
+    cursor: pointer;
     padding: 0;
     border: 0 none;
     background: transparent;
@@ -1467,6 +1468,8 @@ column-gap: 5%;
     width: 100px;
     height: 5px;
     top: -1px;
+    transition-property: width;
+    transition-duration: 0.8s;
 }
 
 .progress-bar:before{

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 790px){
 
 .header{
     padding-right: 2%;
@@ -6,7 +6,7 @@
 }
 
 .header h1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #write-to-us-btn{
@@ -80,7 +80,7 @@ h3{
 
 .curriculum-list{
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .creator-img-block{
@@ -110,7 +110,7 @@ width: auto;
 
 .curriculum h2{
     font-size: 1.3rem;
-    line-height: 10px;
+    line-height: 18px;
 }
 
 .custom-table thead th{
@@ -281,7 +281,13 @@ footer .row-second{
 }
 
 .header-btn button{
-    padding: 6px 10px;
+    padding: 5px 5px;
+    height: 30px;
+}
+
+.curriculum-list ul li{
+    font-size: 12px;
+    line-height: 18px;
 }
 
 }

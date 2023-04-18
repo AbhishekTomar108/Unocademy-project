@@ -1,18 +1,48 @@
 import React from 'react'
 
 const Curriculum = () => {
+
+    const MoveProgress = (point)=>{
+            const progressBar = document.getElementsByClassName("progress-bar")[0];
+            if(point===0)
+            {
+                progressBar.style.width="100px"
+            }
+            if(point===1)
+            {
+                progressBar.style.width="350px"
+            }
+            if(point===2)
+            {
+                progressBar.style.width="550px"
+            }
+            if(point===3)
+            {
+                progressBar.style.width="750px"
+            }
+            if(point===4)
+            {
+                progressBar.style.width="950px"
+            }
+            if(point===5)
+            {
+                progressBar.style.width="1150px"
+            }
+           
+    }
+
   return (
     <div className='curriculum'>
         <h2>Learn with a world class <b>curriculum</b></h2>
 
         <div className='curriculum-list'>
             <ul>
-                <li>Fundamentals</li>
-                <li>Frontend Development</li>
-                <li>Data Structures</li>
-                <li>Backend Development</li>
-                <li>Testing & Deployment</li>
-                <li>Level Up Your Skills</li>
+                <li onClick={()=>MoveProgress(0)}>Fundamentals</li>
+                <li onClick={()=>MoveProgress(1)}>Frontend Development</li>
+                <li onClick={()=>MoveProgress(2)}>Data Structures</li>
+                <li onClick={()=>MoveProgress(3)}>Backend Development</li>
+                <li onClick={()=>MoveProgress(4)}>Testing & Deployment</li>
+                <li onClick={()=>MoveProgress(5)}>Level Up Your Skills</li>
             </ul>
         </div>
 
