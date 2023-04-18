@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/Unocademy-project/static/css/main.4bfac083.css",
-    "main.js": "/Unocademy-project/static/js/main.1c44bb5f.js",
+    "main.css": "/Unocademy-project/static/css/main.163eda20.css",
+    "main.js": "/Unocademy-project/static/js/main.052f309e.js",
     "static/js/787.a65a3956.chunk.js": "/Unocademy-project/static/js/787.a65a3956.chunk.js",
     "static/media/Wipro_Primary_Logo_Color_RGB.svg.png": "/Unocademy-project/static/media/Wipro_Primary_Logo_Color_RGB.svg.37cb66a1d877eec0aae3.png",
+    "static/media/Flipkart_logo.svg.png": "/Unocademy-project/static/media/Flipkart_logo.svg.b95bf40eebd6b23a8de6.png",
+    "static/media/capegemini.png": "/Unocademy-project/static/media/capegemini.e9b1b49fc2d0862f5061.png",
+    "static/media/Amazon_logo.svg.png": "/Unocademy-project/static/media/Amazon_logo.svg.c14905338d156db029d6.png",
     "static/media/Axis_Bank_logo.svg.png": "/Unocademy-project/static/media/Axis_Bank_logo.svg.bf0e205138aa604459a4.png",
     "static/media/Cognizant's_logo.svg.png": "/Unocademy-project/static/media/Cognizant's_logo.svg.30ecd2e65e876debc8fb.png",
+    "static/media/2560px-Deloitte.svg.png": "/Unocademy-project/static/media/2560px-Deloitte.svg.72470a3618f4d7086d88.png",
+    "static/media/Accenture.svg.png": "/Unocademy-project/static/media/Accenture.svg.43b47d8e7e39f13f26cd.png",
     "static/media/Tech_Mahindra_New_Logo.svg.png": "/Unocademy-project/static/media/Tech_Mahindra_New_Logo.svg.3ff76785c195182574fb.png",
     "static/media/IBM_logo.svg.png": "/Unocademy-project/static/media/IBM_logo.svg.8dce07a1c64c2dc904ff.png",
+    "static/media/uber.png": "/Unocademy-project/static/media/uber.90425d1c648681218b5a.png",
     "index.html": "/Unocademy-project/index.html",
-    "main.4bfac083.css.map": "/Unocademy-project/static/css/main.4bfac083.css.map",
-    "main.1c44bb5f.js.map": "/Unocademy-project/static/js/main.1c44bb5f.js.map",
+    "main.163eda20.css.map": "/Unocademy-project/static/css/main.163eda20.css.map",
+    "main.052f309e.js.map": "/Unocademy-project/static/js/main.052f309e.js.map",
     "787.a65a3956.chunk.js.map": "/Unocademy-project/static/js/787.a65a3956.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bfac083.css",
-    "static/js/main.1c44bb5f.js"
+    "static/css/main.163eda20.css",
+    "static/js/main.052f309e.js"
   ]
 }
