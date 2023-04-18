@@ -31,7 +31,6 @@ function App() {
   <Technologies/>
   <Advantage/>
   <Admission/>
-  <Pricing/>
   <Learner/>
   <Question/>
   <Media/>

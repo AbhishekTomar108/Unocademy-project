@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div className='nav'>
     <div className='header'>
-        <h1>upGrad</h1>
+        <h1>UnCodemy</h1>
       <div className='header-btn'>
         <button id='write-to-us-btn'>Write to Us</button>
         <button id='call-us-btn'>Call Us</button>

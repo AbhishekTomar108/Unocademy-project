@@ -16,6 +16,13 @@ const Curriculum = () => {
             </ul>
         </div>
 
+        <div className='progress'>
+            <div className='progress-bar'>
+
+            </div>
+
+        </div>
+
         <div className='module-container'>
         <span class="module-badge"> Module-1 </span>
         <div class="curi-title">

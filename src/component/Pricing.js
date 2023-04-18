@@ -9,6 +9,7 @@ const Pricing = () => {
             <div className='summary-1'>
 
                 <div className='price-thumb'>
+                    <div className='responsive-thumb-1'>
                     <div className='thumb-1'>
                         <span>1. Program Fees</span>
                     </div>
@@ -17,6 +18,8 @@ const Pricing = () => {
                         <span>INR 85,000 + GST</span>
                         <strong>INR 1,55,000</strong>
                     </div>
+                    </div>
+
 
                     <div className='thumb-3'>
                         <span>View Plans</span>

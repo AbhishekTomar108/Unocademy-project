@@ -1,9 +1,5 @@
 @media only screen and (max-width: 767px){
 
-.nav{
-    background-color: grey;
-}
-
 .header{
     padding-right: 2%;
     padding-left: 2%;
@@ -102,6 +98,9 @@ width: auto;
 
 .project-card{
     overflow: hidden;
+    justify-content: initial;
+    padding-left: 5px;
+    width: auto;
 }
 
 .technologies h2{
@@ -158,6 +157,8 @@ width: auto;
 
 .learner{
     overflow: hidden;
+    margin-top: 50px;
+    width: auto;
 }
 
 .review-thumb p{
@@ -189,7 +190,7 @@ height: 90px;
 
 .review-thumb{
     width: auto;
-    padding: 10px 10px;
+    padding: 10px 3px;
     height: 300px;
 }
 
@@ -268,10 +269,19 @@ footer .row-second{
 
 .creator h2{
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 .bootcamp{
     padding: 35px 0
+}
+
+.pricing h2{
+    font-size: 20px;
+}
+
+.header-btn button{
+    padding: 6px 10px;
 }
 
 }
