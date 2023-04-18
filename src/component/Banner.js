@@ -19,10 +19,10 @@ const Banner = () => {
                     Software Development Bootcamp
                 </h1>
                 <p>
-                Earn upto 12LPA on Course Completion - Book Your Seat With As Low As <span id='price-text'>INR 5,000/- only</span>
+                Earn upto 9LPA on Course Completion - Book Your Seat With As Low As <span id='price-text'>INR 2,000/- only</span>
                 <strong>Duration of the program- 6 months</strong>
 
-                <span className='cohort-text'>Next Cohort Starts: 27 Mar, 2023</span>
+                <span className='cohort-text'>Next Cohort Starts: 01 May, 2023</span>
                 <span className='limited-text'>Limited no. of seats available</span>
                 </p>
 

@@ -5,6 +5,7 @@ const Advantage = () => {
     <div className='advantage'>
         <h2>The upGrad <b>Advantage</b></h2>
 
+    <div className='table-container'>
         <div class="table-responsive">
             <table class="table table-striped custom-table">
                 <thead>
@@ -72,6 +73,7 @@ const Advantage = () => {
                     </tr>
                 </tbody>
             </table>
+        </div>
         </div>
 
         <ul>

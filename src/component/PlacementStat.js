@@ -15,13 +15,13 @@ const PlacementStat = () => {
             <h1><b>Placement</b> Stats</h1>
         </div>
         <div className='placement-box-right'>
-            <span><b>2700+</b>
+            <span><b>2300+</b>
             Tech transitions</span>
-            <span><b>12LPA</b>
+            <span><b>9LPA</b>
             Exciting salaries</span>
-            <span><b>44%</b>
+            <span><b>54%</b>
             Average Salary Hike</span>
-            <span><b>650+</b>
+            <span><b>550+</b>
             Hiring Partners</span>
         </div>
         </div>

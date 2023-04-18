@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
         <footer>
-        <footer>
+      
     <div class="container">
         <div class="footer-summary">
             <div class="top-footer">
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
     </div>
 </footer>
-    </footer>
+    
     </div>
   )
 }

@@ -277,7 +277,7 @@ transform: translate(-50%,-50%);
 
 .company{
     width: 100%;
-    padding: 60px 30px;
+    padding: 60px 0;
     border: 1px solid #dddddd;
     border-radius: 12px;
     position: relative;
@@ -450,7 +450,6 @@ display: inline-block;
 .creator h2
 {
     text-align: center;
-    width: 36vw;
     margin: 0 auto 50px auto;
     line-height: 40px;
     font-size: 30px;
@@ -543,8 +542,8 @@ margin-bottom: 20px;
 .creator-img-block{
 overflow: hidden;
 position: relative;
-width: 72vw;
-margin: auto;
+width: 100%;
+justify-content: center;
 height: 100%;
 z-index: 1;
 display: flex;
@@ -724,8 +723,8 @@ column-gap: 5%;
 
 .project-card{
     display: flex;
-    width: 85vw;
-    margin: auto;
+    width: 100%;
+    justify-content: center;
 }
 .project-thumb {
     width: 350px;
@@ -858,7 +857,6 @@ text-align: center!important;
 
 .table-responsive {
     display: block;
-    width: 85vw;
     margin: 50px auto 0 auto;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1070,6 +1068,16 @@ table {
     width: 85vw;
     margin: 100px auto 0 auto;
 }
+
+.summary-1{
+    display: flex;
+    justify-content: center;
+}
+
+.summary-2{
+    display: flex;
+    justify-content: center;
+}
 /* 
 .pricing-summary .summary-1{
     margin-bottom: 50px;
@@ -1080,13 +1088,14 @@ table {
 } */
 
 .price-thumb{
+    width: 70%;
     margin-bottom: 50px;
     background: #fff;
     position: relative;
     box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
     border-radius: 8px;
-    column-gap: 20%;
-    padding-left: 40px;
+    justify-content: space-between;
+    padding: 0 40px;
     display: flex;
     height: 154px;
     align-items: center;
@@ -1118,7 +1127,7 @@ table {
     font-weight: 400;
 }
 
-.thumb-3 span::before{
+/* .thumb-3 span::before{
     background-position: -1px -787px;
     content: '';
     background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite.svg);
@@ -1129,7 +1138,7 @@ table {
     width: 10px;
     height: 7px;
     transform: translateY(-50%);
-}
+} */
 
 .thumb-3 button{
     background: #e95454 !important;
@@ -1155,13 +1164,14 @@ margin-left: 25px;
 
 .reviews{
     column-gap: 5%;
-    width: 85vw;
-    margin: 0 auto 0 auto;
+    width: 100%;
+    justify-content: center;
     display: flex;
 }
 
 
     .learner {
+        width: 100%;
         margin-top: 300px;
         background: #f7fafe;
         height: 500px;

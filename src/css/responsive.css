@@ -86,4 +86,193 @@ h3{
     width: 100%;
     overflow-x: hidden;
 }
+
+.creator-img-block{
+justify-content: initial;
+padding: 0 10px;
+width: auto;
 }
+
+.project h2{
+    font-size: 1.3rem;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.project-card{
+    overflow: hidden;
+}
+
+.technologies h2{
+    font-size: 1.3rem;
+    line-height: 10px;
+}
+
+.curriculum h2{
+    font-size: 1.3rem;
+    line-height: 10px;
+}
+
+.custom-table thead th{
+    font-size: 8px;
+}
+
+.custom-table tbody td .title{
+    font-size: 12px;
+}
+
+.advantage h2{
+    font-size: 1.3rem;
+}
+
+.table-responsive{
+    padding: 2px;
+}
+
+.admission ul li .count{
+    font-size: 16px;
+}
+
+.admission ul{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.admission ul li .content{
+    font-size: 12px;
+    max-width: 102px;
+    line-height: 20px;
+    margin: 15px auto 0;
+}
+
+.section-heading {
+    font-size: 20px;
+}
+
+.reviews{
+    justify-content: initial;
+    column-gap: 2%;
+}
+
+.learner{
+    overflow: hidden;
+}
+
+.review-thumb p{
+margin-top: 12px;
+font-size: 12px;
+line-height: 18px;
+height: 90px;
+}
+
+.review-thumb .media{
+    display: block;
+    padding-bottom: 11px;
+}
+
+.review-title{
+    margin-top: 12px;
+    height: 13px;
+}
+
+.review-thumb .media-body h3{
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.review-thumb .review-img img{
+    width: 50px;
+    height: 50px;
+}
+
+.review-thumb{
+    width: auto;
+    padding: 10px 10px;
+    height: 300px;
+}
+
+.review-thumb .media-body{
+    padding-left: 0;
+}
+
+.faq-summary .faq-collection .card-header h3{
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 223px;
+}
+
+.faq-summary .faq-list.faq-collection .card .card-header .card-link:before{
+    right: 20px;
+    top: 10px;
+}
+
+.faq-summary .faq-list.faq-collection .card .card-header .card-link{
+    padding: 5px;
+}
+.last{
+    margin-top: 50px !important;
+}
+
+.row{
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.got-a-ques-summary img{
+    display: none;
+}
+
+.row .offset-md-6{
+    margin-left: 0;
+    text-align: center;
+}
+
+.got-a-ques-btn{
+    justify-content: center;
+}
+
+.footer-summary {
+    padding: 0 !important;
+    text-align: center;
+}
+
+.top-footer{
+    padding: 50px 0 40px !important;
+}
+
+.footer-summary .social-icons{
+    margin-top: 35px !important;
+    justify-content: center !important;
+}
+
+.footer-summary h3{
+    margin-top: 50px;
+}
+
+
+footer .row-second{
+    flex-direction: column;
+    position: static !important;
+    
+}
+
+.bottom-footer{
+    padding-bottom: 5px !important;
+}
+
+.advantage{
+    margin-top: 50px;
+}
+
+.creator h2{
+    font-size: 20px;
+}
+
+.bootcamp{
+    padding: 35px 0
+}
+
+}
+

@@ -8,7 +8,7 @@ const Bootcamp = () => {
      <div className='course-summary'>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-1"/><h3> 100+ hours learning </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-1"/><h3> 200+ hours learning </h3>
                         <p>
                             Learn from world class MAANG instructors and become job ready
                         </p>
@@ -22,7 +22,7 @@ const Bootcamp = () => {
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-3"/><h3> 20+ projects and case studies </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-3"/><h3> 15+ projects and case studies </h3>
                         <p>
                         Learn over 20 tools and technologies through real life industry projects
                         </p>
