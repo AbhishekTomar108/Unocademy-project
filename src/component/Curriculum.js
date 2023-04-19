@@ -6,27 +6,27 @@ const Curriculum = () => {
             const progressBar = document.getElementsByClassName("progress-bar")[0];
             if(point===0)
             {
-                progressBar.style.width="100px"
+                progressBar.style.width="10%"
             }
             if(point===1)
             {
-                progressBar.style.width="350px"
+                progressBar.style.width="25%"
             }
             if(point===2)
             {
-                progressBar.style.width="550px"
+                progressBar.style.width="45%"
             }
             if(point===3)
             {
-                progressBar.style.width="750px"
+                progressBar.style.width="60%"
             }
             if(point===4)
             {
-                progressBar.style.width="950px"
+                progressBar.style.width="78%"
             }
             if(point===5)
             {
-                progressBar.style.width="1150px"
+                progressBar.style.width="95%"
             }
            
     }
