@@ -8,7 +8,6 @@ const Nav = () => {
     <div className='header'>
         <h1>UnCodemy</h1>
       <div className='header-btn'>
-        <button id='write-to-us-btn'>Write to Us</button>
         <button id='call-us-btn'>Call Us</button>
         <button id='chat-btn'><img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icon whatsapp-icon"></img>Chat With Us</button>
       </div>

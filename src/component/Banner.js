@@ -1,13 +1,17 @@
 import React from 'react'
+import { Form } from './Form'
+
 
 const Banner = () => {
+
+  
   return (
     <div className='banner'>
         <div className='banner-at-point'>
             <ul>
                 <li>Home</li>
                 <li>Bootcamps</li>
-                <li>Full Stack Software Development Bootcamp</li>
+                <li>Job Oriented Full Stack Software Development Bootcamp</li>
             </ul>
         </div>
 
@@ -15,11 +19,11 @@ const Banner = () => {
             <div className='lower-box-left'>
                 <h2>Job Assistance with Interview Opportunity*</h2>
                 <h1>
-                    <span>Full Stack</span>
+                    <span>Job Oriented Full Stack</span>
                     Software Development Bootcamp
                 </h1>
                 <p>
-                Earn upto 9LPA on Course Completion - Book Your Seat With As Low As <span id='price-text'>INR 2,000/- only</span>
+                Earn upto 10LPA on Course Completion - Book Your Seat With As Low As <span id='price-text'>INR 2,000/- only</span>
                 <strong>Duration of the program- 6 months</strong>
 
                 <span className='cohort-text'>Next Cohort Starts: 01 May, 2023</span>

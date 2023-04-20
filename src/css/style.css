@@ -233,7 +233,7 @@ button {
 
 .placement-container {
   margin: 40px auto 0 auto;
-  width: 72vw;
+  width: 75vw;
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.05);
   border-radius: 12px;
@@ -458,10 +458,10 @@ button {
 .program-thumb {
   height: 340px;
   background: #ffffff;
-  box-shadow: 0px 4px 18px rgba(24, 39, 75, 0.05);
+  box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
   border-radius: 14px;
   margin-top: 60px;
-  margin-bottom: 20px;
+ 
 }
 
 .creator-img {
@@ -473,7 +473,6 @@ button {
 
 .program-thumb-content {
   padding: 15px;
-  border: 0.5px solid #ededed;
   border-radius: 0 0 14px 14px;
   height: 140px;
   border-top: 0 none;
@@ -545,8 +544,9 @@ button {
 }
 
 .creator-img-block {
+  padding-left: 5px;
   transition-property: transform;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   position: relative;
   height: 100%;
   z-index: 1;
@@ -717,29 +717,28 @@ button {
   max-width: 446px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 60px;
   font-size: 30px;
   line-height: 45px;
   font-weight: 500;
   color: #111111;
 }
 
-.project-card-container{
-    
-    width: 80vw;
-    margin: auto;
-    overflow: hidden;
+.project-card-container {
+  width: 80vw;
+  margin: auto;
+  overflow: hidden;
 }
 
 .project-card {
-    transition-property: transform;
-    transition-duration: .2s;
+  transition-property: transform;
+  transition-duration: 0.2s;
   display: flex;
   column-gap: 5%;
 }
 
-.right{
-    cursor: pointer;
+.right {
+  cursor: pointer;
 }
 .project-thumb {
   width: 350px;
@@ -749,7 +748,6 @@ button {
   border-radius: 12px;
   padding: 45px 40px 40px;
   margin-bottom: 58px;
-  margin-top: 70px;
 }
 
 .project-thumb img {
@@ -866,6 +864,11 @@ button {
   line-height: 45px;
   font-weight: 500;
   color: #111111;
+}
+
+.table-container {
+  width: 87vw;
+  margin: auto;
 }
 
 .table-responsive {
@@ -1174,14 +1177,34 @@ table {
   margin-left: 25px;
 }
 
+.reviews-container {
+  display: flex;
+  overflow: hidden;
+  width: 80vw;
+  margin: auto;
+}
+
+.review-left-arrow {
+  position: absolute;
+  top: 280px;
+  left: 5vw;
+}
+.review-right-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 280px;
+  left: 89vw;
+}
+
 .reviews {
+  transition-property: transform;
+  transition-duration: 0.2s;
   column-gap: 5%;
-  width: 100%;
-  justify-content: center;
   display: flex;
 }
 
 .learner {
+  position: relative;
   width: 100%;
   margin-top: 100px;
   background: #f7fafe;
@@ -1459,9 +1482,23 @@ a:focus {
 }
 
 .company ul {
-  transform: translateX(-200px);
-  transition-property: transform;
-  transition-duration: 4000ms;
+ /* ------------- alternate ways to move compnay image using transition--------------
+  /*  transition-property: transform;
+  transition-timing-function: linear;  */
+  animation-name: companyImgMove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes companyImgMove {
+  from {
+    transform: translateX(-150px);
+  }
+
+  to {
+    transform: translateX(-1000px);
+  }
 }
 
 .progress {
@@ -1496,16 +1533,16 @@ a:focus {
   transform: translateY(-50%);
 }
 
-.project{
-    position: relative;
+.project {
+  position: relative;
 }
 
-.arrow-block{
-    position: absolute;
-    display: flex;
-    column-gap: 20px;
-    left: 83vw;
-    top: 110px;
+.arrow-block {
+  position: absolute;
+  display: flex;
+  column-gap: 20px;
+  left: 83vw;
+  top: 110px;
 }
 
 .left-arrow {
@@ -1513,6 +1550,18 @@ a:focus {
   position: absolute;
   top: 280px;
   left: 7vw;
+}
+
+.project-left-arrow {
+  position: absolute;
+  left: 83vw;
+  top: 100px;
+}
+.project-right-arrow {
+  cursor: pointer;
+  position: absolute;
+  left: 87vw;
+  top: 100px;
 }
 
 .arrow-img img {

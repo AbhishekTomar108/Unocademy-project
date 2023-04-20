@@ -1,4 +1,4 @@
-@media only screen and (max-width: 790px){
+@media only screen and (max-width: 860px){
 
 .header{
     padding-right: 2%;
@@ -89,7 +89,8 @@ h3{
 justify-content: initial;
 padding: 0 10px;
 width: auto;
-overflow: scroll;
+overflow-x: scroll;
+overflow-y: hidden;
 }
 
 .project h2{
@@ -122,11 +123,17 @@ overflow: scroll;
 
 .custom-table tbody td .title{
     font-size: 12px;
+    line-height: 18px;
 }
 
 .advantage h2{
     font-size: 1.3rem;
 }
+
+.table-container{
+    width: 95%;
+    margin: auto;
+  }
 
 .table-responsive{
     padding: 2px;
@@ -151,6 +158,12 @@ overflow: scroll;
 
 .section-heading {
     font-size: 20px;
+}
+
+.reviews-container{
+    margin: 0;
+    overflow: scroll;
+    width: 100%;
 }
 
 .reviews{
@@ -320,6 +333,18 @@ footer .row-second{
 .project-thumb{
     margin-right: 10px;
 }
+
+}
+
+@media screen and (min-width: 861px) and (max-width: 1200px)
+{
+    body{
+        background-color: grey;
+    }
+
+    .creator-img-block{
+
+    }
 
 }
 

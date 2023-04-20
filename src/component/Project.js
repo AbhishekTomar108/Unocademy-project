@@ -1,18 +1,19 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Left from "../image/left.png";
 import Right from "../image/right.png";
 
 const Project = () => {
 
-    const [moveCreatorImg, setmoveCreatorImg] =  useState(0);
+    const [moveProjectImage, setmoveProjectImage] = useState(0);
     const [imageAt, setImageAt] = useState(4);
 
     useEffect(() => {
 
-        const rightArrow = document.getElementsByClassName('right')[0]
-        const leftArrow = document.getElementsByClassName('left')[0]
+        const rightArrow = document.getElementsByClassName('project-right-arrow')[0]
+        const leftArrow = document.getElementsByClassName('project-left-arrow')[0]
 
         if (imageAt > 4 && imageAt < 7) {
+            console.log("first if");
             rightArrow.style.cursor = "pointer";
             leftArrow.style.cursor = "pointer";
 
@@ -22,58 +23,62 @@ const Project = () => {
         }
 
         if (imageAt === 4) {
+            console.log("second if");
+
             leftArrow.style.cursor = "auto";
-            leftArrow.style.opacity = "0.5"
+            leftArrow.style.opacity = "0.5";
         }
 
         if (imageAt === 7) {
+            console.log("third if");
+
             rightArrow.style.cursor = "auto";
-            rightArrow.style.opacity = "0.5"
+            rightArrow.style.opacity = "0.5";
         }
 
     }, [imageAt])
 
-    const moveImageRight = ()=>{
+    const moveImageRight = () => {
         console.log("right running");
         const projectCard = document.getElementsByClassName('project-card')[0];
 
-        if(imageAt<7)
-        {
-        const nextMove = moveCreatorImg-300;
-        projectCard.style.transform = "translate("+nextMove+"px)";
-        setmoveCreatorImg(nextMove);
+        if (imageAt < 7) {
+            const nextMove = moveProjectImage - 300;
+            projectCard.style.transform = "translate(" + nextMove + "px)";
+            setmoveProjectImage(nextMove);
 
-        const addImage = imageAt+1;
-        setImageAt(addImage);
+            const addImage = imageAt + 1;
+            setImageAt(addImage);
         }
 
     }
 
-    const moveImageLeft = ()=>{
+    const moveImageLeft = () => {
+        console.log("left running");
         const projectCard = document.getElementsByClassName('project-card')[0];
 
-        if(imageAt>4){
-        const nextMove = moveCreatorImg+300;
-        projectCard.style.transform = "translate("+nextMove+"px)";
+        if (imageAt > 4) {
+            const nextMove = moveProjectImage + 300;
+            projectCard.style.transform = "translate(" + nextMove + "px)";
 
-        setmoveCreatorImg(nextMove);
-        const addImage = imageAt-1;
-        setImageAt(addImage);
+            setmoveProjectImage(nextMove);
+            const addImage = imageAt - 1;
+            setImageAt(addImage);
         }
-        
+
     }
     return (
         <div className='project'>
             <h2>Get a real world understanding through <b>industry projects</b></h2>
 
-            <div className='arrow-block'>
-                <div className='left arrow-img' onClick={moveImageLeft}>
+            
+                <div className='project-left-arrow arrow-img' onClick={moveImageLeft}>
                     <img src={Left} />
                 </div>
 
-                <div className='right arrow-img' onClick={moveImageRight}>
+                <div className='project-right-arrow arrow-img' onClick={moveImageRight}>
                     <img src={Right} />
-                </div>
+              
             </div>
             <div className='project-card-container'>
                 <div className='project-card'>
@@ -237,7 +242,7 @@ const Project = () => {
                             </li>
                         </ul>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

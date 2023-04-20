@@ -2,20 +2,20 @@ import React from 'react'
 
 const Question = () => {
 
-    let collapseState = 0;
+    let collapseState = [0,0,0,0,0];
     const showdetails=(index)=>{
         console.log("running",index);
 
         const collapse = document.getElementsByClassName("collapse")[index];
 
-        if(collapseState===0){
+        if(collapseState[index]===0){
         collapse.style.display="block";
-        collapseState=1;
+        collapseState[index]=1;
         }
 
         else{
             collapse.style.display="none";
-            collapseState=0;
+            collapseState[index]=0;
         }
     }
   return (

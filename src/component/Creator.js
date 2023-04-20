@@ -34,6 +34,7 @@ const Creator = () => {
     }, [imageAt])
 
     const moveImageRight = () => {
+        console.log("creator right");
         const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
 
         if (imageAt < 7) {
@@ -49,6 +50,8 @@ const Creator = () => {
     }
 
     const moveImageLeft = () => {
+        console.log("creator left");
+
         const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
 
         if (imageAt > 4) {
@@ -86,14 +89,7 @@ const Creator = () => {
                             <h4> Sachin Bhatnagar </h4>
                             <p> Program Director - Full-Stack </p>
                             <p class="company-name">Knowledgehut upGrad</p>
-                            <ul>
-                                <li>
-                                    Ex - 20+ Years
-                                </li>
-                                <li>
-                                    <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small" />
-                                </li>
-                            </ul>
+                        
                         </div>
                     </div>
 
@@ -103,14 +99,7 @@ const Creator = () => {
                             <h4> Sachin Bhatnagar </h4>
                             <p> Program Director - Full-Stack </p>
                             <p class="company-name">Knowledgehut upGrad</p>
-                            <ul>
-                                <li>
-                                    Ex - 20+ Years
-                                </li>
-                                <li>
-                                    <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small" />
-                                </li>
-                            </ul>
+                    
                         </div>
                     </div>
 
@@ -120,14 +109,7 @@ const Creator = () => {
                             <h4> Sachin Bhatnagar </h4>
                             <p> Program Director - Full-Stack </p>
                             <p class="company-name">Knowledgehut upGrad</p>
-                            <ul>
-                                <li>
-                                    Ex - 20+ Years
-                                </li>
-                                <li>
-                                    <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small" />
-                                </li>
-                            </ul>
+                           
                         </div>
                     </div>
 
@@ -137,14 +119,7 @@ const Creator = () => {
                             <h4> Sachin Bhatnagar </h4>
                             <p> Program Director - Full-Stack </p>
                             <p class="company-name">Knowledgehut upGrad</p>
-                            <ul>
-                                <li>
-                                    Ex - 20+ Years
-                                </li>
-                                <li>
-                                    <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small" />
-                                </li>
-                            </ul>
+                            
                         </div>
                     </div>
 
@@ -154,14 +129,7 @@ const Creator = () => {
                             <h4> Sachin Bhatnagar </h4>
                             <p> Program Director - Full-Stack </p>
                             <p class="company-name">Knowledgehut upGrad</p>
-                            <ul>
-                                <li>
-                                    Ex - 20+ Years
-                                </li>
-                                <li>
-                                    <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small" />
-                                </li>
-                            </ul>
+                           
                         </div>
                     </div>
 
@@ -171,14 +139,7 @@ const Creator = () => {
                             <h4> Sachin Bhatnagar </h4>
                             <p> Program Director - Full-Stack </p>
                             <p class="company-name">Knowledgehut upGrad</p>
-                            <ul>
-                                <li>
-                                    Ex - 20+ Years
-                                </li>
-                                <li>
-                                    <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small" />
-                                </li>
-                            </ul>
+                            
                         </div>
                     </div>
 
@@ -188,14 +149,7 @@ const Creator = () => {
                             <h4> Sachin Bhatnagar </h4>
                             <p> Program Director - Full-Stack </p>
                             <p class="company-name">Knowledgehut upGrad</p>
-                            <ul>
-                                <li>
-                                    Ex - 20+ Years
-                                </li>
-                                <li>
-                                    <img src='https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg' class="icons icon-linkedin-small" />
-                                </li>
-                            </ul>
+                            
                         </div>
                     </div>
 
