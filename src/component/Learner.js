@@ -41,7 +41,7 @@ const Learner = () => {
         const reviews = document.getElementsByClassName('reviews')[0];
 
         if (imageAt > 2) {
-            const nextmove = imageMove + 600;
+            const nextmove = imageMove + 500;
             reviews.style.transform = "translate(" + nextmove + "px)";
             setImageMove(nextmove);
 
@@ -55,7 +55,7 @@ const Learner = () => {
         const reviews = document.getElementsByClassName('reviews')[0];
 
         if (imageAt < 5) {
-            const nextmove = imageMove - 600;
+            const nextmove = imageMove - 500;
             reviews.style.transform = "translate(" + nextmove + "px)";
             setImageMove(nextmove);
 

@@ -393,7 +393,7 @@ button {
 }
 
 .icons {
-  background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+  background-image: url(file:///C:/Uncodemy-project/Unocademy-project/src/image/icon.svg);
   background-repeat: no-repeat;
 }
 
@@ -447,6 +447,22 @@ button {
   position: relative;
 }
 
+.creator-details{
+  position:absolute;
+  top: 400px;
+  color: white;
+  height: 340px;
+  background-color: transparent;
+  transition-property: top;
+  transition-duration: .2s;
+  padding: 10px;
+  text-align: center;
+}
+
+.thumb-container{
+  position: relative;
+}
+
 .creator h2 {
   text-align: center;
   margin: 0 auto 50px auto;
@@ -456,7 +472,7 @@ button {
 }
 
 .program-thumb {
-  height: 340px;
+  width: 307px;
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
   border-radius: 14px;
@@ -464,22 +480,35 @@ button {
  
 }
 
+/* .program-thumb:hover{
+  opacity: 0.5;
+} */
+
 .creator-img {
   height: 200px;
-  width: 200px;
+  width: 100%;
   border-radius: 14px 14px 0 0;
   display: block;
 }
 
 .program-thumb-content {
-  padding: 15px;
+  padding: 0 10px;
   border-radius: 0 0 14px 14px;
-  height: 140px;
   border-top: 0 none;
 }
 
+.star-img-group{
+  display: flex;
+  column-gap: 5px;
+}
+
+.star-img-group img{
+  width: 30px;
+  height: 30px;
+}
+
 .program-thumb-content h4 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 18px;
   color: #111111;
   margin-bottom: 10px;
@@ -489,7 +518,7 @@ button {
 }
 
 .program-thumb-content p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 13px;
   color: #111111;
   font-weight: 400;
@@ -538,7 +567,7 @@ button {
 }
 
 .creator-img-container {
-  width: 75vw;
+  width: 80vw;
   margin: auto;
   overflow: hidden;
 }
@@ -581,9 +610,11 @@ button {
   display: flex;
   list-style: none;
   column-gap: 7%;
+  justify-content: center;
 }
 
 .curriculum-list ul li {
+  min-width: 90px;
   cursor: pointer;
   padding: 0;
   border: 0 none;
@@ -820,7 +851,14 @@ button {
   justify-content: center;
 }
 
+.student-review{
+  color: grey;
+  line-height: 28px;
+}
+
 .technologies ul li {
+  padding-left: 2px;
+  column-gap: 10px;
   display: inline-flex;
   height: 54px;
   align-items: center;
@@ -834,8 +872,9 @@ button {
   margin-right: 25px;
   margin-bottom: 40px;
   position: relative;
-  padding-left: 63px;
 }
+
+
 
 .technologies ul li i {
   height: 54px;
@@ -845,6 +884,13 @@ button {
   position: absolute;
   top: -1px;
   left: -1px;
+}
+
+.technologies ul li img{
+
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
 }
 
 .apply-btn {
@@ -1180,14 +1226,14 @@ table {
 .reviews-container {
   display: flex;
   overflow: hidden;
-  width: 80vw;
+  width: 75vw;
   margin: auto;
 }
 
 .review-left-arrow {
   position: absolute;
   top: 280px;
-  left: 5vw;
+  left: 9vw;
 }
 .review-right-arrow {
   cursor: pointer;
@@ -1199,7 +1245,7 @@ table {
 .reviews {
   transition-property: transform;
   transition-duration: 0.2s;
-  column-gap: 5%;
+  column-gap: 1%;
   display: flex;
 }
 
@@ -1215,7 +1261,7 @@ table {
   background: #ffffff;
   border-radius: 0;
   padding: 20px 40px;
-  width: 478px;
+  width: 430px;
 }
 
 .review-thumb .media {
