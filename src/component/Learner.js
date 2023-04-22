@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import Left from "../image/left.png";
 import Right from "../image/right.png";
+import star from '../image/star.png'
 
 const Learner = () => {
 
     const [imageAt, setImageAt] = useState(2);
     const [imageMove, setImageMove] = useState(0);
 
-    useEffect(()=>{
+    useEffect(() => {
 
         const leftArrow = document.getElementsByClassName('review-left-arrow')[0];
         const RightArrow = document.getElementsByClassName('review-right-arrow')[0];
 
-        if(imageAt>2  && imageAt<5)
-        {
+        if (imageAt > 2 && imageAt < 5) {
             leftArrow.style.cursor = "pointer";
             RightArrow.style.cursor = "pointer";
 
@@ -21,19 +21,17 @@ const Learner = () => {
             RightArrow.style.opacity = "1";
         }
 
-        if(imageAt===2)
-        {
+        if (imageAt === 2) {
             leftArrow.style.cursor = "auto";
             leftArrow.style.opacity = "0.5";
         }
 
-        if(imageAt===5)
-        {
+        if (imageAt === 5) {
             RightArrow.style.cursor = "auto";
             RightArrow.style.opacity = "0.5";
         }
 
-    },[imageAt])
+    }, [imageAt])
 
     const moveImageLeft = () => {
         console.log("learner left");
@@ -78,17 +76,19 @@ const Learner = () => {
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                    <h3> Mohamed Mufasil Mufeeth <a href="https://www.linkedin.com/in/mohamed-mufasil-mufeeth-364b54202" target="_blank" rel="nofollow"> <i class="icons icon-review-linkedin"></i> </a></h3>
+                                    <h3> Vinay Kumar </h3>
                                 </div>
-                                <div class="stars-list">
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
                                 </div>
+
+                                <hr></hr>
                                 <p>
-                                    My journey with upGrad was great. I learnt new technologies and skills that would help to build my career. I am currently working as a software developer at BYJUs. I was jobless for a year and ... <a href="javascript:void(0);" class="show-more" data-toggle="modal" data-target=".review-1">Show More</a>
+                                  "  I completed Data Science course in this institute. Our trainer Upendra Sir was very Knowledgeablen and friendly. It is a good Institute for beginners who want to learn this course. Classes were handled both theoretically and practically."
                                 </p>
                             </div>
                         </div>
@@ -101,17 +101,19 @@ const Learner = () => {
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                    <h3> Mohamed Mufasil Mufeeth <a href="https://www.linkedin.com/in/mohamed-mufasil-mufeeth-364b54202" target="_blank" rel="nofollow"> <i class="icons icon-review-linkedin"></i> </a></h3>
+                                    <h3>Mohit Sharma </h3>
                                 </div>
-                                <div class="stars-list">
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
                                 </div>
+
+                                <hr></hr>
                                 <p>
-                                    This course best fits people who want to kick start their careers in Software Development without having the required preconditioning. The most wholesome part of this course is the... <a href="javascript:void(0);" class="show-more" data-toggle="modal" data-target=".review-7">Show More</a>
+                                 "   Uncodemy gave me the best experience of theoritical and practical knowledge of Java Full stack course. Initially I was confused regarding pursuing the training from here but throughout the training the training I got a wonderful experience."
                                 </p>
                             </div>
                         </div>
@@ -124,17 +126,20 @@ const Learner = () => {
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                    <h3> Mohamed Mufasil Mufeeth <a href="https://www.linkedin.com/in/mohamed-mufasil-mufeeth-364b54202" target="_blank" rel="nofollow"> <i class="icons icon-review-linkedin"></i> </a></h3>
+                                    <h3>Nitin Yadav </h3>
                                 </div>
-                                <div class="stars-list">
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
                                 </div>
+
+                                <hr></hr>
                                 <p>
-                                    This course best fits people who want to kick start their careers in Software Development without having the required preconditioning. The most wholesome part of this course is the... <a href="javascript:void(0);" class="show-more" data-toggle="modal" data-target=".review-7">Show More</a>
+                                  "  I got trained in MERN full Stack development from Uncodemy, their teaching methodology is very practical, Industry relevant, and interactive.
+                                    our mentor Ajay Sir made the concepts very clear and simple and taught us the best ways and practices that I could never learn anywhere else before, and mentors are supportive and friendly."
                                 </p>
                             </div>
                         </div>
@@ -147,17 +152,19 @@ const Learner = () => {
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                    <h3> Mohamed Mufasil Mufeeth <a href="https://www.linkedin.com/in/mohamed-mufasil-mufeeth-364b54202" target="_blank" rel="nofollow"> <i class="icons icon-review-linkedin"></i> </a></h3>
+                                    <h3> Sanoj Kumar</h3>
                                 </div>
-                                <div class="stars-list">
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
                                 </div>
+
+                                <hr></hr>
                                 <p>
-                                    This course best fits people who want to kick start their careers in Software Development without having the required preconditioning. The most wholesome part of this course is the... <a href="javascript:void(0);" class="show-more" data-toggle="modal" data-target=".review-7">Show More</a>
+                              "  I done my mern full stack course the best software training institute in Noida. I'am from Delhi studying final year before joined here don't know anything now i done my Health product base wep app in Mern. faculty Ajay sir and management was very supportive and caring every one. Thank you i refer every one to join here for Full stack development course."
                                 </p>
                             </div>
                         </div>
@@ -170,17 +177,21 @@ const Learner = () => {
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                    <h3> Mohamed Mufasil Mufeeth <a href="https://www.linkedin.com/in/mohamed-mufasil-mufeeth-364b54202" target="_blank" rel="nofollow"> <i class="icons icon-review-linkedin"></i> </a></h3>
+                                <h3> David Raj</h3>
                                 </div>
-                                <div class="stars-list">
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
-                                    <i class="icons icon-star"></i>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
                                 </div>
+
+                                <hr></hr>
                                 <p>
-                                    This course best fits people who want to kick start their careers in Software Development without having the required preconditioning. The most wholesome part of this course is the... <a href="javascript:void(0);" class="show-more" data-toggle="modal" data-target=".review-7">Show More</a>
+                                    "I got trained in MERN full Stack development from Uncodemy. Their teaching methodology is very practical, industry relevant, and interactive.
+
+                                    Our mentor Ajay Sir made the concepts very clear and simple and taught us the best ways and practices that I could never learn anywhere else before. He taught us to choose technology that works for each project, not just implement it excitedly without any thought of how it can be executed or make the most out of it. After that we were given training on how to use web technologies such as HTML5, JavaScript and CSS3 to build a complete stack which we could also use for building our own applications as well as modifying code from existing projects."
                                 </p>
                             </div>
                         </div>

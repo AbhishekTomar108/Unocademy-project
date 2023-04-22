@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&family=Poppins&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -447,19 +450,37 @@ button {
   position: relative;
 }
 
-.creator-details{
-  position:absolute;
-  top: 400px;
-  color: white;
-  height: 340px;
+.creator-details-container {
+  /*   overflow: hidden; */
+  position: relative;
+}
+
+.creator-details {
+  position: absolute;
+  top: 460px;
   background-color: transparent;
   transition-property: top;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: white;
+  height: 80%;
   padding: 10px;
   text-align: center;
 }
 
-.thumb-container{
+.creator-details .details {
+  height: 100%;
+  overflow: scroll;
+}
+
+.creator-details .details::-webkit-scrollbar {
+  width: 0;
+}
+
+.thumb-container {
   position: relative;
 }
 
@@ -472,12 +493,17 @@ button {
 }
 
 .program-thumb {
-  width: 307px;
+  min-width: 22vw;
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
   border-radius: 14px;
   margin-top: 60px;
- 
+  height: 400px;
+}
+
+.program-thumb-content-hr {
+  visibility: hidden;
+  margin: 0;
 }
 
 /* .program-thumb:hover{
@@ -485,46 +511,63 @@ button {
 } */
 
 .creator-img {
-  height: 200px;
+  height: 280px;
   width: 100%;
   border-radius: 14px 14px 0 0;
   display: block;
 }
 
 .program-thumb-content {
-  padding: 0 10px;
+  padding: 10px 10px;
   border-radius: 0 0 14px 14px;
   border-top: 0 none;
 }
 
-.star-img-group{
+.star-img-group {
   display: flex;
   column-gap: 5px;
+  margin-top: 10px;
 }
 
-.star-img-group img{
-  width: 30px;
-  height: 30px;
+.star-img-group img {
+  width: 20px;
+  height: 20px;
+}
+
+.review-thumb .media hr {
+  margin-top: 15px;
 }
 
 .program-thumb-content h4 {
   font-size: 20px;
   line-height: 18px;
   color: #111111;
-  margin-bottom: 10px;
-  height: 18px;
+  margin-bottom: 2px;
+  margin-top: 12px;
+  height: 25px;
   overflow: hidden;
   font-weight: 600;
 }
 
 .program-thumb-content p {
+  font-family: "Poltawski Nowy", serif;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 15px;
   line-height: 13px;
   color: #111111;
   font-weight: 400;
-  height: 26px;
+  height: 53px;
   overflow: hidden;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.program-thumb-content p img {
+  width: 85px;
+  height: 35px;
 }
 
 .program-thumb-content .company-name {
@@ -567,7 +610,7 @@ button {
 }
 
 .creator-img-container {
-  width: 80vw;
+  width: 75vw;
   margin: auto;
   overflow: hidden;
 }
@@ -580,7 +623,7 @@ button {
   height: 100%;
   z-index: 1;
   display: flex;
-  column-gap: 7%;
+  column-gap: 5%;
   transition-property: transform;
   box-sizing: content-box;
 }
@@ -851,7 +894,7 @@ button {
   justify-content: center;
 }
 
-.student-review{
+.student-review {
   color: grey;
   line-height: 28px;
 }
@@ -874,8 +917,6 @@ button {
   position: relative;
 }
 
-
-
 .technologies ul li i {
   height: 54px;
   width: 54px;
@@ -886,8 +927,7 @@ button {
   left: -1px;
 }
 
-.technologies ul li img{
-
+.technologies ul li img {
   height: 45px;
   width: 45px;
   border-radius: 50%;
@@ -1262,6 +1302,7 @@ table {
   border-radius: 0;
   padding: 20px 40px;
   width: 430px;
+  height: 320px;
 }
 
 .review-thumb .media {
@@ -1344,11 +1385,19 @@ table {
 }
 
 .review-thumb p {
+  font-family: "Poltawski Nowy", serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 15px;
   font-size: 15px;
   line-height: 28px;
   font-weight: 300;
   color: #111111;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.review-thumb p::-webkit-scrollbar {
+  width: 0;
 }
 
 .review-thumb p a {
@@ -1528,22 +1577,22 @@ a:focus {
 }
 
 .company ul {
- /* ------------- alternate ways to move compnay image using transition--------------
+  /* ------------- alternate ways to move compnay image using transition--------------
   /*  transition-property: transform;
   transition-timing-function: linear;  */
   animation-name: companyImgMove;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 @keyframes companyImgMove {
   from {
-    transform: translateX(-150px);
+    transform: translateX(0px);
   }
 
   to {
-    transform: translateX(-1000px);
+    transform: translateX(-4480px);
   }
 }
 

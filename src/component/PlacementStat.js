@@ -1,16 +1,39 @@
 import React, {useEffect, useState} from 'react'
-import Axis from "../image/Axis_Bank_logo.svg.png"
-import Cognizant from "../image/Cognizant's_logo.svg.png"
-import IBM from "../image/IBM_logo.svg.png"
-import TechMahindra from "../image/Tech_Mahindra_New_Logo.svg.png"
-import Wipro from "../image/Wipro_Primary_Logo_Color_RGB.svg.png"
-import Adobe from "../image/images.png"
-import Delloite from "../image/2560px-Deloitte.svg.png"
-import Accenture from "../image/Accenture.svg.png"
-import Capegemini from "../image/capegemini.png"
+import WALMART from "../image/walmart.png"
+import COGNIZANT from "../image/Cognizant's_logo.svg.png"
+import MINDTREE from "../image/mindtree.png"
+import CRED from "../image/cred.png"
+import GOOGLE from "../image/google.png"
+import SAMSUNG from "../image/samsung.png"
+import ONEPLUS from "../image/oneplus.png"
+import DUNZO from "../image/dunzo.png"
+import MEDIANET from "../image/medianet.png"
 import Flipkart from "../image/Flipkart_logo.svg.png"
-import Uber from "../image/uber.png"
-import Amazon from "../image/Amazon_logo.svg.png"
+import UBER from "../image/uber.png"
+import AMAZON from "../image/Amazon_logo.svg.png"
+import nvidia from "../image/nvidia.png"
+import microsoft from "../image/microsoft.png"
+import paytm from "../image/paytm.png"
+import gojek from "../image/gojek.png"
+import ajio from "../image/ajio.png"
+import netflix from "../image/netflix.png"
+import jio from "../image/jio.png"
+import delhivery from "../image/delhivery.png"
+import goldman from "../image/goldman.png"
+import zeta from "../image/zeta.png"
+import phonepe from "../image/phonepe.png"
+import infosys from "../image/infosys.png"
+import toppr from "../image/toppr.png"
+import mindtickle from "../image/mindtickle.png"
+import atlassian from "../image/atlassian.png"
+import paysafe from "../image/paysafe.png"
+import creditSuisse from "../image/creditSuisse.png"
+import qualcomm from "../image/qualcomm.png"
+import ola from "../image/ola.png"
+import hcl from "../image/hcl.png"
+import wakefit from "../image/wakefit.png"
+
+
 
 
 const PlacementStat = () => {
@@ -51,7 +74,7 @@ const PlacementStat = () => {
         <div className='placement-box-right'>
             <span><b>1200+</b>
             Students Placed</span>
-            <span><b>18LPA</b>
+            <span><b>25LPA</b>
             Highest salaries</span>
             <span><b>35%</b>
             Average Salary Hike</span>
@@ -61,21 +84,42 @@ const PlacementStat = () => {
         </div>
 
         <div className='company'>
-        <h2>Companies that trust upGrad learners</h2>
+        <h2>Companies that trust Uncodemy learners</h2>
         <div className='company-logo-moving'>
            <ul id='company-list'>
-            <li className=''><img src={Axis}/></li>
-            <li className=''><img src={Cognizant}/></li>
-            <li className=''><img src={IBM}/></li>
-            <li className=''><img src={TechMahindra}/></li>
-            <li className=''><img src={Wipro}/></li>
-            <li className=''><img src={Adobe}/></li>
-            <li className=''><img src={Amazon}/></li>
+            <li className=''><img src={WALMART}/></li>
+            <li className=''><img src={COGNIZANT}/></li>
+            <li className=''><img src={MINDTREE}/></li>
+            <li className=''><img src={CRED}/></li>
+            <li className=''><img src={GOOGLE}/></li>
+            <li className=''><img src={SAMSUNG}/></li>
+            <li className=''><img src={ONEPLUS}/></li>
             <li className=''><img src={Flipkart}/></li>
-            <li className=''><img src={Capegemini}/></li>
-            <li className=''><img src={Uber}/></li>
-            <li className=''><img src={Delloite}/></li>
-            <li className=''><img src={Accenture}/></li>
+            <li className=''><img src={DUNZO}/></li>
+            <li className=''><img src={UBER}/></li>
+            <li className=''><img src={MEDIANET}/></li>
+            <li className=''><img src={AMAZON}/></li>
+            <li className=''><img src={nvidia}/></li>
+            <li className=''><img src={microsoft}/></li>
+            <li className=''><img src={paytm}/></li>
+            <li className=''><img src={gojek}/></li>
+            <li className=''><img src={ajio}/></li>
+            <li className=''><img src={netflix}/></li>
+            <li className=''><img src={jio}/></li>
+            <li className=''><img src={delhivery}/></li>
+            <li className=''><img src={goldman}/></li>
+            <li className=''><img src={zeta}/></li>
+            <li className=''><img src={phonepe}/></li>
+            <li className=''><img src={infosys}/></li>
+            <li className=''><img src={toppr}/></li>
+            <li className=''><img src={mindtickle}/></li>
+            <li className=''><img src={atlassian}/></li>
+            <li className=''><img src={paysafe}/></li>
+            <li className=''><img src={creditSuisse}/></li>
+            <li className=''><img src={qualcomm}/></li>
+            <li className=''><img src={ola}/></li>
+            <li className=''><img src={hcl}/></li>
+            <li className=''><img src={wakefit}/></li>
         
             
             </ul> 
