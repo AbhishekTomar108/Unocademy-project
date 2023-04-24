@@ -1291,7 +1291,6 @@ table {
 
 .learner {
   position: relative;
-  width: 100%;
   margin-top: 100px;
   background: #f7fafe;
   height: 500px;
@@ -1301,7 +1300,7 @@ table {
   background: #ffffff;
   border-radius: 0;
   padding: 20px 40px;
-  width: 430px;
+  width: 32vw;
   height: 320px;
 }
 
@@ -1580,10 +1579,10 @@ a:focus {
   /* ------------- alternate ways to move compnay image using transition--------------
   /*  transition-property: transform;
   transition-timing-function: linear;  */
-  animation-name: companyImgMove;
+  /* animation-name: companyImgMove;
   animation-duration: 60s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
 @keyframes companyImgMove {
