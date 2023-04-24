@@ -3,7 +3,8 @@ import linkedIn from "../image/LinkedIn.png"
 import Left from "../image/left.png";
 import Right from "../image/right.png";
 import Riya from "../image/riyatiwari.jpg"
-import Preity from "../image/preitySingh3.png"
+import Preity from "../image/preitySingh.jpg"
+import TANVI from "../image/tanvi.jpg"
 import Ritesh from "../image/riteshSingh.jpg"
 import ADITYA from "../image/adityaSingh.jpg"
 import RAJENDRA from "../image/rajendra.jpg"
@@ -234,7 +235,7 @@ const Creator = () => {
 
                     <div className='thumb-container' onMouseOver={() => showCreatorDetail(3)} onMouseOut={() => hideCreatorDetails(3)}>
                         <div class="program-thumb">
-                            <img class="creator-img" src={Preity} />
+                            <img class="creator-img" src={TANVI} />
                             <div class="program-thumb-content">
                                 <h4> Preity Singh </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>

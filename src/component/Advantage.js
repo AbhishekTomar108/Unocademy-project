@@ -76,20 +76,7 @@ const Advantage = () => {
         </div>
         </div>
 
-        <ul>
-            <li>
-                Cloud Labs is an intelligent immersive learning platform where you can practice your codes and receive instant feedback on areas of improvement.
-            </li>
-            <li>
-                Interview Opportunity indicates that upGrad will be guaranteed an invitation to interview post successful completion of the progam.
-            </li>
-            <li>
-                MAANG instructors stand for instructors from the best tech firms in the world namely Meta, Apple, Amazon, Netflix, Google and other top product companies.
-            </li>
-            <li>
-                Performance report provides the learners with their strengths and areas of development. It also recommends the assets that they need to look into to improve the areas of development.
-            </li>
-        </ul>
+        
     </div>
   )
 }

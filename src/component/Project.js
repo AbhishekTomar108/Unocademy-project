@@ -43,8 +43,8 @@ const Project = () => {
         const projectCard = document.getElementsByClassName('project-card')[0];
 
         if (imageAt < 7) {
-            const nextMove = moveProjectImage - 300;
-            projectCard.style.transform = "translate(" + nextMove + "px)";
+            const nextMove = moveProjectImage - 30;
+            projectCard.style.transform = "translate(" + nextMove + "vw)";
             setmoveProjectImage(nextMove);
 
             const addImage = imageAt + 1;
@@ -58,8 +58,8 @@ const Project = () => {
         const projectCard = document.getElementsByClassName('project-card')[0];
 
         if (imageAt > 4) {
-            const nextMove = moveProjectImage + 300;
-            projectCard.style.transform = "translate(" + nextMove + "px)";
+            const nextMove = moveProjectImage + 30;
+            projectCard.style.transform = "translate(" + nextMove + "vw)";
 
             setmoveProjectImage(nextMove);
             const addImage = imageAt - 1;

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 900px){
 
 .header{
     padding-right: 2%;
@@ -339,15 +339,23 @@ footer .row-second{
 
 .project-thumb{
     margin-right: 10px;
+    min-width: 65vw;
+}
+
+.program-thumb-content p img{
+    width: 65px;
+   
+}
+
+.program-thumb{
+    min-width: 65vw;
 }
 
 }
 
 @media screen and (min-width: 861px) and (max-width: 1054px)
 {
-    body{
-        background-color: grey;
-    }
+
 
     .btn-group{
         margin-top: 0;
@@ -359,3 +367,10 @@ footer .row-second{
 
 }
 
+@media screen and (min-width: 767px) and (max-width: 900px)
+{
+    .program-thumb{
+        overflow: scroll;
+        min-width: 40vw;
+    }
+}

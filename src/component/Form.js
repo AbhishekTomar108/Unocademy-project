@@ -2,7 +2,18 @@ import React from 'react'
 
 export const Form = () => {
   return (
-    <div>Form</div>
+    <div className='form-container'>
+      <form>
+        Name <input/>
+        Email <input/>
+        Phone No. <input/>
+        Location <input/>
+        <div className='submit-btn'>
+
+        <input type='submit'/>
+        </div>
+      </form>
+    </div>
   )
 }
 

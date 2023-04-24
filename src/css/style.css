@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&family=Poppins&family=Roboto&display=swap');
+
 
 body {
   margin: 0;
@@ -12,7 +14,7 @@ body {
   width: 100vw;
   position: fixed;
   background: white;
-  z-index: 2;
+  z-index: 5;
 }
 
 h2 {
@@ -799,7 +801,7 @@ button {
 }
 
 .project-card-container {
-  width: 80vw;
+  width: 90vw;
   margin: auto;
   overflow: hidden;
 }
@@ -815,12 +817,12 @@ button {
   cursor: pointer;
 }
 .project-thumb {
-  width: 350px;
+  min-width: 22vw;
   height: 476px;
   background: #f7fafe;
   border: 1px solid #eef1ff;
   border-radius: 12px;
-  padding: 45px 40px 40px;
+  padding: 2vw 2vw;
   margin-bottom: 58px;
 }
 
@@ -1266,7 +1268,7 @@ table {
 .reviews-container {
   display: flex;
   overflow: hidden;
-  width: 75vw;
+  width: 72vw;
   margin: auto;
 }
 
@@ -1299,7 +1301,7 @@ table {
 .review-thumb {
   background: #ffffff;
   border-radius: 0;
-  padding: 20px 40px;
+  padding: 1.7vw 2vw;
   width: 32vw;
   height: 320px;
 }
@@ -1583,6 +1585,51 @@ a:focus {
   animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; */
+}
+
+.form-container {
+  position: absolute;
+  top: 150px;
+  margin: 0 30vw;
+  font-family: 'Roboto', sans-serif;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 1;
+}
+
+.form-container form {
+  grid-template-columns: 10vw 20vw;
+  column-gap: 10vw;
+  display: grid;
+  font-size: 18px;
+  flex-direction: column;
+  row-gap: 50px;
+  background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.form-container form .submit-btn{
+  width: 40vw;
+  text-align: center;
+}
+
+.form-container form .submit-btn input{
+  background-color: #e95454;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  width: 10vw;
+  height: 35px;
+
+}
+
+form input{
+  border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #c5c2c2;
 }
 
 @keyframes companyImgMove {
