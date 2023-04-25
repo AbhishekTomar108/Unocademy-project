@@ -354,8 +354,6 @@
     text-align: initial;
   }
 
-  .footer-form-container form input {
-  }
 
   .footer-form-container form .submit-btn {
     min-width: 48vw;
@@ -364,10 +362,19 @@
 }
 
 @media screen and (max-width: 700px) {
+    .modules{
+
+        min-width: 90vw;
+    }
+
   .form-container {
     top: 56%;
     min-width: 100%;
     margin: 0;
+  }
+
+  .curriculum{
+    min-height: 950px;
   }
 }
 
@@ -415,4 +422,19 @@
     overflow: scroll;
     min-width: 40vw;
   }
+}
+
+
+@media screen and (max-width: 340px) {
+    .curriculum{
+        min-height: 1010px;
+    }
+
+    .btn-group{
+        column-gap: 5px;
+    }
+
+    button{
+        padding: 9px 9px;
+    }
 }

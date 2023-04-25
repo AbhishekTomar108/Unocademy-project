@@ -32,6 +32,7 @@ import qualcomm from "../image/qualcomm.png"
 import ola from "../image/ola.png"
 import hcl from "../image/hcl.png"
 import wakefit from "../image/wakefit.png"
+import Placement from "../image/placement-2.jpg"
 
 
 
@@ -65,6 +66,8 @@ const PlacementStat = () => {
 
   // },[1])
   return (
+    <>
+    <div className='bg-image'></div>
     <div className='placement-container'>
 
 <div className='placement-box'>
@@ -127,6 +130,7 @@ const PlacementStat = () => {
         </div>
         </div>
     </div>
+    </>
   )
 }
 

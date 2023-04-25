@@ -236,6 +236,11 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.bg-image{
+  background-image: url('../image/placement-2.jpg');
+  background-size: cover;
+}
+
 .placement-container {
   margin: 40px auto 0 auto;
   width: 75vw;
@@ -245,6 +250,8 @@ button {
   position: relative;
   bottom: 71px;
   padding: 80px 70px 60px;
+ 
+  
 }
 
 .placement-box {
@@ -631,10 +638,12 @@ button {
 }
 
 .curriculum {
+  position: relative;
   padding: 80px 0;
   background: #f7fafe;
   border-radius: 10px;
   margin-top: 100px;
+  min-height: 800px;
 }
 
 .curriculum h2 {
@@ -672,9 +681,26 @@ button {
   height: 50px;
 }
 
+.modules{
+ position: relative;
+ width: 70vw;
+ margin: auto;
+}
+
+#module1{
+  display: block;
+}
+
+.module{
+  display: none;
+}
+
+
+
 .module-container {
-  width: 63vw;
-  margin: auto;
+  position: absolute;
+  /* width: 63vw;
+  margin: auto; */
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
   padding: 40px;
@@ -786,7 +812,10 @@ button {
 .curi-btn {
   justify-content: center;
   display: flex;
-  margin-top: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+ 
 }
 
 .project h2 {
@@ -1715,6 +1744,7 @@ form input {
 
 .project {
   position: relative;
+
 }
 
 .arrow-block {
