@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&family=Poppins&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&family=Poppins&family=Roboto&display=swap");
 
 body {
   margin: 0;
@@ -86,6 +85,7 @@ button {
 }
 
 .banner {
+  position: relative;
   padding: 88px 10px 70px 10px;
   margin-top: -16px;
   background: #f7fafe;
@@ -1589,47 +1589,86 @@ a:focus {
 
 .form-container {
   position: absolute;
-  top: 150px;
-  margin: 0 30vw;
-  font-family: 'Roboto', sans-serif;
+  top: 19%;
+  left: 0;
+  font-family: "Roboto", sans-serif;
   z-index: 2;
+  background-color: white;
   visibility: hidden;
   opacity: 1;
+  min-width: 40vw;
+  margin: 0 28vw;
 }
 
 .form-container form {
-  grid-template-columns: 10vw 20vw;
-  column-gap: 10vw;
-  display: grid;
   font-size: 18px;
   flex-direction: column;
-  row-gap: 50px;
-  background: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-
+  display: flex;
+  padding: 10px 2vw;
+  border-radius: 5px;
+  margin-top: 40px;
 }
 
-.form-container form .submit-btn{
-  width: 40vw;
+.form-container form .submit-btn {
+ 
   text-align: center;
 }
 
-.form-container form .submit-btn input{
+.form-container form .submit-btn input {
   background-color: #e95454;
   color: white;
-  font-family: 'Roboto', sans-serif;
-  width: 10vw;
+  font-family: "Roboto", sans-serif;
+  min-width: 100%;
   height: 35px;
-
 }
 
-form input{
+.footer-form-container{
+  top: 0;
+  left: 57vw;
+  height: 100%;
+  margin:0;
+  background: none;
+  visibility: visible;
+}
+
+
+
+.footer-form-container form{
+  display: grid;
+  grid-template-columns: 7vw 25vw;
+  color: black;
+  margin: 0;
+}
+
+.footer-form-container form .submit-btn{
+  position: absolute;
+  min-width: 25vw;
+  top: 77%;
+  left: 9vw;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.footer-form-container form .submit-btn input{
+  background-color: #e95454;
+  color: white;
+}
+
+form input {
   border-radius: 5px;
-    height: 25px;
-    padding: 5px;
-    font-size: 15px;
-    border: 1px solid #c5c2c2;
+  height: 25px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.form-top{
+  width: 100%;
+    height: 30px;
+    background: #ff4242;
+    position: absolute;
 }
 
 @keyframes companyImgMove {

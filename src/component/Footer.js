@@ -19,39 +19,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div class="col-md-6 offset-md-3">
-                        <div class="row-second">
-                            <div class="col-md-5 offset-md-1">
-                                <h3> Upgrad </h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.upgrad.com/about/" target="_blank"> About </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.upgrad.com/media/" target="_blank"> upGrad In Media</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.upgrad.com/careers/" target="_blank"> Careers </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.upgrad.com/blog/" target="_blank"> upGrad Blog </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.upgrad.com/success-stories/" target="_blank"> Success Stories </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-5 offset-md-1">
-                                <h3> Support </h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.upgrad.com/terms/" target="_blank"> Terms and Conditions </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.upgrad.com/privacy/" target="_blank"> Privacy Policy </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                   
                     </div>
                 </div>
             </div>

@@ -237,7 +237,7 @@ const Creator = () => {
                         <div class="program-thumb">
                             <img class="creator-img" src={TANVI} />
                             <div class="program-thumb-content">
-                                <h4> Preity Singh </h4>
+                                <h4> Tanvi </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
                                 <p className='college-img'><img src={ashoka} className='college-img-2' /> &rarr; <img src={adobe} className='college-img-2' /> </p>
 

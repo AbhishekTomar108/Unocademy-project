@@ -34,8 +34,11 @@ function App() {
     <div>
    
   <Nav/>
-
+<HashRouter>
   <Banner/>
+  {/* <Routes>
+    <Route exact path="/footer" element={<Footer/>}/>
+  </Routes> */}
   <PlacementStat/>
   <Bootcamp/>
   <Creator/>
@@ -46,7 +49,9 @@ function App() {
   <Admission/>
   <Learner/>
   <Last/>
+ 
   <Footer/>
+  </HashRouter>
 
     </div>
   );

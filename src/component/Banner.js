@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -38,6 +39,7 @@ const Banner = () => {
   return (
     <div className='banner'>
         <div className='form-container'>
+          <div className='form-top'></div>
       <form>
         Name <input/>
         Email <input/>
@@ -81,7 +83,7 @@ const Banner = () => {
         </div>
         <div className='btn-group'>
                 <button id='curriculum-btn' onClick={hideBanner}><img src="https://www.upgrad.com/bootcamps/images/download.svg"/>Download Curriculum</button>
-                <button id='apply-btn'>Apply Now</button>
+                <Link to="footer"><button id='apply-btn'>Apply Now</button></Link>
                 </div>
         </div>
   )
