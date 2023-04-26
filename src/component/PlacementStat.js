@@ -67,7 +67,7 @@ const PlacementStat = () => {
   // },[1])
   return (
     <>
-    <div className='bg-image'></div>
+
     <div className='placement-container'>
 
 <div className='placement-box'>

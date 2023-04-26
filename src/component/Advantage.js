@@ -3,7 +3,7 @@ import React from 'react'
 const Advantage = () => {
   return (
     <div className='advantage'>
-        <h2>The upGrad <b>Advantage</b></h2>
+        <h2>The Uncodemy <b>Advantage</b></h2>
 
     <div className='table-container'>
         <div class="table-responsive">

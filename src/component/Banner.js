@@ -9,7 +9,7 @@ const Banner = () => {
     const hideBanner=()=>{
 
         const Banner = document.getElementsByClassName('banner-lower-box')[0];
-        const formContainer = document.getElementsByClassName('form-container')[0];
+        const formContainer = document.getElementsByClassName('form-main')[0];
         if(status===0){
 
             Banner.style.opacity = "0.5";
@@ -27,7 +27,7 @@ const Banner = () => {
     const hideForm = ()=>{
       if(status===1)
       {
-        const formContainer = document.getElementsByClassName('form-container')[0];
+        const formContainer = document.getElementsByClassName('form-main')[0];
         const Banner = document.getElementsByClassName('banner-lower-box')[0];
         formContainer.style.visibility="hidden";
         Banner.style.opacity = "1";
@@ -35,9 +35,18 @@ const Banner = () => {
       }
     }
 
+    const goToBottom = ()=>{
+      console.log("go to running");
+      const gotoValue = (document.body.scrollHeight)-800;
+
+      console.log("go to = ", gotoValue);
+      window.scrollTo({top:gotoValue, left:0, behavior:'smooth'})
+    }
+
   
   return (
     <div className='banner'>
+     <div className='form-main'>
         <div className='form-container'>
           <div className='form-top'></div>
       <form>
@@ -51,6 +60,8 @@ const Banner = () => {
         </div>
       </form>
     </div>
+    </div>
+   
         <div className='banner-at-point'>
             <ul>
                 <li>Home</li>
@@ -74,7 +85,7 @@ const Banner = () => {
                 <span className='limited-text'>Limited no. of seats available</span>
                 </p>
 
-                {/*  */}
+           
             </div>
             <div className='lower-box-right'>
             <img class="video-thumbnail" src="https://www.upgrad.com/bootcamps/images/bnr-thumb.png"/>
@@ -83,7 +94,7 @@ const Banner = () => {
         </div>
         <div className='btn-group'>
                 <button id='curriculum-btn' onClick={hideBanner}><img src="https://www.upgrad.com/bootcamps/images/download.svg"/>Download Curriculum</button>
-                <Link to="footer"><button id='apply-btn'>Apply Now</button></Link>
+                <button id='apply-btn' onClick={goToBottom}>Apply Now</button>
                 </div>
         </div>
   )

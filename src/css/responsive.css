@@ -345,8 +345,8 @@
   }
 
   .footer-form-container {
-    top: 0 !important;
-    left: 17vw;
+    display: flex;
+    justify-content: center;
   }
 
   .footer-form-container form {
@@ -357,8 +357,13 @@
 
   .footer-form-container form .submit-btn {
     min-width: 48vw;
-    left: 27vw;
+    left: 25vw;
   }
+
+  .footer-form-container form .submit-btn input{
+    min-width: 48vw;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -367,10 +372,19 @@
         min-width: 90vw;
     }
 
+    .banner-lower-box .lower-box-left{
+      margin: 0;
+      max-width: none;
+    }
+
   .form-container {
+    
+    min-width: 82%;
+    
+  }
+
+  .form-main{
     top: 56%;
-    min-width: 100%;
-    margin: 0;
   }
 
   .curriculum{
@@ -380,9 +394,12 @@
 
 @media screen and (min-width: 701px) and (max-width: 882px) {
   .form-container {
-    min-width: 100%;
+    min-width: 82%;
+    
+  }
+
+  .form-main{
     top: 40%;
-    margin: 0;
   }
 }
 
@@ -394,7 +411,7 @@
   .placement-box {
     column-gap: 12%;
   }
-  .form-container {
+  .form-main {
     top: 21%;
   }
 
@@ -404,17 +421,20 @@
   }
 
   .footer-form-container form {
-    grid-template-columns: 20vw 22vw;
+    grid-template-columns: 9vw 22vw;
     text-align: initial;
   }
 
-  .footer-form-container form input {
-  }
-
+ 
   .footer-form-container form .submit-btn {
-    min-width: 22vw;
-    left: 22vw;
-  }
+   
+    left: 9vw;
+}
+
+.footer-form-container form .submit-btn input{
+  min-width: 22vw;
+}
+  
 }
 
 @media screen and (min-width: 767px) and (max-width: 900px) {
@@ -437,4 +457,9 @@
     button{
         padding: 9px 9px;
     }
+
+    
+  .modules{
+    min-width: 95%;
+  }
 }

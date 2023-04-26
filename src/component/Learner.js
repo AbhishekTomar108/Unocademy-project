@@ -76,7 +76,7 @@ const Learner = () => {
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                    <h3> Vinay Kumar </h3>
+                                    <h3> Mani Raja </h3>
                                 </div>
                                 <div className="star-img-group">
                                     <img src={star} />
@@ -88,7 +88,7 @@ const Learner = () => {
 
                                 <hr></hr>
                                 <p>
-                                  "  I completed Data Science course in this institute. Our trainer Upendra Sir was very Knowledgeablen and friendly. It is a good Institute for beginners who want to learn this course. Classes were handled both theoretically and practically."
+                                  " I joined the Uncodemy for MERN Stack course as I was interested in the development course. It was my best decision because I got very good teaching from Ajay sir. I thank them wholeheartedly. Also, our mentors assured us about placements and kept us enthusiastic. Thanks, Uncodemy. And special thanks to Shivani mam and Pooja mam for showing trust in us and always keep encouraging us. I also suggest joining Uncodemy who are interested to start a career in the IT field."
                                 </p>
                             </div>
                         </div>

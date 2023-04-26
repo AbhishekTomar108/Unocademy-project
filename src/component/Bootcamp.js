@@ -52,8 +52,8 @@ const Bootcamp = () => {
 
      <div className='btn-group'>
     
-        <button id='chat-btn'><img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icon whatsapp-icon"></img>Chat With Us</button>
-        <button id='call-us-btn'>Call Us</button>
+        <button id='chat-btn'><img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icon whatsapp-icon"></img><a href="https://wa.link/tu20ly">Chat With Us</a></button>
+        <button id='call-us-btn'><a href="tel:91 770-192-8515">Call Us</a></button>
       </div>
 
         </div>

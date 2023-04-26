@@ -1,15 +1,17 @@
 import React from 'react'
 import "../css/style.css"
 import "../css/responsive.css"
+import Uncodemy from "../image/uncodemy-2.png"
 
 const Nav = () => {
   return (
     <div className='nav'>
     <div className='header'>
-        <h1>UnCodemy</h1>
+       {/* <img src={Uncodemy}/> */}
+       <div></div>
       <div className='header-btn'>
-        <button id='call-us-btn'>Call Us</button>
-        <button id='chat-btn'><img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icon whatsapp-icon"></img>Chat With Us</button>
+        <button id='call-us-btn'><a href="tel:91 770-192-8515">Call Us</a></button>
+         <button id='chat-btn'><img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icon whatsapp-icon"></img><a href="https://wa.link/tu20ly">Chat With Us</a></button>
       </div>
       </div>
        <hr style={{margin:"0"}}/>

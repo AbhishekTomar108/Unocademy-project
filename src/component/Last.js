@@ -8,7 +8,7 @@ const Last = () => {
                     <img src="https://www.upgrad.com/bootcamps/images/got-ques.png" alt="Support" title="Support" />
                     <div class="row">
                         <div class="col-md-6 offset-md-6">
-                            <div className='footer-form-container form-container'>
+                            <div className='footer-form-container '>
                                 <form>
                                     Name <input />
                                     Email <input />

@@ -20,6 +20,13 @@ import MYSQL from "../image/mysql.png"
 import NETLIFY from "../image/netlify.png"
 
 const Technologies = () => {
+    const goToBottom = ()=>{
+        console.log("go to running");
+        const gotoValue = (document.body.scrollHeight)-800;
+  
+        console.log("go to = ", gotoValue);
+        window.scrollTo({top:gotoValue, left:0, behavior:'smooth'})
+      }
   return (
     <div className='technologies'>
         <h2>Tools and <b>Technologies covered</b></h2>
@@ -109,7 +116,7 @@ const Technologies = () => {
         </ul>
 
         <div className='apply-btn'>
-        <button id="call-us-btn">Apply Now</button>
+        <button id="call-us-btn"  onClick={goToBottom}>Apply Now</button>
         </div>
     </div>
   )
