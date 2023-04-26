@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Unocademy-project/static/css/main.be245306.css",
-    "main.js": "/Unocademy-project/static/js/main.0665265f.js",
+    "main.css": "/Unocademy-project/static/css/main.ad060f3f.css",
+    "main.js": "/Unocademy-project/static/js/main.59cec563.js",
     "static/js/787.a65a3956.chunk.js": "/Unocademy-project/static/js/787.a65a3956.chunk.js",
     "static/media/icon.svg": "/Unocademy-project/static/media/icon.2f61875f89202470b341.svg",
     "static/media/cred.png": "/Unocademy-project/static/media/cred.c65ee104e456c5f29313.png",
@@ -72,12 +72,12 @@
     "static/media/indianuniversity.png": "/Unocademy-project/static/media/indianuniversity.411c48f4603e063dfc3c.png",
     "static/media/mindtickle.png": "/Unocademy-project/static/media/mindtickle.4e83836c3bca3344513f.png",
     "index.html": "/Unocademy-project/index.html",
-    "main.be245306.css.map": "/Unocademy-project/static/css/main.be245306.css.map",
-    "main.0665265f.js.map": "/Unocademy-project/static/js/main.0665265f.js.map",
+    "main.ad060f3f.css.map": "/Unocademy-project/static/css/main.ad060f3f.css.map",
+    "main.59cec563.js.map": "/Unocademy-project/static/js/main.59cec563.js.map",
     "787.a65a3956.chunk.js.map": "/Unocademy-project/static/js/787.a65a3956.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be245306.css",
-    "static/js/main.0665265f.js"
+    "static/css/main.ad060f3f.css",
+    "static/js/main.59cec563.js"
   ]
 }
