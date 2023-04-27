@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Unocademy-project/static/css/main.056751f8.css",
-    "main.js": "/Unocademy-project/static/js/main.dbc7c025.js",
+    "main.css": "/Unocademy-project/static/css/main.08914e25.css",
+    "main.js": "/Unocademy-project/static/js/main.c16510f6.js",
     "static/js/787.a65a3956.chunk.js": "/Unocademy-project/static/js/787.a65a3956.chunk.js",
     "static/media/icon.svg": "/Unocademy-project/static/media/icon.2f61875f89202470b341.svg",
     "static/media/cred.png": "/Unocademy-project/static/media/cred.c65ee104e456c5f29313.png",
@@ -48,7 +48,6 @@
     "static/media/vscode.png": "/Unocademy-project/static/media/vscode.6acf7130202323bec1fc.png",
     "static/media/infosys.png": "/Unocademy-project/static/media/infosys.c332953ad945d31fb9be.png",
     "static/media/jio.png": "/Unocademy-project/static/media/jio.bd395104a0d7fc0cd33b.png",
-    "static/media/uncodemy-2.png": "/Unocademy-project/static/media/uncodemy-2.2b08cbe57eb567c5dffe.png",
     "static/media/zeta.png": "/Unocademy-project/static/media/zeta.0b461973adffc8f5da2c.png",
     "static/media/microsoft.png": "/Unocademy-project/static/media/microsoft.d2f813831bbdfb606b75.png",
     "static/media/mongodb.png": "/Unocademy-project/static/media/mongodb.479432de633a4886d3dc.png",
@@ -64,6 +63,7 @@
     "static/media/pyhton.png": "/Unocademy-project/static/media/pyhton.461c1effab163e472fc7.png",
     "static/media/css.png": "/Unocademy-project/static/media/css.2ec1075ce2d173513b17.png",
     "static/media/goldman.png": "/Unocademy-project/static/media/goldman.fbb37dfb4537aa3575b6.png",
+    "static/media/uncodemy-logo.jpg": "/Unocademy-project/static/media/uncodemy-logo.fe1f0783d89e57fbf30d.jpg",
     "static/media/google-icon.png": "/Unocademy-project/static/media/google-icon.cadee8cdb0c0afb1a713.png",
     "static/media/left.png": "/Unocademy-project/static/media/left.c69f7757e71b0f897a34.png",
     "static/media/hcl2.png": "/Unocademy-project/static/media/hcl2.1c91045da05db1fd327b.png",
@@ -71,6 +71,7 @@
     "static/media/webpack.png": "/Unocademy-project/static/media/webpack.855c92f49fddc8ca5d72.png",
     "static/media/deloitte.png": "/Unocademy-project/static/media/deloitte.b2efb4fcd8d406f29587.png",
     "static/media/toppr.png": "/Unocademy-project/static/media/toppr.61831467e3549fdd394f.png",
+    "static/media/uncodemy.png": "/Unocademy-project/static/media/uncodemy.a10713c030f41e1d341b.png",
     "static/media/mani.jpg": "/Unocademy-project/static/media/mani.aeb22c0152b34f155498.jpg",
     "static/media/hcl.png": "/Unocademy-project/static/media/hcl.a043969d538b6cdb66d5.png",
     "static/media/atlassian.png": "/Unocademy-project/static/media/atlassian.2a9c7b1edbb10ad0e475.png",
@@ -81,12 +82,12 @@
     "static/media/indianuniversity.png": "/Unocademy-project/static/media/indianuniversity.411c48f4603e063dfc3c.png",
     "static/media/mindtickle.png": "/Unocademy-project/static/media/mindtickle.4e83836c3bca3344513f.png",
     "index.html": "/Unocademy-project/index.html",
-    "main.056751f8.css.map": "/Unocademy-project/static/css/main.056751f8.css.map",
-    "main.dbc7c025.js.map": "/Unocademy-project/static/js/main.dbc7c025.js.map",
+    "main.08914e25.css.map": "/Unocademy-project/static/css/main.08914e25.css.map",
+    "main.c16510f6.js.map": "/Unocademy-project/static/js/main.c16510f6.js.map",
     "787.a65a3956.chunk.js.map": "/Unocademy-project/static/js/787.a65a3956.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.056751f8.css",
-    "static/js/main.dbc7c025.js"
+    "static/css/main.08914e25.css",
+    "static/js/main.c16510f6.js"
   ]
 }
