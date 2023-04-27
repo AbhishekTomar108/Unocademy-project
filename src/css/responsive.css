@@ -501,6 +501,10 @@
   .modules{
     min-width: 95%;
   }
+  .header-btn button {
+   
+    font-size: 9px;
+}
 }
 
 @media screen and (min-width: 901px) and (max-width: 1226px) 

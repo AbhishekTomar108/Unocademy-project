@@ -90,6 +90,10 @@ button {
   margin-left: 10%;
 }
 
+.banner-at-point li img{
+  width: 10px;
+}
+
 .banner {
   position: relative;
   padding: 88px 10px 70px 10px;
@@ -105,22 +109,22 @@ button {
 .banner-at-point li {
   position: relative;
   line-height: 16px;
-  padding-right: 26px;
+  padding-right: 20px;
   font-size: 12px;
   font-weight: 700;
   color: #666;
 }
-.banner-at-point li::after {
+/* .banner-at-point li::after {
   position: absolute;
   content: "";
   top: 4px;
   right: 10px;
   color: #ffffff;
-  background-image: url(https://d2o2utebsixu4k.cloudfront.net/assets/icons/osl-sprite.svg);
+  background-image: url(../image/banner-right-arrow.png);
   width: 6px;
   height: 10px;
   background-position: -2px -19px;
-}
+} */
 
 .banner-at-point li:last-child {
   padding-right: 0;
@@ -239,12 +243,12 @@ button {
   border-radius: 10px;
 }
 
-.lower-box-right span {
+/* .lower-box-right span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .placement-container {
   background-image: url(/src/image/placement.jpg);
@@ -571,12 +575,13 @@ button {
 
 .star-review-group{
   display: flex;
+  column-gap: 8px;
 }
 
 .icon-review-container{
   display: flex;
   margin-top: 52px;
-  column-gap: 38px;
+  column-gap: 42px;
 }
 
 .review-section .review-text {
@@ -1594,10 +1599,7 @@ a:focus {
   display: none;
 }
 
-.faq-summary .faq-list.faq-collection .card .card-header .card-link:before {
-  top: 19px;
-  right: 80px;
-}
+
 
 .faq-summary .card .card-header .card-link.collapsed:before {
   background-position: -701px -774px;
@@ -1758,8 +1760,20 @@ form input {
   width: 100%;
   height: 30px;
   background: #ff4242;
-  position: absolute;
+  position: relative;
 }
+
+#cross-img{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  cursor: pointer;
+  top: 5px;
+}
+
+
+
 
 @keyframes companyImgMove {
   from {

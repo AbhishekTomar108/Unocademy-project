@@ -1,38 +1,34 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
+import cross from "../image/cross-2.png"
+import rightArrow from "../image/banner-right-arrow.png"
+import fullStack from "../image/full-stack-image.jpg"
+import download from "../image/download.svg"
 
 
 
 const Banner = () => {
-    const [status, setStatus] = useState(0);
+   
 
     const hideBanner=()=>{
 
         const Banner = document.getElementsByClassName('banner-lower-box')[0];
         const formContainer = document.getElementsByClassName('form-main')[0];
-        if(status===0){
+        
 
             Banner.style.opacity = "0.5";
             formContainer.style.visibility = "visible";
-            setStatus(1);
+            
+          
         }
-
-        else{
-            Banner.style.opacity = "1";
-            formContainer.style.visibility = "hidden";
-            setStatus(0);
-        }
-    }
 
     const hideForm = ()=>{
-      if(status===1)
-      {
+      
         const formContainer = document.getElementsByClassName('form-main')[0];
         const Banner = document.getElementsByClassName('banner-lower-box')[0];
         formContainer.style.visibility="hidden";
         Banner.style.opacity = "1";
-        setStatus(0);
-      }
+      
     }
 
     const goToBottom = ()=>{
@@ -48,7 +44,9 @@ const Banner = () => {
     <div className='banner'>
      <div className='form-main'>
         <div className='form-container'>
-          <div className='form-top'></div>
+          <div className='form-top'>
+            <img src={cross} id='cross-img' onClick={hideForm}/>
+          </div>
       <form>
         Name <input/>
         Email <input/>
@@ -65,12 +63,15 @@ const Banner = () => {
         <div className='banner-at-point'>
             <ul>
                 <li>Home</li>
+                <li><img src={rightArrow}/></li>
                 <li>Bootcamps</li>
+                
+                <li><img src={rightArrow}/></li>
                 <li>Job Oriented Full Stack Software Development Bootcamp</li>
             </ul>
         </div>
 
-        <div className='banner-lower-box' onClick={hideForm}>
+        <div className='banner-lower-box'>
             <div className='lower-box-left'>
                 <h2>Job Assistance with Interview Opportunity*</h2>
                 <h1>
@@ -88,12 +89,12 @@ const Banner = () => {
            
             </div>
             <div className='lower-box-right'>
-            <img class="video-thumbnail" src="https://www.upgrad.com/bootcamps/images/bnr-thumb.png"/>
+            <img class="video-thumbnail" src={fullStack}/>
             
             </div>
         </div>
         <div className='btn-group'>
-                <button id='curriculum-btn' onClick={hideBanner}><img src="https://www.upgrad.com/bootcamps/images/download.svg"/>Download Curriculum</button>
+                <button id='curriculum-btn' onClick={hideBanner}><img src={download}/>Download Curriculum</button>
                 <button id='apply-btn' onClick={goToBottom}>Apply Now</button>
                 </div>
         </div>

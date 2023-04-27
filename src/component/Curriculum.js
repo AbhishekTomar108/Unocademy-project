@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import download from "../image/download.svg"
 
 const Curriculum = () => {
     const [prevPoint, setPrevPoint] = useState(0);
@@ -239,7 +240,7 @@ const Curriculum = () => {
             </div>
 
             <div className='curi-btn'>
-                <button id='curriculum-btn'><img src="https://www.upgrad.com/bootcamps/images/download.svg" />Download Curriculum</button>
+                <button id='curriculum-btn'><img src={download} />Download Curriculum</button>
             </div>
         </div>
     )
