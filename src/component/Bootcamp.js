@@ -8,44 +8,44 @@ const Bootcamp = () => {
      <div className='course-summary'>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-1"/><h3> 200+ hours learning </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-1"/><h3> 120+ hours learning </h3>
                         <p>
-                            Learn from world class MAANG instructors and become job ready
+                            With over 120 hours of instruction from an experienced full-stack developer, you will gain in-depth knowledge of the latest web development technologies and best practices.
                         </p>
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-2"/><h3> Immersive learning platform </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-2"/><h3> 10+ year Experience Industry Expert Trainers </h3>
                         <p>
-                        Get reports on strengths and weaknesses on tech skills through coding on CloudLabs
+                          At Uncodemy, You will Learn from the Experts from industry who are Passionate in sharing their Knowledge with Learners. Get Personally Mentored by the Experts.
                         </p>
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-3"/><h3> 15+ projects and case studies </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-3"/><h3> 25+ Assignments, Live projects and case studies</h3>
                         <p>
-                        Learn over 20 tools and technologies through real life industry projects
+                        Get an opportunity to work in Real-time projects that will give you a Deep Experience. Showcase your projects Experience & Increase your chances of getting Hired!
                         </p>
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-4"/><h3>Outcome driven pedagogy </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-4"/><h3>Live Facility with Internet </h3>
                         <p>
-                        Career coaching includes mock interviews, CV, LinkedIn, Github and soft skills training
+                          At Uncodemy, the availability of a lab facility with Internet access for students can greatly enhance their practical experience and prepare for the Dream Job.
                         </p>
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-5"/><h3> 10X more employable </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-5"/><h3> Affordable Fees with No Cost EMI</h3>
                         <p>
-                        Get access to 10X more job opportunities and get ahead of your peers
+                        At Uncodemy, Course Fee is not only Affordable, but you have the option to pay it in installmentsand also No cost EMI. Quality Training at an Affordable Price is our Motto.
                         </p>
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-6"/><h3> 16+ hours of group career coaching </h3>
+                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-6"/><h3>100% Placement Support </h3>
                         <p>
-                        Become trained to join the workforce through interactions with tech industry leaders
+                        Tie-Up & MOU with more than 500+ Small & Medium Companies to Support you with opportunities to Kick-Start & Step-up Your Career.
                         </p>
                     </div>
      </div>

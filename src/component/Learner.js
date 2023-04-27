@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react'
 import Left from "../image/left.png";
 import Right from "../image/right.png";
 import star from '../image/star.png'
+import mani from '../image/mani.jpg'
+import mohit from '../image/mohit.jpg'
+import sanoj from '../image/sanoj.jpg'
+import nitin from '../image/nitin.jpg'
+import david from '../image/david.jpg'
 
 const Learner = () => {
 
@@ -72,7 +77,8 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                                <img src="https://www.upgrad.com/bootcamps/images/reviews/review-1.png" alt="Mohamed Mufasil Mufeeth" title="Mohamed Mufasil Mufeeth" />
+                                <img src={mani}/>
+                                 
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
@@ -97,7 +103,7 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                                <img src="https://www.upgrad.com/bootcamps/images/reviews/review-7.jpg" alt="Mohamed Mufasil Mufeeth" title="Mohamed Mufasil Mufeeth" />
+                            <img src={mohit}/>
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
@@ -122,7 +128,7 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                                <img src="https://www.upgrad.com/bootcamps/images/reviews/review-7.jpg" alt="Mohamed Mufasil Mufeeth" title="Mohamed Mufasil Mufeeth" />
+                            <img src={nitin}/>
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
@@ -148,7 +154,7 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                                <img src="https://www.upgrad.com/bootcamps/images/reviews/review-7.jpg" alt="Mohamed Mufasil Mufeeth" title="Mohamed Mufasil Mufeeth" />
+                            <img src={sanoj}/>
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
@@ -173,7 +179,7 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                                <img src="https://www.upgrad.com/bootcamps/images/reviews/review-7.jpg" alt="Mohamed Mufasil Mufeeth" title="Mohamed Mufasil Mufeeth" />
+                            <img src={david}/>
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">

@@ -16,7 +16,7 @@ body {
   z-index: 5;
 }
 
-a{
+a {
   color: white;
 }
 
@@ -30,11 +30,7 @@ h2 {
   padding-right: 10%;
   justify-content: space-between;
   padding-left: 10%;
-}
-
-.uncodemy-logo{
-  background-image: url(../image/uncodemy-2.png);
-  background-size: cover;
+  min-height: 60px;
 }
 
 .header h1 {
@@ -225,8 +221,8 @@ button {
   border-radius: 10px;
 }
 
-#chat-btn a{
-  color:#3FC350;
+#chat-btn a {
+  color: #3fc350;
 }
 
 .lower-box-right a {
@@ -250,19 +246,17 @@ button {
   transform: translate(-50%, -50%);
 }
 
-
-
 .placement-container {
   background-image: url(/src/image/placement.jpg);
   background-size: cover;
   margin: 40px auto 0 auto;
   width: 75vw;
- 
+
   box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.05);
   border-radius: 12px;
   position: relative;
   bottom: 71px;
-  padding: 80px 70px 60px;  
+  padding: 80px 70px 60px;
 }
 
 .placement-box {
@@ -398,8 +392,8 @@ button {
 }
 
 .benefit-thumb {
+
   margin-bottom: 65px;
-  height: 167px;
 }
 
 .benefit-thumb img {
@@ -415,6 +409,17 @@ button {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.benefit-thumb h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  height: 56px;
+  overflow: hidden;
+  margin-top: 15px;
+  max-width: 225px;
+  color: #111111;
 }
 
 .icons {
@@ -445,6 +450,7 @@ button {
   display: flex;
   justify-content: center;
   column-gap: 2%;
+  margin-top: 50px;
 }
 
 .certificate {
@@ -554,6 +560,49 @@ button {
 .star-img-group img {
   width: 20px;
   height: 20px;
+}
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  column-gap: 13px;
+  margin-top: 10px;
+}
+
+.star-review-group{
+  display: flex;
+}
+
+.icon-review-container{
+  display: flex;
+  margin-top: 52px;
+  column-gap: 38px;
+}
+
+.review-section .review-text {
+  color: white;
+}
+
+.star-section {
+  display: flex;
+  column-gap: 5px;
+}
+
+.star-section img {
+  height: 17px;
+  width: 17px;
+}
+
+.company-icon img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.company-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
 }
 
 .review-thumb .media hr {
@@ -694,21 +743,19 @@ button {
   height: 50px;
 }
 
-.modules{
- position: relative;
- width: 70vw;
- margin: auto;
+.modules {
+  position: relative;
+  width: 70vw;
+  margin: auto;
 }
 
-#module1{
+#module1 {
   display: block;
 }
 
-.module{
+.module {
   display: none;
 }
-
-
 
 .module-container {
   position: absolute;
@@ -828,7 +875,6 @@ button {
   width: 100%;
   position: absolute;
   bottom: 20px;
- 
 }
 
 .project h2 {
@@ -1619,8 +1665,7 @@ a:focus {
   border: 1px solid #e95454;
 }
 
-
-.form-main{
+.form-main {
   position: absolute;
   top: 19%;
   width: 100%;
@@ -1636,7 +1681,6 @@ a:focus {
   background-color: white;
   opacity: 1;
   min-width: 40vw;
-  
 }
 
 .form-container form {
@@ -1649,7 +1693,6 @@ a:focus {
 }
 
 .form-container form .submit-btn {
- 
   text-align: center;
 }
 
@@ -1661,16 +1704,22 @@ a:focus {
   height: 35px;
 }
 
-.footer-form-container{
+.footer-form-container {
   height: 100%;
-  margin:10px 0 0 0 ;
+  margin: 10px 0 0 0;
   background: none;
   visibility: visible;
 }
 
+.uncodemy-logo {
+  height: 40px;
+}
 
+.header-uncodemy-logo {
+  height: 30px;
+}
 
-.footer-form-container form{
+.footer-form-container form {
   display: grid;
   grid-template-columns: 7vw 22vw;
   color: black;
@@ -1678,7 +1727,7 @@ a:focus {
   position: relative;
 }
 
-.footer-form-container form .submit-btn{
+.footer-form-container form .submit-btn {
   position: absolute;
   min-width: 25vw;
   top: 86%;
@@ -1687,7 +1736,7 @@ a:focus {
   margin-top: 20px;
 }
 
-.footer-form-container form .submit-btn input{
+.footer-form-container form .submit-btn input {
   background-color: #e95454;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -1705,11 +1754,11 @@ form input {
   margin-bottom: 20px;
 }
 
-.form-top{
+.form-top {
   width: 100%;
-    height: 30px;
-    background: #ff4242;
-    position: absolute;
+  height: 30px;
+  background: #ff4242;
+  position: absolute;
 }
 
 @keyframes companyImgMove {
@@ -1756,7 +1805,6 @@ form input {
 
 .project {
   position: relative;
-
 }
 
 .arrow-block {
