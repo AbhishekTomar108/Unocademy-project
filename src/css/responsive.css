@@ -426,6 +426,11 @@
     top: 56%;
   }
 
+  .form-heading-text{
+    font-size: 11px;
+    width: 90%;
+  }
+
   .curriculum{
     min-height: 950px;
   }

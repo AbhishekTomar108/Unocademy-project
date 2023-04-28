@@ -230,7 +230,7 @@ footer {
 }
 
 .top-footer {
-    padding: 45px 0;
+    padding: 20px 0;
 }
 
 footer .row-second {
@@ -267,7 +267,9 @@ footer .row ul li a{
 }
 
 .bottom-footer {
-    padding: 9px 0 60px;
+    padding: 10px 0 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-footer p {

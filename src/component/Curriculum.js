@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import download from "../image/download.svg"
-import cross from "../image/cross-2.png"
+import cross from "../image/cross-1.png"
 
 const Curriculum = () => {
     const [prevPoint, setPrevPoint] = useState(0);
@@ -55,9 +55,8 @@ const Curriculum = () => {
         console.log("hiding form");
       
         const formContainer = document.getElementsByClassName('form-main')[0];
-        // const Banner = document.getElementsByClassName('banner-lower-box')[0];
         formContainer.style.visibility="hidden";
-        // Banner.style.opacity = "1";
+    
       
     }
 
@@ -65,9 +64,9 @@ const Curriculum = () => {
         <div className='curriculum'>
             <div className='form-main'>
         <div className='form-container'>
-          <div className='form-top'>
-            <img src={cross} id='cross-img' onClick={hideForm}/>
-          </div>
+         
+            <img src={cross} onClick={hideForm}/>
+         
       <form>
         Name <input/>
         Email <input/>

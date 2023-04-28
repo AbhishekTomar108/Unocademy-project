@@ -1649,11 +1649,54 @@ a:focus {
   margin: 0;
 }
 
+.brochure{
+  color: white;
+    background: #ff5421;
+    padding: 0 15px;
+    font-weight: 600;
+    margin: 10px 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    position: relative;
+}
+
+.form-heading-text{
+  width: 75%;
+  margin: auto;
+  color: grey;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.agree-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  column-gap: 10px;
+}
+
+.agree-box input{
+  margin: 0;
+}
+
+.form-container form select{
+  border-radius: 5px;
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
 .row {
   display: flex;
   width: 85vw;
   margin: auto;
   column-gap: 5%;
+  justify-content: space-around;
 }
 
 .view-btn {
@@ -1682,7 +1725,18 @@ a:focus {
   z-index: 2;
   background-color: white;
   opacity: 1;
-  min-width: 40vw;
+  width: 35vw;
+  border-radius: 12px;
+  box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
+}
+
+.form-container img{
+  cursor: pointer;
+  width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
 
 .form-container form {
@@ -1699,7 +1753,7 @@ a:focus {
 }
 
 .form-container form .submit-btn input {
-  background-color: #e95454;
+  background-color: #ff5421;
   color: white;
   font-family: "Roboto", sans-serif;
   min-width: 100%;
