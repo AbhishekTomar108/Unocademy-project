@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import linkedIn from "../image/LinkedIn.png"
 import Left from "../image/left.png";
 import Right from "../image/right.png";
-import Riya from "../image/riyatiwari.jpg"
+import Riya from "../image/riyatiwari (1).jpg"
 import Preity from "../image/preitySingh.jpg"
 import TANVI from "../image/tanvi.jpg"
 import Ritesh from "../image/riteshSingh.jpg"

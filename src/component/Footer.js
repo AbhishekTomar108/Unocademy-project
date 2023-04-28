@@ -36,7 +36,7 @@ const Footer = () => {
                             <img src={star}/>
                         </div>
                         <div className='review-text'>
-                            4.9 out of 5 based on 56998 votes
+                            4.9 out of 5 based on 10112 votes
                         </div>
                         </div>
                        
@@ -44,7 +44,7 @@ const Footer = () => {
                         <div className='company-icon google-review'>
                             <img src={googleIcon}/>
                             <div className='review-text'>
-                            4.9/5
+                            5/5
                         </div>
                         </div>
                        

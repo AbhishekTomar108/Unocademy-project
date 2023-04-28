@@ -58,9 +58,9 @@ const Last = () => {
                     <img src="https://www.upgrad.com/bootcamps/images/got-ques.png" alt="Support" title="Support" />
                     <div class="row">
                         <div class="col-md-6 offset-md-6">
-                        <div className='form-main'>
-        <div className='form-container'>
-        <div className='form-heading-text'>
+                        <div className='last-form-main form-main'>
+        <div className='last-form-container form-container'>
+        <div className='last-form-heading-text form-heading-text'>
         Submit your details below to learn more about the course fee, curriculum, placements, and more.
         <hr></hr>
         </div>

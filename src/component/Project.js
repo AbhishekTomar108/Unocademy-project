@@ -84,69 +84,96 @@ const Project = () => {
                 <div className='project-card'>
                     <div class="project-thumb">
                         <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/1.png" alt="Bookshelf" title="Bookshelf" />
-                        <h5 class="proj-title"> Bookshelf </h5>
-                        <h3 class="proj-name"> Social Networking </h3>
+                        <h5 class="proj-title"> Uncode Tech </h5>
+                        <h3 class="proj-name"> Learning Management Systems</h3>
                         <p>
-                            A social networking application, like Facebook, that allows users to create a curated virtual bookshelf with reviews
+                            Uncode Tech offers the best professional LMS made to cater to industry requirements. LMS is built with State of IT Technology with World Class features, Course content, Industry expert trainer, Quiz, and Interview Preparation. 
                         </p>
                         <ul class="skills">
                             <li>
-                                React JS
+                                HTML 
                             </li>
                             <li>
-                                Node JS
+                                CSS
                             </li>
                             <li>
-                                Express JS
+                               Javascript
                             </li>
                             <li>
-                                Creative Thinking
+                               ReactJS
+                            </li>
+                            <li>
+                               NodeJS
+                            </li>
+                            <li>
+                               MongoDB
+                            </li>
+                            <li>
+                               AWS
+                            </li>
+                            <li>
+                               Trello Jira
                             </li>
                         </ul>
                     </div>
 
                     <div class="project-thumb">
                         <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/2.png" alt="Bookshelf" title="Bookshelf" />
-                        <h5 class="proj-title"> Flixxit </h5>
-                        <h3 class="proj-name"> Entertainment </h3>
+                        <h5 class="proj-title"> UncodeCart </h5>
+                        <h3 class="proj-name"> E-commerce Application </h3>
                         <p>
-                            A video streaming web app like Netflix, Prime Video or Apple TV+
+                            The One-stop Shopping Destination. E-commerce is revolutionizing the way we all shop in India. E-commerce allows you to buy and sell tangible goods, digital products, or services online.
                         </p>
                         <ul class="skills">
-                            <li>
-                                React JS
+                        <li>
+                                HTML 
                             </li>
                             <li>
-                                Node JS
+                                CSS
                             </li>
                             <li>
-                                Express JS
+                               Javascript
                             </li>
                             <li>
-                                Creative Thinking
+                                Typescript
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Sql Server
+                            </li>
+                            <li>
+                                AWS
                             </li>
                         </ul>
                     </div>
 
                     <div class="project-thumb">
                         <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/3.png" alt="Bookshelf" title="Bookshelf" />
-                        <h5 class="proj-title"> ShopPlusPlus </h5>
-                        <h3 class="proj-name"> Commerce </h3>
+                        <h5 class="proj-title"> TrackUncode </h5>
+                        <h3 class="proj-name"> Shipping and Tracking Software </h3>
                         <p>
-                            An Amazon clone that allows users to create accounts, wish lists, browse and purchase products
+                            Flexible modern app that makes it easyto ship and track by saving time. Reduces manual efforts by 80% by Processing orders faster and efficiently.
                         </p>
                         <ul class="skills">
-                            <li>
-                                React JS
+                        <li>
+                                HTML 
                             </li>
                             <li>
-                                Node JS
+                                CSS
                             </li>
                             <li>
-                                Express JS
+                               Javascript
                             </li>
                             <li>
-                                Creative Thinking
+                               ReactJS
+                            </li>
+                            <li>
+                               NodeJS
+                            </li>
+                            <li>
+                               MongoDB
                             </li>
                         </ul>
                     </div>
