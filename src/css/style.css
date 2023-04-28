@@ -60,7 +60,7 @@ button {
 }
 
 #call-us-btn {
-  background: #e95454;
+  background: #ff5421;
   color: white;
   border: none;
 }
@@ -205,7 +205,7 @@ button {
 }
 
 #apply-btn {
-  background: #e95454;
+  background: #ff5421;
   color: white;
   border: none;
 }
@@ -1739,7 +1739,7 @@ a:focus {
 }
 
 .footer-form-container form .submit-btn input {
-  background-color: #e95454;
+  background-color: #ff5421;
   color: white;
   font-family: "Roboto", sans-serif;
   min-width: 22vw;

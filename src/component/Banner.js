@@ -1,14 +1,18 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom';
+import axios from 'axios'
 import cross from "../image/cross-2.png"
 import rightArrow from "../image/banner-right-arrow.png"
 import fullStack from "../image/full-stack-image.jpg"
 import download from "../image/download.svg"
+import pdfFile from '../pdf/uncodemy-file.pdf'
 
 
 
 const Banner = () => {
-   
+   const [name, setName] = useState('');
+   const [email, setEmail] = useState('');
+   const [mobile, setMobile] = useState('');
+   const [location, setLocation] = useState('');
 
     const hideBanner=()=>{
 
@@ -39,6 +43,34 @@ const Banner = () => {
       window.scrollTo({top:gotoValue, left:0, behavior:'smooth'})
     }
 
+    const submitHandle = ()=>{
+     if(name.length<3){
+      alert("Name should be at least four character");
+     }
+     if(mobile.length!=10){
+      alert("Please enter correct mobile no.");
+     }
+     if(email.length===0){
+      alert("Email must be filled");
+     }
+     if(location.length===0){
+      alert("Location must be filled");
+     }
+
+     else{
+          const url = 'http://localhost/uncodemy/formSubmit.php';
+
+          let data = new FormData();
+          data.append('name', name);
+          data.append('email', email);
+          data.append('mobile', mobile);
+          data.append('location', location);
+
+          axios.post(url,data).then(response=>window.open(pdfFile))
+          .catch(error=>alert(error));
+     }
+    }
+
   
   return (
     <div className='banner'>
@@ -48,13 +80,13 @@ const Banner = () => {
             <img src={cross} id='cross-img' onClick={hideForm}/>
           </div>
       <form>
-        Name <input/>
-        Email <input/>
-        Phone No. <input/>
-        Location <input/>
+        Name <input type='text' name='name' value={name} onChange={(e)=>setName(e.target.value)}/>
+        Email <input type='email' name='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+        Phone No. <input type='number' name='mobile' value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
+        Location <input type='text' name='location' value={location} onChange={(e)=>setLocation(e.target.value)}/>
         <div className='submit-btn'>
 
-        <input type='submit'/>
+        <input type='submit' onClick={submitHandle}/>
         </div>
       </form>
     </div>

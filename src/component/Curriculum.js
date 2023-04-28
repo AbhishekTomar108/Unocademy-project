@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import download from "../image/download.svg"
+import cross from "../image/cross-2.png"
 
 const Curriculum = () => {
     const [prevPoint, setPrevPoint] = useState(0);
@@ -36,8 +37,49 @@ const Curriculum = () => {
 
     }
 
+    
+    const showForm=()=>{
+
+        console.log("hiding bannner");
+      
+        const formContainer = document.getElementsByClassName('form-main')[0];
+            formContainer.style.visibility = "visible";
+
+            window.scrollTo({top:50, left:0, behavior:'smooth'});
+            
+          
+        }
+
+    const hideForm = ()=>{
+
+        console.log("hiding form");
+      
+        const formContainer = document.getElementsByClassName('form-main')[0];
+        // const Banner = document.getElementsByClassName('banner-lower-box')[0];
+        formContainer.style.visibility="hidden";
+        // Banner.style.opacity = "1";
+      
+    }
+
     return (
         <div className='curriculum'>
+            <div className='form-main'>
+        <div className='form-container'>
+          <div className='form-top'>
+            <img src={cross} id='cross-img' onClick={hideForm}/>
+          </div>
+      <form>
+        Name <input/>
+        Email <input/>
+        Phone No. <input/>
+        Location <input/>
+        <div className='submit-btn'>
+
+        <input type='submit'/>
+        </div>
+      </form>
+    </div>
+    </div>
             <h2>Learn with a world class <b>curriculum</b></h2>
 
             <div className='curriculum-list'>
@@ -240,7 +282,7 @@ const Curriculum = () => {
             </div>
 
             <div className='curi-btn'>
-                <button id='curriculum-btn'><img src={download} />Download Curriculum</button>
+                <button id='curriculum-btn' onClick={showForm}><img src={download} />Download Curriculum</button>
             </div>
         </div>
     )
