@@ -2,6 +2,8 @@ import React from 'react'
 import clock from "../image/clock.jpg"
 import trainer from "../image/trainer.jpg"
 import monitor from "../image/monitor.jpg"
+import fees from "../image/fees.png"
+import learning from "../image/learning.jpg"
 import placement from "../image/placement (2).jpg"
 import whatsapp from "../image/whatsapp.png"
 
@@ -27,7 +29,7 @@ const Bootcamp = () => {
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-3"/><h3> 25+ Assignments, Live projects and case studies</h3>
+                        <img src={learning} class="icons icon-benefit-3"/><h3> 25+ Assignments, Live projects and case studies</h3>
                         <p>
                         Get an opportunity to work in Real-time projects that will give you a Deep Experience. Showcase your projects Experience & Increase your chances of getting Hired!
                         </p>
@@ -41,7 +43,7 @@ const Bootcamp = () => {
                     </div>
      <div class="benefit-thumb">
                         
-                        <img src="https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg" class="icons icon-benefit-5"/><h3> Affordable Fees with No Cost EMI</h3>
+                        <img src={fees} class="icons icon-benefit-5"/><h3> Affordable Fees with No Cost EMI</h3>
                         <p>
                         At Uncodemy, Course Fee is not only Affordable, but you have the option to pay it in installmentsand also No cost EMI. Quality Training at an Affordable Price is our Motto.
                         </p>

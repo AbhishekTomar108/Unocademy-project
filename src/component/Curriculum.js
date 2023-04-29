@@ -45,40 +45,22 @@ const Curriculum = () => {
         const formContainer = document.getElementsByClassName('form-main')[0];
             formContainer.style.visibility = "visible";
 
-            window.scrollTo({top:50, left:0, behavior:'smooth'});
+            const width = window.screen.width;
+            if(width<500){
+            window.scrollTo({top:500, left:0, behavior:'smooth'});
+
+            }
+            else{
+
+                window.scrollTo({top:50, left:0, behavior:'smooth'});
+            }
             
           
         }
 
-    const hideForm = ()=>{
-
-        console.log("hiding form");
-      
-        const formContainer = document.getElementsByClassName('form-main')[0];
-        formContainer.style.visibility="hidden";
-    
-      
-    }
 
     return (
         <div className='curriculum'>
-            <div className='form-main'>
-        <div className='form-container'>
-         
-            <img src={cross} onClick={hideForm}/>
-         
-      <form>
-        Name <input/>
-        Email <input/>
-        Phone No. <input/>
-        Location <input/>
-        <div className='submit-btn'>
-
-        <input type='submit'/>
-        </div>
-      </form>
-    </div>
-    </div>
             <h2>Learn with a world class <b>curriculum</b></h2>
 
             <div className='curriculum-list'>
@@ -104,26 +86,45 @@ const Curriculum = () => {
                         <span class="module-badge"> Module-1 </span>
                         <div class="curi-title">
                             <h3> Fundamentals </h3>
-                            <span> Week 1-3 </span>
+                            
                         </div>
-                        <p>
-                            This module helps you take your first steps towards becoming a successful coder. You will be introduced to computer programming as you learn about programming languages, how computer programs work, and how to build programming logic using Pseudocode.
-                        </p>
+                       
 
                         <div class="topics-covered">
                             <h4><span>Topics Covered</span></h4>
                             <ul>
                                 <li>
-                                    Introduction to Programming
+                                Learn the most fundamental languages that define the world wide web.
                                 </li>
                                 <li>
-                                    Syntax and Pseudocode
+                                Learn to build beautiful websites and user interfaces that work on a variety of devices and platforms.
                                 </li>
                                 <li>
-                                    Introduction to Fullstack Development
+                                Build expressive websites, landing pages, and more.
                                 </li>
                                 <li>
-                                    Linux Essentials
+                                Go from basics to functional and object-oriented JavaScript.
+                                </li>
+                                <li>
+                                Bring your web pages to life by adding interactivity and data-driven dynamism.
+                                </li>
+                                <li>
+                                Learn to interact with remote services and APIs.
+                                </li>
+                                <li>
+                                Learn to build modular JavaScript applications.
+                                </li>
+                                <li>
+                                Earn to set up your development environment effectively.
+                                </li>
+                                <li>
+                                Learn and implement auto code formatting and linting.
+                                </li>
+                                <li>
+                                Embrace Babel and write next-gen JavaScript today.
+                                </li>
+                                <li>
+                                Learn all about module bundlers with Parcel and Webpack.
                                 </li>
                             </ul>
                         </div>
@@ -134,27 +135,36 @@ const Curriculum = () => {
                     <div className='module-container module' id='module2'>
                         <span class="module-badge"> Module-2 </span>
                         <div class="curi-title">
-                            <h3> Fundamentals </h3>
-                            <span> Week 3-5 </span>
+                            <h3> Frontend Development Using React </h3>
+                           
                         </div>
-                        <p>
-                            This module helps you take your first steps towards becoming a successful coder. You will be introduced to computer programming as you learn about programming languages, how computer programs work, and how to build programming logic using Pseudocode.
-                        </p>
 
                         <div class="topics-covered">
                             <h4><span>Topics Covered</span></h4>
                             <ul>
                                 <li>
-                                    Introduction to Programming
+                                Master the most popular JavaScript library for building UIs and Web apps.
                                 </li>
                                 <li>
-                                    Syntax and Pseudocode
+                                Learn to build composable and reusable components.
                                 </li>
                                 <li>
-                                    Introduction to Fullstack Development
+                                Embrace the power of React Hooks and learn to build your hooks.
                                 </li>
                                 <li>
-                                    Linux Essentials
+                                Implement routing in a single-page application with React Router.
+                                </li>
+                                <li>
+                                Master global state management and transitions using Redux.
+                                </li>
+                                <li>
+                                Build data-driven applications with ease.
+                                </li>
+                                <li>
+                                Implement Test-Driven Development (TDD) using Jest, Enzyme, and React Testing Library.
+                                </li>
+                                <li>
+                                Master the framework of choice for Facebook, Instagram, New York Times, Netflix, Airbnb, Microsoft, and more.
                                 </li>
                             </ul>
                         </div>
@@ -163,28 +173,18 @@ const Curriculum = () => {
                     <div className='module-container module' id='module2'>
                         <span class="module-badge"> Module-3 </span>
                         <div class="curi-title">
-                            <h3> Fundamentals </h3>
-                            <span> Week 5-7 </span>
+                            <h3> Data Structures Using JavaScript </h3>
+                           
                         </div>
-                        <p>
-                            This module helps you take your first steps towards becoming a successful coder. You will be introduced to computer programming as you learn about programming languages, how computer programs work, and how to build programming logic using Pseudocode.
-                        </p>
+                       
 
                         <div class="topics-covered">
                             <h4><span>Topics Covered</span></h4>
                             <ul>
                                 <li>
-                                    Introduction to Programming
+                                Master the intricacies of Arrays, Objects, Stacks, Queues, Linked Lists, Hash Tables, Graphs, Trees, and more data structures.
                                 </li>
-                                <li>
-                                    Syntax and Pseudocode
-                                </li>
-                                <li>
-                                    Introduction to Fullstack Development
-                                </li>
-                                <li>
-                                    Linux Essentials
-                                </li>
+                            
                             </ul>
                         </div>
                     </div>
@@ -192,27 +192,48 @@ const Curriculum = () => {
                     <div className='module-container module' id='module2'>
                         <span class="module-badge"> Module-4 </span>
                         <div class="curi-title">
-                            <h3> Fundamentals </h3>
-                            <span> Week 7-9 </span>
+                            <h3> Backend Development with Node.js, Express, and MongoDB </h3>
+                          
                         </div>
-                        <p>
-                            This module helps you take your first steps towards becoming a successful coder. You will be introduced to computer programming as you learn about programming languages, how computer programs work, and how to build programming logic using Pseudocode.
-                        </p>
 
                         <div class="topics-covered">
                             <h4><span>Topics Covered</span></h4>
                             <ul>
                                 <li>
-                                    Introduction to Programming
+                                Learn to write server-side applications using JavaScript.
                                 </li>
                                 <li>
-                                    Syntax and Pseudocode
+                                Learn to work with files, modules, and NPM.
                                 </li>
                                 <li>
-                                    Introduction to Fullstack Development
+                                Learn to build web servers, APIs, and more.
                                 </li>
                                 <li>
-                                    Linux Essentials
+                                Master the Express framework for rapidly building web apps with Node.js.
+                                </li>
+                                <li>
+                                Get a grip on Middleware, Authentication, and the MVC architecture
+                                </li>
+                                <li>
+                                Build data-driven applications using MongoDB Atlas as the database.
+                                </li>
+                                <li>
+                                Learn to secure your web apps and APIs and deploy them on the Cloud.
+                                </li>
+                                <li>
+                                Learn to effectively implement Create-Read-Update-Delete queries.
+                                </li>
+                                <li>
+                                Learn about schema design and data modeling.
+                                </li>
+                                <li>
+                                Learn about critical operations like sorting, aggregation, and lots more.
+                                </li>
+                                <li>
+                                Master the platform that is used by LinkedIn, Netflix, PayPal, NASA, Medium, Walmart, and more.
+                                </li>
+                                <li>
+                                Embrace the database of choice for Uber, Lyft, Accenture, and more.
                                 </li>
                             </ul>
                         </div>
@@ -221,27 +242,37 @@ const Curriculum = () => {
                     <div className='module-container module' id='module2'>
                         <span class="module-badge"> Module-5 </span>
                         <div class="curi-title">
-                            <h3> Fundamentals </h3>
-                            <span> Week 9-11 </span>
+                            <h3> APIs and Testing & Deployment </h3>
+                           
                         </div>
-                        <p>
-                            This module helps you take your first steps towards becoming a successful coder. You will be introduced to computer programming as you learn about programming languages, how computer programs work, and how to build programming logic using Pseudocode.
-                        </p>
+                
 
                         <div class="topics-covered">
                             <h4><span>Topics Covered</span></h4>
                             <ul>
                                 <li>
-                                    Introduction to Programming
+                                Learn all about REST and build RESTful APIs.    
                                 </li>
                                 <li>
-                                    Syntax and Pseudocode
+                                Discover the OpenAPI 3.0 specification.
                                 </li>
                                 <li>
-                                    Introduction to Fullstack Development
+                                Work with Swagger to document your APIs.
                                 </li>
                                 <li>
-                                    Linux Essentials
+                                Learn to test your code so it doesn't fail in production.
+                                </li>
+                                <li>
+                                Learn to write unit tests using Jest.
+                                </li>
+                                <li>
+                                Build end-to-end (E2E) tests using Puppeteer.
+                                </li>
+                                <li>
+                                Level up your E2E experience with Cypress.io.
+                                </li>
+                                <li>
+                                Go hands-on with deployment on major cloud platforms such as AWS, Cpanel, Netlify, and Heroku.
                                 </li>
                             </ul>
                         </div>
@@ -250,27 +281,30 @@ const Curriculum = () => {
                     <div className='module-container module' id='module2'>
                         <span class="module-badge"> Module-6 </span>
                         <div class="curi-title">
-                            <h3> Fundamentals </h3>
-                            <span> Week 11-15 </span>
+                            <h3> Level Up Your Skills – Mastering Algorithms and Process Management </h3>
+                           
                         </div>
-                        <p>
-                            This module helps you take your first steps towards becoming a successful coder. You will be introduced to computer programming as you learn about programming languages, how computer programs work, and how to build programming logic using Pseudocode.
-                        </p>
 
                         <div class="topics-covered">
                             <h4><span>Topics Covered</span></h4>
                             <ul>
                                 <li>
-                                    Introduction to Programming
+                                Learn all about time complexity.
                                 </li>
                                 <li>
-                                    Syntax and Pseudocode
+                                Learn to implement algorithms such as sorting, search, divide and conquer, dynamic programming, greedy algorithms and many more.
                                 </li>
                                 <li>
-                                    Introduction to Fullstack Development
+                                Discover the Agile way of building software.
                                 </li>
                                 <li>
-                                    Linux Essentials
+                                Learn about project lifecycle management with Agile.
+                                </li>
+                                <li>
+                                Embrace the SCRUM framework like Jira, rello.
+                                </li>
+                                <li>
+                                Get ready to face job interviews.
                                 </li>
                             </ul>
                         </div>

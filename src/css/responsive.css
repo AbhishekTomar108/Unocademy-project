@@ -264,6 +264,39 @@
     margin-top: 50px !important;
   }
 
+  .last-form-main{
+    position:static !important;
+  }
+
+  .last-form-main form{
+    display: grid;
+    grid-template-columns: 37vw 37vw;
+    column-gap: 5%;
+  }
+
+  .last-form-container{
+    width: auto;
+    border-radius: 0;
+  }
+
+  .got-a-ques-summary{
+    min-height: auto !important;
+    max-height: none !important;
+  }
+
+  form input{
+    font-size: 12px;
+  }
+
+  form select {
+    font-size: 12px !important;
+  }
+
+  .agree-box{
+    font-size: 11px;
+    column-gap: 2px;
+  }
+
   .top-footer .row {
     margin: auto;
   }
@@ -432,10 +465,10 @@
     width: 90%;
   }
 
-  .curriculum{
-    min-height: 950px;
-  }
+ 
 }
+
+
 
 @media screen and (min-width: 701px) and (max-width: 882px) {
   .form-container {
@@ -491,9 +524,7 @@
 
 
 @media screen and (max-width: 340px) {
-    .curriculum{
-        min-height: 1010px;
-    }
+    
 
     .btn-group{
         column-gap: 5px;

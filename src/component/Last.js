@@ -1,12 +1,34 @@
 import React, {useState} from 'react'
 import axios from "axios"
 import pdfFile from '../pdf/uncodemy-file.pdf'
+import contact from '../image/contact-1.png'
 
 const Last = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [mobile, setMobile] = useState('');
     const [location, setLocation] = useState('');
+    const [mode, setMode] = useState('');
+    const [submitStatus, setSubmitStatus] = useState(true);
+
+    const checkAgree =()=>{
+        console.log('status ',submitStatus);
+      const agreeCheck = document.getElementById('terms');
+      const submitBtn = document.getElementsByClassName('last-submit-btn-container')[0];
+      
+      submitBtn.style.opacity="1";
+      setSubmitStatus(false);
+
+        if(agreeCheck.checked){
+          submitBtn.style.opacity="1";
+          setSubmitStatus(false)
+        }
+        else{
+            console.log('else is running');
+          submitBtn.style.opacity="0.5";
+          setSubmitStatus(true)
+        }
+    }
 
     const submitHandle = ()=>{
         console.log("name ",name);
@@ -37,6 +59,7 @@ const Last = () => {
             data.append('email', email);
             data.append('mobile', mobile);
             data.append('location', location);
+            data.append('mode', mode);
   
             axios.post(url, data).then(window.open(pdfFile, '_blank'))
             .catch(error=>console.log("error"));
@@ -51,11 +74,13 @@ const Last = () => {
        }
       }
 
+      
+
     return (
         <div className='last'>
             <div class="got-a-ques-summary">
                 <div class="container">
-                    <img src="https://www.upgrad.com/bootcamps/images/got-ques.png" alt="Support" title="Support" />
+                    <img src={contact} alt="Support" title="Support" />
                     <div class="row">
                         <div class="col-md-6 offset-md-6">
                         <div className='last-form-main form-main'>
@@ -69,17 +94,17 @@ const Last = () => {
         <input type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
          <input type='number' name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
        <input type='text' name='location'placeholder="Enter your Location"  value={location} onChange={(e)=>setLocation(e.target.value)}/>
-       <select placeholder='select the training mode'>
+       <select placeholder='select the training mode' onChange={e=>setMode(e.target.value)}>
         <option disabled selected>Select the Training Mode</option>
         <option>Online</option>
         <option>Class room</option>
        </select>
 
-       <div className='agree-box'><input type="checkbox" name="terms" id="terms" required onchange="activateButton(this)"/>  I Agree Terms & Coditions
+       <div className='agree-box'><input type="checkbox" name="terms" id="terms" onChange={checkAgree}/>  I Agree Terms & Coditions
        </div>
-        <div className='submit-btn'>
-
-        <input type='submit'  onClick={submitHandle}/>
+        <div className='last-submit-btn-container'>
+        <button disabled={submitStatus} id='submit-btn' onClick={submitHandle}>Submit</button>
+       
         </div>
       </form>
     </div>

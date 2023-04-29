@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import cross from "../image/cross-1.png"
 import rightArrow from "../image/banner-right-arrow.png"
-import fullStack from "../image/full-stack-image.jpg"
+import fullStack from "../image/fullstack-img.png"
 import download from "../image/download.svg"
 import pdfFile from '../pdf/uncodemy-file.pdf'
 
@@ -15,6 +15,8 @@ const Banner = () => {
    const [email, setEmail] = useState('');
    const [mobile, setMobile] = useState('');
    const [location, setLocation] = useState('');
+   const [mode, setMode] = useState('Select the Training Mode');
+   const [submitStatus, setSubmitStatus] = useState(true);
 
     const hideBanner=()=>{
 
@@ -27,6 +29,23 @@ const Banner = () => {
             
           
         }
+
+        const checkAgree =()=>{
+          
+          const agreeCheck = document.getElementById('term');
+          const submitBtn = document.getElementsByClassName('submit-btn-container')[0];
+            if(agreeCheck.checked){
+
+              submitBtn.style.opacity="1";
+              setSubmitStatus(false)
+            }
+            else{
+              submitBtn.style.opacity="0.5";
+              setSubmitStatus(true)
+            }
+        }
+
+       
 
     const hideForm = ()=>{
       
@@ -53,29 +72,24 @@ const Banner = () => {
       alert("Name should be at least four character");
       
      }
-     if(mobile.length!=10){
-      alert("Please enter correct mobile no.");
-      
-     }
-     if(email.length===0){
-      alert("Email must be filled");
-   
-     }
-     if(location.length===0){
-      alert("Location must be filled");
+     
     
-     }
+     
 
      else{
           const url = 'http://localhost/uncodemy/formSubmit.php';
 
+          console.log("mode ", mode);
+          
           let data = new FormData();
           data.append('name', name);
           data.append('email', email);
           data.append('mobile', mobile);
           data.append('location', location);
+          data.append('mode', mode);
 
-          axios.post(url, data).then(window.open(pdfFile, '_blank'))
+
+          axios.post(url, data).then(window.open(pdfFile))
           .catch(error=>console.log("error"));
 
           // axios({
@@ -102,21 +116,21 @@ const Banner = () => {
         <hr></hr>
         </div>
       <form>
-        <input type='text' name='name' placeholder="Enter your Name*" value={name} onChange={(e)=>setName(e.target.value)}/>
-        <input type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-         <input type='number' name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
-       <input type='text' name='location'placeholder="Enter your Location"  value={location} onChange={(e)=>setLocation(e.target.value)}/>
-       <select placeholder='select the training mode'>
+        <input type='text' name='name' placeholder="Enter your Name*" required value={name} onChange={(e)=>setName(e.target.value)}/>
+        <input type='email' name='email' placeholder="Enter your Email*" required value={email} onChange={(e)=>setEmail(e.target.value)}/>
+         <input type='number' name='mobile' placeholder="Enter your Phone No." required value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
+       <input type='text' name='location'placeholder="Enter your Location" required  value={location} onChange={(e)=>setLocation(e.target.value)}/>
+       <select placeholder='select the training mode' onChange={e=>setMode(e.target.value)}>
         <option disabled selected>Select the Training Mode</option>
-        <option>Online</option>
-        <option>Class room</option>
+        <option value='online'>Online</option>
+        <option value='classRoom'>Class room</option>
        </select>
 
-       <div className='agree-box'><input type="checkbox" name="terms" id="terms" required onchange="activateButton(this)"/>  I Agree Terms & Coditions
+       <div className='agree-box'><input type="checkbox" name="terms" id="term"  onChange={checkAgree}/>  I Agree Terms & Coditions
        </div>
-        <div className='submit-btn'>
+        <div className='submit-btn-container'>
 
-        <input type='submit'  onClick={submitHandle}/>
+        <button disabled={submitStatus} id='submit-btn' onClick={submitHandle}>Submit</button>
         </div>
       </form>
     </div>

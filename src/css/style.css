@@ -137,9 +137,10 @@ button {
 
 .banner-lower-box {
   padding-top: 20px;
-  width: 72vw;
-  margin: auto;
-  display: flex;
+    width: 82vw;
+    margin: auto;
+    display: flex;
+    column-gap: 5%;
 }
 
 .banner-lower-box .lower-box-left {
@@ -191,7 +192,7 @@ button {
 }
 
 .btn-group {
-  width: 72vw;
+  width: 82vw;
   margin: -50px auto 0 auto;
   display: flex;
   column-gap: 20px;
@@ -219,6 +220,7 @@ button {
 }
 
 .video-thumbnail {
+  background: #8b8b8b;
   width: 100%;
   height: 100%;
   display: block;
@@ -324,21 +326,13 @@ button {
 .last-form-main{
   visibility: visible !important;
   width: fit-content !important;
-  top: -205px !important;
+  top: -82% !important;
 }
 
 .last-form-main form{
   margin-top: 10px !important;
 }
 
-.last-form-container{
-
-
-}
-
-.last-form-heading-text{
-
-}
 
 .company-logo-moving {
   margin-left: auto;
@@ -444,10 +438,10 @@ button {
   color: #111111;
 }
 
-.icons {
+/* .icons {
   background-image: url(file:///C:/Uncodemy-project/Unocademy-project/src/image/icon.svg);
   background-repeat: no-repeat;
-}
+} */
 
 .icon-benefit-1 {
   background-position: 0 -226px;
@@ -723,12 +717,11 @@ button {
 }
 
 .curriculum {
-  position: relative;
-  padding: 80px 0;
+  
+  padding: 55px 0;
   background: #f7fafe;
   border-radius: 10px;
   margin-top: 100px;
-  min-height: 800px;
 }
 
 .curriculum h2 {
@@ -781,12 +774,12 @@ button {
 }
 
 .module-container {
-  position: absolute;
+  
   /* width: 63vw;
   margin: auto; */
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
-  padding: 40px;
+  padding: 20px 65px;
   border-radius: 10px;
 }
 
@@ -804,7 +797,6 @@ button {
 
 .curi-title {
   display: flex;
-  margin-top: 15px;
   align-items: center;
 }
 
@@ -835,9 +827,9 @@ button {
   color: #666666;
 }
 
-.topics-covered {
+/* .topics-covered {
   margin-top: 40px;
-}
+} */
 
 .topics-covered h4 {
   position: relative;
@@ -883,7 +875,7 @@ button {
 
 .topics-covered ul li:before {
   content: "";
-  background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite.svg);
+  background-image: url(../image/icon-multiple.svg);
   position: absolute;
   left: 0;
   background-position: -598px -244px;
@@ -896,8 +888,9 @@ button {
   justify-content: center;
   display: flex;
   width: 100%;
-  position: absolute;
-  bottom: 20px;
+  margin-top: 20px;
+  
+ 
 }
 
 .project h2 {
@@ -1166,10 +1159,7 @@ table {
   background-color: #e2ffec;
 }
 
-.icons {
-  background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
-  background-repeat: no-repeat;
-}
+
 
 .icon-wrong {
   background-position: -391px -785px;
@@ -1472,10 +1462,7 @@ table {
   display: inline-block;
 }
 
-.icons {
-  background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
-  background-repeat: no-repeat;
-}
+
 
 .stars-list {
   display: flex;
@@ -1776,16 +1763,25 @@ a:focus {
   margin-top: 40px;
 }
 
-.form-container form .submit-btn {
+.form-container form .submit-btn-container {
   text-align: center;
+  opacity: 0.5;
 }
 
-.form-container form .submit-btn input {
+.last-submit-btn-container{
+  opacity: 0.5;
+}
+
+.form-container form #submit-btn {
   background-color: #ff5421;
   color: white;
   font-family: "Roboto", sans-serif;
   min-width: 100%;
   height: 35px;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+ 
 }
 
 .footer-form-container {

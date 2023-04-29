@@ -1,5 +1,5 @@
 .icons {
-    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
+    background-image: url(../image/icon-multiple.svg);
     background-repeat: no-repeat;
 }
 
@@ -158,6 +158,8 @@
     position: absolute;
     bottom: 0;
     left: 153px;
+    width: 334px;
+    height: 390px;
 }
 
 
@@ -211,10 +213,7 @@
     background-position: -923px -237px;
 }
 
-.icons {
-    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
-    background-repeat: no-repeat;
-}
+
 
 .last{
     margin-top: 220px;
@@ -322,10 +321,6 @@ left: 50%;
     width: 97px;
 }
 
-.icons {
-    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
-    background-repeat: no-repeat;
-}
 
 .icon-ugam {
     background-position: -35px -3063px;
