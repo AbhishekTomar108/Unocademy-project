@@ -68,7 +68,7 @@ const Learner = () => {
     }
     return (
         <div className='learner'>
-            <h2 class="section-heading text-center"> See what <b>our learners say</b></h2>
+            <h2 class="section-heading text-center"> See what <b>Our Learners Say</b></h2>
             <div className='review-left-arrow arrow-img' onClick={moveImageLeft}>
                 <img src={Left} />
             </div>

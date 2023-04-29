@@ -69,7 +69,7 @@ const Project = () => {
     }
     return (
         <div className='project'>
-            <h2>Get a real world understanding through <b>industry projects</b></h2>
+            <h2>Get a real world understanding through <b>Industry Projects</b></h2>
 
             
                 <div className='project-left-arrow arrow-img' onClick={moveImageLeft}>

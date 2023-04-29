@@ -64,7 +64,11 @@
   }
 
   .placement-box-right {
-    column-gap: 30%;
+    column-gap: 13%;
+  }
+
+  .placement-box-right span{
+    font-size: 16px;
   }
 
   .company {

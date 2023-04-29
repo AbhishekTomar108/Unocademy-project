@@ -59,18 +59,6 @@ const Creator = () => {
         const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
 
         if (imageAt < 7) {
-            console.log("width =", window.innerWidth)
-            // if(window.innerWidth>861 && window.innerWidth<1034)
-            // {
-            //     console.log("innerwidth is running");
-            // const nextMove = moveCreatorImg - 250;
-            // creatorImgBlock.style.transform = "translate(" + nextMove + "px)";
-            // setmoveCreatorImg(nextMove);
-
-            // const addImage = imageAt + 1;
-            // setImageAt(addImage);
-            // }
-
 
             const nextMove = moveCreatorImg - 26;
             creatorImgBlock.style.transform = "translate(" + nextMove + "vw)";
@@ -91,18 +79,6 @@ const Creator = () => {
 
         if (imageAt > 4) {
             console.log("width =", window.innerWidth)
-
-            // if(window.innerWidth>861 && window.innerWidth<1034)
-            // {
-            //     console.log("innerwidth is running");
-            // const nextMove = moveCreatorImg + 250;
-            // creatorImgBlock.style.transform = "translate(" + nextMove + "px)";
-
-            // setmoveCreatorImg(nextMove);
-            // const addImage = imageAt - 1;
-            // setImageAt(addImage);
-            // }
-
 
             const nextMove = moveCreatorImg + 26;
             creatorImgBlock.style.transform = "translate(" + nextMove + "vw)";
@@ -128,8 +104,8 @@ const Creator = () => {
 
         creatorDetail.style.top = "60px";
         projectThumb.style.filter = "blur(1px)";
-        projectThumb.style.backgroundColor = "black";
-        CreatorImg.style.opacity = "0.4";
+        projectThumb.style.backgroundColor = "#ff5421";
+        CreatorImg.style.opacity = "0.1";
         programThummbHr.style.visibility = "visible";
         collegeImg.style.opacity = "0.1";
         programThummbHr1.style.visibility = "hidden";

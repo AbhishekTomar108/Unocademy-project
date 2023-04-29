@@ -61,7 +61,7 @@ const Curriculum = () => {
 
     return (
         <div className='curriculum'>
-            <h2>Learn with a world class <b>curriculum</b></h2>
+            <h2>Learn with a world class <b>Curriculum</b></h2>
 
             <div className='curriculum-list'>
                 <ul>
@@ -69,7 +69,7 @@ const Curriculum = () => {
                     <li onClick={() => MoveProgress(1)}>Frontend Development</li>
                     <li onClick={() => MoveProgress(2)}>Data Structures</li>
                     <li onClick={() => MoveProgress(3)}>Backend Development</li>
-                    <li onClick={() => MoveProgress(4)}>Testing & Deployment</li>
+                    <li onClick={() => MoveProgress(4)}>API Testing & Deployment</li>
                     <li onClick={() => MoveProgress(5)}>Level Up Your Skills</li>
                 </ul>
             </div>

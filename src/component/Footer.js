@@ -5,6 +5,7 @@ import googleIcon from "../image/google-icon.png"
 import sulekhaIcon from "../image/sulekha-icon.png"
 import facebookIcon from "../image/facebook-icon-2.png"
 import JustDialIcon from "../image/just-dial-icon.jpg"
+import urban from "../image/urban.jpg"
 
 const Footer = () => {
   return (
@@ -35,7 +36,7 @@ const Footer = () => {
                             <img src={star}/>
                             <img src={star}/>
                         </div>
-                        <div className='review-text'>
+                        <div className='review-text top-text-review'>
                             4.9 out of 5 based on 10112 votes
                         </div>
                         </div>
@@ -65,6 +66,12 @@ const Footer = () => {
                        
                         <div className='company-icon facebook-icon'>
                             <img src={facebookIcon}/>
+                            <div className='review-text'>
+                            4.9/5
+                        </div>
+                        </div>
+                        <div className='company-icon urban-icon'>
+                            <img src={urban}/>
                             <div className='review-text'>
                             4.9/5
                         </div>

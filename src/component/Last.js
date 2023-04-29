@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import axios from "axios"
-import pdfFile from '../pdf/uncodemy-file.pdf'
+import pdfFile from '../pdf/FullStack-Uncodemy.pdf'
 import contact from '../image/contact-1.png'
 
 const Last = () => {
