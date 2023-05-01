@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import cross from "../image/cross-1.png"
 import rightArrow from "../image/banner-right-arrow.png"
@@ -15,8 +15,13 @@ const Banner = () => {
   const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
   const [location, setLocation] = useState('');
-  const [mode, setMode] = useState('Select the Training Mode');
+  const [mode, setMode] = useState('');
   const [submitStatus, setSubmitStatus] = useState(true);
+ 
+
+  
+
+ 
 
   const hideBanner = () => {
 
@@ -67,16 +72,17 @@ const Banner = () => {
   const submitHandle = () => {
     console.log("name ", name);
 
-    if (name.length < 3) {
+  
 
-      alert("Name should be at least four character");
-
+    if (mobile.length!=10){
+      alert('Please enter the correct Mobile no.')
     }
 
 
 
 
-    else {
+   else{
+      console.log('last if runnig')
       const url = 'http://localhost/uncodemy/formSubmit.php';
 
       console.log("mode ", mode);
@@ -90,15 +96,19 @@ const Banner = () => {
 
 
       axios.post(url, data)
-        .then(window.open(pdfFile)       
-        ).catch(error => alert(error));
-
-      // axios({
-      //   method: 'post',
-      //   url: url,
-      //   data: data
-      // }).then(()=> window.open(pdfFile))
-      // .catch(error=>alert(error));
+        .then(result=>{
+          if(result.data==true){
+            console.log('data submitted')
+            window.location.href=pdfFile;
+          }
+          else{
+            console.log(result)
+            alert('error invalid')
+           
+          }
+        }).catch(error => {
+          console.log('error server not running');
+          alert(error)});
 
     }
   }
@@ -116,13 +126,13 @@ const Banner = () => {
             Submit your details below to learn more about the course fee, curriculum, placements, and more.
             <hr></hr>
           </div>
-          <form method='#'>
+          <form method='#' onSubmit={submitHandle}>
             <input type='text' name='name' placeholder="Enter your Name*" required value={name} onChange={(e) => setName(e.target.value)} />
             <input type='email' name='email' placeholder="Enter your Email*" required value={email} onChange={(e) => setEmail(e.target.value)} />
             <input type='number' name='mobile' placeholder="Enter your Phone No." required value={mobile} onChange={(e) => setMobile(e.target.value)} />
             <input type='text' name='location' placeholder="Enter your Location" required value={location} onChange={(e) => setLocation(e.target.value)} />
-            <select placeholder='select the training mode' onChange={e => setMode(e.target.value)}>
-              <option disabled selected>Select the Training Mode</option>
+            <select required  onChange={e => setMode(e.target.value)}>
+              <option disabled selected value=''>Select the Training Mode</option>
               <option value='online'>Online</option>
               <option value='classRoom'>Class room</option>
             </select>
@@ -131,7 +141,7 @@ const Banner = () => {
             </div>
             <div className='submit-btn-container'>
 
-              <button disabled={submitStatus} id='submit-btn' onClick={submitHandle}>Submit</button>
+              <input type='submit' disabled={submitStatus} id='submit-btn'/>
             </div>
           </form>
         </div>

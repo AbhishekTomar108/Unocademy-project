@@ -33,13 +33,18 @@ const Last = () => {
     const submitHandle = ()=>{
         console.log("name ",name);
       
+       if(name.length<3){
       
+        alert("Name should be at least four character");
+        
+       }
        if(mobile.length!=10){
         alert("Please enter correct mobile no.");
         
        }
   
-       else {
+       if(name.length>3 && mobile.length==10 && email.length>1 && location.length>1 && mode.length>1){
+        console.log('submit last if running');
             const url = 'http://localhost/uncodemy/formSubmit.php';
   
             let data = new FormData();
@@ -87,13 +92,13 @@ const Last = () => {
         Submit your details below to learn more about the course fee, curriculum, placements, and more.
         <hr></hr>
         </div>
-      <form onSubmit={submitHandle} method='POST'>
-        <input required type='text' name='name' placeholder="Enter your Name*" value={name} onChange={(e)=>setName(e.target.value)}/>
-        <input required type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-         <input required type='number' name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
-       <input required type='text' name='location'placeholder="Enter your Location"  value={location} onChange={(e)=>setLocation(e.target.value)}/>
-       <select required placeholder='select the training mode' onChange={e=>setMode(e.target.value)}>
-        <option disabled selected value=''>Select the Training Mode</option>
+      <form>
+        <input type='text' name='name' placeholder="Enter your Name*" value={name} onChange={(e)=>setName(e.target.value)}/>
+        <input type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+         <input type='number' name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
+       <input type='text' name='location'placeholder="Enter your Location"  value={location} onChange={(e)=>setLocation(e.target.value)}/>
+       <select placeholder='select the training mode' onChange={e=>setMode(e.target.value)}>
+        <option disabled selected>Select the Training Mode</option>
         <option>Online</option>
         <option>Class room</option>
        </select>
@@ -101,7 +106,7 @@ const Last = () => {
        <div className='agree-box'><input type="checkbox" name="terms" id="terms" onChange={checkAgree}/>  I Agree Terms & Coditions
        </div>
         <div className='last-submit-btn-container'>
-        <input type='submit' disabled={submitStatus} id='submit-btn'/>
+        <button disabled={submitStatus} id='submit-btn' onClick={submitHandle}>Submit</button>
        
         </div>
       </form>

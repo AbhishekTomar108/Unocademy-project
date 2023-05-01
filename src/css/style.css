@@ -951,10 +951,15 @@ b{
   color: #111111;
 }
 
+.icon-footer-img{
+  
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+}
 .project-thumb .proj-name {
   font-size: 30px;
-  line-height: 33px;
-  height: 33px;
+  line-height: 39px;
   overflow: hidden;
   color: #111111;
   margin-top: 45px;
@@ -1789,7 +1794,12 @@ a:focus {
   padding: 0;
   border: none;
   font-size: 18px;
+  margin-bottom: 5px;
  
+}
+
+.company-logo-icon-container{
+  text-align: center;
 }
 
 .footer-form-container {
@@ -1801,6 +1811,7 @@ a:focus {
 
 .uncodemy-logo {
   height: 40px;
+    width: 8rem;
 }
 
 .header-uncodemy-logo {

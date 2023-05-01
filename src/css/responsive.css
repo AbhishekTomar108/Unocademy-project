@@ -71,6 +71,11 @@
     font-size: 16px;
   }
 
+  .project-thumb .proj-name{
+    font-size: 24px;
+    height: 30px;
+  }
+
   .company {
     padding: 15px 20px;
   }
