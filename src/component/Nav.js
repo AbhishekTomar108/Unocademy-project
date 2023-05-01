@@ -12,7 +12,7 @@ const Nav = () => {
        <div></div>
       <div className='header-btn'>
         <button id='call-us-btn'><a href="tel:91 770-192-8515">Call Us</a></button>
-         <button id='chat-btn'><img src={whatsapp} class="icon whatsapp-icon"></img><a href="https://wa.link/tu20ly">Chat With Us</a></button>
+         <button id='chat-btn'><img src={whatsapp} class="icon whatsapp-icon"></img><a href="https://wa.link/5kqmus">Chat With Us</a></button>
       </div>
       </div>
        <hr style={{margin:"0"}}/>

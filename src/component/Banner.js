@@ -69,8 +69,8 @@ const Banner = () => {
     window.scrollTo({ top: gotoValue, left: 0, behavior: 'smooth' })
   }
 
-  const submitHandle = () => {
-    console.log("name ", name);
+  const submitHandle = (e) => {
+    e.preventDefault();
 
   
 
@@ -100,6 +100,11 @@ const Banner = () => {
           if(result.data==true){
             console.log('data submitted')
             window.location.href=pdfFile;
+            setEmail('')
+                setLocation('')
+                setMobile('')
+                setMode('')
+                setName('');
           }
           else{
             console.log(result)

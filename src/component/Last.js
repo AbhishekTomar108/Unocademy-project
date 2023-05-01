@@ -30,7 +30,8 @@ const Last = () => {
         }
     }
 
-    const submitHandle = ()=>{
+    const submitHandle = (e)=>{
+      e.preventDefault();
         console.log("name ",name);
       
       
@@ -53,6 +54,11 @@ const Last = () => {
               if(result.data==true){
                 console.log('data submitted')
                 window.location.href=pdfFile;
+                setEmail('')
+                setLocation('')
+                setMobile('')
+                setMode('')
+                setName('');
               }
               else{
                 console.log(result)
@@ -62,12 +68,7 @@ const Last = () => {
             })
             .catch(error=>console.log("error"));
   
-            // axios({
-            //   method: 'post',
-            //   url: url,
-            //   data: data
-            // }).then(()=> window.open(pdfFile))
-            // .catch(error=>alert(error));
+          
   
        }
       }
@@ -87,7 +88,7 @@ const Last = () => {
         Submit your details below to learn more about the course fee, curriculum, placements, and more.
         <hr></hr>
         </div>
-      <form onSubmit={submitHandle} method='POST'>
+      <form onSubmit={submitHandle}>
         <input required type='text' name='name' placeholder="Enter your Name*" value={name} onChange={(e)=>setName(e.target.value)}/>
         <input required type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
          <input required type='number' name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
