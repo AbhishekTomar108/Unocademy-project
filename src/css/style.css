@@ -274,7 +274,7 @@ b{
 
 .placement-box {
   display: flex;
-  column-gap: 30%;
+  column-gap: 25%;
   color: white;
 }
 
@@ -286,7 +286,7 @@ b{
 .placement-box-right {
   display: grid;
   grid-template-columns: 57% 50%;
-  column-gap: 50%;
+  column-gap: 45%;
   row-gap: 40%;
 }
 
@@ -333,8 +333,9 @@ b{
 .last-form-main{
   visibility: visible !important;
   width: fit-content !important;
-  top: -72% !important;
+  top: -60% !important;
 }
+
 
 .last-form-main form{
   margin-top: 10px !important;
@@ -1209,9 +1210,8 @@ table {
 }
 
 .admission {
-  margin-top: 100px;
+  position: relative;
   padding: 80px 0;
-  width: 86vw;
   margin: 100px auto 0 auto;
   border-radius: 15px;
   box-shadow: 0px 0px 18px rgba(2, 177, 253, 0.782);
@@ -1219,6 +1219,13 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
+}
+
+.apply-btn-container{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .section-heading {

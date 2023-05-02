@@ -69,7 +69,7 @@ const Banner = () => {
     window.scrollTo({ top: gotoValue, left: 0, behavior: 'smooth' })
   }
 
-  const submitHandle = (e) => {
+  const submitHandle = async(e) => {
     e.preventDefault();
 
   
@@ -83,7 +83,7 @@ const Banner = () => {
 
    else{
       console.log('last if runnig')
-      const url = 'http://localhost/uncodemy/formSubmit.php';
+      // const url = 'http://localhost/uncodemy/formSubmit.php';
 
       console.log("mode ", mode);
 
@@ -95,25 +95,28 @@ const Banner = () => {
       data.append('mode', mode);
 
 
-      axios.post(url, data)
-        .then(result=>{
-          if(result.data==true){
-            console.log('data submitted')
-            window.location.href=pdfFile;
-            setEmail('')
+      try{
+        const response = await axios.post('https://albuminoid-contempt.000webhostapp.com/formSubmit.php', data);
+
+        
+        if(response.data===1){
+          window.location.href=pdfFile;
+               setEmail('')
                 setLocation('')
                 setMobile('')
                 setMode('')
                 setName('');
-          }
-          else{
-            console.log(result)
-            alert('error invalid')
-           
-          }
-        }).catch(error => {
-          console.log('error server not running');
-          alert(error)});
+        }
+
+        else{
+          alert("sorry some error is occured")
+          console.log(response)
+        }
+      }
+      catch(error) {
+        alert("There is some error to proceed") 
+      };
+
 
     }
   }
@@ -142,8 +145,7 @@ const Banner = () => {
               <option value='classRoom'>Class room</option>
             </select>
 
-            <div className='agree-box'><input type="checkbox" name="terms" id="term" onChange={checkAgree} />  I Agree Terms & Coditions
-            </div>
+  
             <div className='submit-btn-container'>
 
               <input type='submit' disabled={submitStatus} id='submit-btn'/>
@@ -174,7 +176,7 @@ const Banner = () => {
             Earn upto 10LPA on Course Completion - Book Your Seat With As Low As <span id='price-text'>INR 2,000/- only</span>
             <strong>Duration of the program- 6 months</strong>
 
-            <span className='cohort-text'>Next Batch Starts: 01 May, 2023</span>
+            <span className='cohort-text'>New Batch Starts from : 01 May, 05 May, 09 May 2023</span>
             <span className='limited-text'>Limited no. of seats available</span>
           </p>
 

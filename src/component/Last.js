@@ -30,7 +30,7 @@ const Last = () => {
         }
     }
 
-    const submitHandle = (e)=>{
+    const submitHandle = async(e)=>{
       e.preventDefault();
         console.log("name ",name);
       
@@ -41,7 +41,7 @@ const Last = () => {
        }
   
        else {
-            const url = 'http://localhost/uncodemy/formSubmit.php';
+           
   
             let data = new FormData();
             data.append('name', name);
@@ -50,23 +50,27 @@ const Last = () => {
             data.append('location', location);
             data.append('mode', mode);
   
-            axios.post(url, data).then(result=>{
-              if(result.data==true){
-                console.log('data submitted')
+            try{
+              const response = await axios.post('https://albuminoid-contempt.000webhostapp.com/formSubmit.php', data);
+      
+              
+              if(response.data===1){
                 window.location.href=pdfFile;
-                setEmail('')
-                setLocation('')
-                setMobile('')
-                setMode('')
-                setName('');
+                     setEmail('')
+                      setLocation('')
+                      setMobile('')
+                      setMode('')
+                      setName('');
               }
+      
               else{
-                console.log(result)
-                alert('error invalid')
-               
+                alert("sorry some error is occured")
+                console.log(response)
               }
-            })
-            .catch(error=>console.log("error"));
+            }
+            catch(error) {
+              alert(error)
+            };
   
           
   
@@ -99,8 +103,7 @@ const Last = () => {
         <option>Class room</option>
        </select>
 
-       <div className='agree-box'><input type="checkbox" name="terms" id="terms" onChange={checkAgree}/>  I Agree Terms & Coditions
-       </div>
+       
         <div className='last-submit-btn-container'>
         <input type='submit' disabled={submitStatus} id='submit-btn'/>
        

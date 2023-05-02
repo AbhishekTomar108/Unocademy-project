@@ -54,6 +54,10 @@ const Creator = () => {
 
     }, [imageAt])
 
+    const autoScroll = ()=>{
+        
+    }
+
     const moveImageRight = () => {
         console.log("creator right");
         const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
