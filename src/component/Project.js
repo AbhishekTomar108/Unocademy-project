@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import Left from "../image/left.png";
-import Right from "../image/right.png";
+import Left from "../image/banner-left-arrow.png";
+import Right from "../image/banner-right-arrow.png";
+import uncodetech from "../image/lms.jpg";
+import UncodeCart from "../image/e-commerce.jpg";
+import uncodetrack from "../image/tracking.jpg";
 
 const Project = () => {
 
@@ -83,7 +86,7 @@ const Project = () => {
             <div className='project-card-container'>
                 <div className='project-card'>
                     <div class="project-thumb">
-                        <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/1.png" alt="Bookshelf" title="Bookshelf" />
+                        <img class="project-img" src={uncodetech} alt="Bookshelf" title="Bookshelf" />
                         <h5 class="proj-title"> Uncode Tech </h5>
                         <h3 class="proj-name"> Learning Management Systems</h3>
                         <p>
@@ -118,7 +121,7 @@ const Project = () => {
                     </div>
 
                     <div class="project-thumb">
-                        <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/2.png" alt="Bookshelf" title="Bookshelf" />
+                        <img class="project-img" src={UncodeCart} alt="Bookshelf" title="Bookshelf" />
                         <h5 class="proj-title"> UncodeCart </h5>
                         <h3 class="proj-name"> E-commerce Application </h3>
                         <p>
@@ -150,7 +153,7 @@ const Project = () => {
                     </div>
 
                     <div class="project-thumb">
-                        <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/3.png" alt="Bookshelf" title="Bookshelf" />
+                        <img class="project-img" src={uncodetrack} alt="Bookshelf" title="Bookshelf" />
                         <h5 class="proj-title"> TrackUncode </h5>
                         <h3 class="proj-name"> Shipping and Tracking Software </h3>
                         <p>
@@ -179,7 +182,7 @@ const Project = () => {
                     </div>
 
                     <div class="project-thumb">
-                        <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/3.png" alt="Bookshelf" title="Bookshelf" />
+                        <img class="project-img" src={uncodetech} alt="Bookshelf" title="Bookshelf" />
                         <h5 class="proj-title"> ShopPlusPlus </h5>
                         <h3 class="proj-name"> Commerce </h3>
                         <p>
@@ -202,7 +205,7 @@ const Project = () => {
                     </div>
 
                     <div class="project-thumb">
-                        <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/3.png" alt="Bookshelf" title="Bookshelf" />
+                        <img class="project-img" src={UncodeCart} alt="Bookshelf" title="Bookshelf" />
                         <h5 class="proj-title"> ShopPlusPlus </h5>
                         <h3 class="proj-name"> Commerce </h3>
                         <p>
@@ -225,7 +228,7 @@ const Project = () => {
                     </div>
 
                     <div class="project-thumb">
-                        <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/3.png" alt="Bookshelf" title="Bookshelf" />
+                        <img class="project-img" src={uncodetrack} alt="Bookshelf" title="Bookshelf" />
                         <h5 class="proj-title"> ShopPlusPlus </h5>
                         <h3 class="proj-name"> Commerce </h3>
                         <p>
@@ -248,7 +251,7 @@ const Project = () => {
                     </div>
 
                     <div class="project-thumb">
-                        <img class="project-img" src="https://www.upgrad.com/bootcamps/images/projects/3.png" alt="Bookshelf" title="Bookshelf" />
+                        <img class="project-img" src={UncodeCart} alt="Bookshelf" title="Bookshelf" />
                         <h5 class="proj-title"> ShopPlusPlus </h5>
                         <h3 class="proj-name"> Commerce </h3>
                         <p>

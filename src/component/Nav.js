@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div className='nav'>
     <div className='header'>
-    <img className='header-uncodemy-logo' src={Uncodemy}/>
+    <a href="https://www.uncodemy.com/" target='_blank'><img className='header-uncodemy-logo' src={Uncodemy}/></a>
        <div></div>
       <div className='header-btn'>
         <button id='call-us-btn'><a href="tel:91 770-192-8515">Call Us</a></button>

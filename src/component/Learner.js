@@ -21,7 +21,7 @@ const Learner = () => {
         const leftArrow = document.getElementsByClassName('review-left-arrow')[0];
         const RightArrow = document.getElementsByClassName('review-right-arrow')[0];
 
-        if (imageAt > 2 && imageAt < 5) {
+        if (imageAt > 2 && imageAt < 8) {
             leftArrow.style.cursor = "pointer";
             RightArrow.style.cursor = "pointer";
 
@@ -34,7 +34,7 @@ const Learner = () => {
             leftArrow.style.opacity = "0.5";
         }
 
-        if (imageAt === 5) {
+        if (imageAt === 8) {
             RightArrow.style.cursor = "auto";
             RightArrow.style.opacity = "0.5";
         }
@@ -68,7 +68,7 @@ const Learner = () => {
     } else if (currentIndex === 0 && direction === -1) {
       direction = 1;
     }
-  }, 3000)// Change slide every 3 seconds
+  }, 1500)// Change slide every 3 seconds
   // Change slide every 3 seconds
  }
  
@@ -105,7 +105,7 @@ const Learner = () => {
         console.log("learner right");
         const reviews = document.getElementsByClassName('reviews')[0];
 
-        if (imageAt < 5) {
+        if (imageAt < 8) {
             const nextmove = imageMove - 36;
             reviews.style.transform = "translate(" + nextmove + "vw)";
             setImageMove(nextmove);
@@ -246,6 +246,84 @@ const Learner = () => {
                                     "I got trained in MERN full Stack development from Uncodemy. Their teaching methodology is very practical, industry relevant, and interactive.
 
                                     Our mentor Ajay Sir made the concepts very clear and simple and taught us the best ways and practices that I could never learn anywhere else before. He taught us to choose technology that works for each project, not just implement it excitedly without any thought of how it can be executed or make the most out of it. After that we were given training on how to use web technologies such as HTML5, JavaScript and CSS3 to build a complete stack which we could also use for building our own applications as well as modifying code from existing projects."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="review-thumb">
+                        <div class="media">
+                            <div class="review-img">
+                            <img src={david}/>
+                            </div>
+                            <div class="media-body align-self-center">
+                                <div class="review-title">
+                                <h3>Raja Singh k</h3>
+                                </div>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                </div>
+
+                                <hr></hr>
+                                <p>
+                                    "Hello All, I am very glad to write this review on Uncodemy, This is one of the best IT training and placement companies. My experience with all processes and especially with the Training department was very good. I have completed the mern full stack course from here. The placement department of Uncodemy is very active and helpful in making your future bright. So I can suggest If you are looking for IT Training & placement then go there and register yourself and get good knowledge and a good Job. Thank You Uncodemy Team.."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-thumb">
+                        <div class="media">
+                            <div class="review-img">
+                            <img src={david}/>
+                            </div>
+                            <div class="media-body align-self-center">
+                                <div class="review-title">
+                                <h3>Abhishek Singh</h3>
+                                </div>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                </div>
+
+                                <hr></hr>
+                                <p>
+                                    "I had an awesome experience learning Mern Full stack programming from Uncodemy, it gives 100% personal attention and has flexible timings as per candidate requirements. Friendly class ambience created by the Institute.
+                                        The trainer is cooperative and has good command over the subject. The concepts are explained with depth and clarity. It is one of the best institute for software courses in Noida.
+                                        After having a good experience with Mern Full stack I also joined for Python Training and Data science Course. The course was well planned. It would be highly recommended by me to join this institute. Most importantly he gives personal attention on each candidate from both practical and practice point of view."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-thumb">
+                        <div class="media">
+                            <div class="review-img">
+                            <img src={david}/>
+                            </div>
+                            <div class="media-body align-self-center">
+                                <div class="review-title">
+                                <h3>Mithun Mohli</h3>
+                                </div>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                </div>
+
+                                <hr></hr>
+                                <p>
+                                    "Uncodemy is the Best learning institute for web development courses. I have completed MERN Stack Developement course in Noida from Uncodemy. Trainers and other faculties are very supportive and co-operative. Its been a great learning experience for me. I suggest Uncodemy for everyone who wants build there carrier in web development field. I'm very much thankful to Ajay Sir, Anam Mam, and Pradyumn Sir fot their support."
                                 </p>
                             </div>
                         </div>

@@ -9,26 +9,8 @@ const Last = () => {
     const [mobile, setMobile] = useState('');
     const [location, setLocation] = useState('');
     const [mode, setMode] = useState('');
-    const [submitStatus, setSubmitStatus] = useState(true);
+   
 
-    const checkAgree =()=>{
-        console.log('status ',submitStatus);
-      const agreeCheck = document.getElementById('terms');
-      const submitBtn = document.getElementsByClassName('last-submit-btn-container')[0];
-      
-      submitBtn.style.opacity="1";
-      setSubmitStatus(false);
-
-        if(agreeCheck.checked){
-          submitBtn.style.opacity="1";
-          setSubmitStatus(false)
-        }
-        else{
-            console.log('else is running');
-          submitBtn.style.opacity="0.5";
-          setSubmitStatus(true)
-        }
-    }
 
     const submitHandle = async(e)=>{
       e.preventDefault();
@@ -105,7 +87,7 @@ const Last = () => {
 
        
         <div className='last-submit-btn-container'>
-        <input type='submit' disabled={submitStatus} id='submit-btn'/>
+        <input type='submit' id='submit-btn'/>
        
         </div>
       </form>

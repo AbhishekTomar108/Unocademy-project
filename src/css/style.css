@@ -895,7 +895,7 @@ b{
   justify-content: center;
   display: flex;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   
  
 }
@@ -969,6 +969,7 @@ b{
   color: #111111;
   margin-top: 45px;
   font-weight: 500;
+  min-height: 80px;
 }
 
 .project-thumb p {
@@ -1794,6 +1795,8 @@ a:focus {
 
 
 
+
+
 .form-container form #submit-btn {
   background-color: #ff5421;
   color: white;
@@ -1804,6 +1807,7 @@ a:focus {
   border: none;
   font-size: 18px;
   margin-bottom: 5px;
+  cursor: pointer;
  
 }
 
@@ -1943,11 +1947,13 @@ form input {
   position: absolute;
   top: 700px;
   left: 7vw;
+  opacity: 0.5;
 }
 .second-right-arrow{
   position: absolute;
   top: 700px;
   left: 89vw;
+  cursor: pointer;
 }
 
 .project-left-arrow {
@@ -1963,8 +1969,9 @@ form input {
 }
 
 .arrow-img img {
-  width: 30px;
-  height: 35px;
+  width: 15px;
+  height: 15px;
+  background: #ff5421;
 }
 
 .right-arrow {

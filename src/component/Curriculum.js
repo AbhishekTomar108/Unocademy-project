@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import download from "../image/download.svg"
-import cross from "../image/cross-1.png"
 
 const Curriculum = () => {
     const [prevPoint, setPrevPoint] = useState(0);

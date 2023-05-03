@@ -13,14 +13,14 @@ const Advantage = () => {
                         <th class="first-column"></th>
                         <th>Video Course</th>
                         <th>Bootcamps</th>
-                        <th>upGrad</th>
+                        <th>UnCodemy</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="first-column">
                         <h3 class="title">
-                            Cloud Labs
+                            Lab Facility
                         </h3></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>
@@ -29,7 +29,7 @@ const Advantage = () => {
                     <tr>
                         <td class="first-column">
                         <h3 class="title">
-                            Industry projects
+                            Industry Live Projects
                         </h3></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>
                         <td align="center"><i class="icons icon-tick"></i></td>
@@ -38,7 +38,25 @@ const Advantage = () => {
                     <tr>
                         <td class="first-column">
                         <h3 class="title">
-                            Interview Opportunity
+                            CV Building & Interview Oppurtunity
+                        </h3></td>
+                        <td align="center"><i class="icons icon-wrong"></i></td>
+                        <td align="center"><i class="icons icon-wrong"></i></td>
+                        <td align="center"><i class="icons icon-tick"></i></td>
+                    </tr>
+                    {/* <tr>
+                        <td class="first-column">
+                        <h3 class="title">
+                        Career guidance sessions
+                        </h3></td>
+                        <td align="center"><i class="icons icon-wrong"></i></td>
+                        <td align="center"><i class="icons icon-tick"></i></td>
+                        <td align="center"><i class="icons icon-tick"></i></td>
+                    </tr> */}
+                    <tr>
+                        <td class="first-column">
+                        <h3 class="title">
+                            Performance Report Monthly
                         </h3></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>
@@ -47,25 +65,7 @@ const Advantage = () => {
                     <tr>
                         <td class="first-column">
                         <h3 class="title">
-                            Career guidance sessions
-                        </h3></td>
-                        <td align="center"><i class="icons icon-wrong"></i></td>
-                        <td align="center"><i class="icons icon-tick"></i></td>
-                        <td align="center"><i class="icons icon-tick"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="first-column">
-                        <h3 class="title">
-                            Performance Report
-                        </h3></td>
-                        <td align="center"><i class="icons icon-wrong"></i></td>
-                        <td align="center"><i class="icons icon-wrong"></i></td>
-                        <td align="center"><i class="icons icon-tick"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="first-column">
-                        <h3 class="title">
-                            MAANG instructors
+                          Industry Expert Instructors
                         </h3></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>

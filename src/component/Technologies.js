@@ -73,16 +73,16 @@ const Technologies = () => {
                 <h3>NodeJS</h3>
             </li>
             <li>
-            <img src={MONGODB}/>
-                <h3>MongoDB</h3>
-            </li>
-            <li>
             <img src={PYTHON}/>
                 <h3>Python</h3>
             </li>
             <li>
             <img src={JAVA}/>
                 <h3>Java</h3>
+            </li>
+            <li>
+            <img src={MONGODB}/>
+                <h3>MongoDB</h3>
             </li>
             <li>
             <img src={MYSQL}/>

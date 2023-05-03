@@ -18,7 +18,7 @@ const Footer = () => {
             <div class="top-footer">
                 <div class="row">
                     <div class="col-md-3 company-logo-icon-container">
-                    <img src={Uncodemy} className='uncodemy-logo' />
+                    <a href="https://www.uncodemy.com/" target='_blank'><img src={Uncodemy} className='uncodemy-logo' /></a>
                      
                         <div class="social-icons">
                             <a href="https://www.facebook.com/uncodemyofficial/" target="_blank"><i class="icons icon-footer-fb"></i></a>
