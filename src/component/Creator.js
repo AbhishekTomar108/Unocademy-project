@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import linkedIn from "../image/LinkedIn.png"
 import Left from "../image/left.png";
 import Right from "../image/right.png";
 import Riya from "../image/riyatiwari (1).jpg"
-import Preity from "../image/preitySingh.jpg"
 import TANVI from "../image/tanvi.jpg"
 import Ritesh from "../image/riteshSingh.jpg"
 import ADITYA from "../image/adityaSingh.jpg"
 import RAJENDRA from "../image/rajendra.jpg"
 import SAURABH from "../image/saurabh.jpg"
-import college from "../image/college.png"
 import amity from "../image/amity.png"
 import nalanda from "../image/nalanda.png"
 import ashoka from "../image/ashoka.png"
@@ -27,8 +24,14 @@ import bloohash from "../image/bloohash.png"
 const Creator = () => {
     const [moveCreatorImg, setmoveCreatorImg] = useState(0);
     const [imageAt, setImageAt] = useState(4);
+    const [moveCreatorImg2, setmoveCreatorImg2] = useState(0);
+    const [imageAt2, setImageAt2] = useState(4);
+    const [stopScroll, setStopScroll] = useState(false);
+    let currentIndex = 0;
     
     useEffect(() => {
+       
+        let scrollInterval =null;
 
         const rightArrow = document.getElementsByClassName('right-arrow')[0]
         const leftArrow = document.getElementsByClassName('left-arrow')[0]
@@ -54,30 +57,26 @@ const Creator = () => {
 
         if(document.documentElement.clientWidth >= 901)
         {
-            autoScroll();
-        }
-
-    }, [])
-
-    const autoScroll = ()=>{
-      
-
-      const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
+            const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
       const creatorImgBlock2 = document.getElementsByClassName('creator-img-block')[1];
       const creatorImage = document.getElementsByClassName('program-thumb');
     
       let totalItems =  creatorImage.length;   
-      const slideWidth  = creatorImage[0].offsetWidth;
-        let currentIndex = 0;
+        currentIndex = 0;
        let nextMove = 26;
        let direction =1;
         
       
- 
-setInterval(() => {
+   if(stopScroll===false){
+   
+    scrollInterval = window.setInterval(() => {
+       
     currentIndex = (currentIndex + direction) % (totalItems/2);
+   
+  
     if (currentIndex === -1) {
       currentIndex = (totalItems/2) - 1;
+     
     }
     creatorImgBlock.style.transform = `translateX(-${currentIndex * nextMove}vw)`;
     creatorImgBlock2.style.transform = `translateX(-${currentIndex * nextMove}vw)`;
@@ -87,53 +86,100 @@ setInterval(() => {
     } else if (currentIndex === 0 && direction === -1) {
       direction = 1;
     }
-  }, 3000); // Change slide every 3 seconds
- // Change slide every 3 seconds
-}; 
+  }, 3000)// Change slide every 3 seconds
+  // Change slide every 3 seconds
+ }
+ 
+ else{
+    
+   
+    window.clearInterval(scrollInterval);
+ }
+
+        }
+
+             
+ return () => {
+    window.clearInterval(scrollInterval);
+    }
+
+    }, [stopScroll, imageAt])          
+
+    const moveImageRight = () => {
+           
+            const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
+    
+            if (imageAt < 7) {
+    
+                const nextMove = moveCreatorImg - 26;
+                creatorImgBlock.style.transform = "translate(" + nextMove + "vw)";
+                setmoveCreatorImg(nextMove);
+    
+                const addImage = imageAt + 1;
+                setImageAt(addImage);
+    
+    
+            }
+    
+        }
+
+        const moveImageRight2 = () => {
+    
+            const creatorImgBlock2 = document.getElementsByClassName('creator-img-block')[1];
+    
+            if (imageAt2 < 7) {
+    
+                const nextMove2 = moveCreatorImg2 - 26;
+                creatorImgBlock2.style.transform = "translate(" + nextMove2 + "vw)";
+                setmoveCreatorImg2(nextMove2);
+    
+                const addImage = imageAt2 + 1;
+                setImageAt2(addImage);
+    
+    
+            }
+    
+        }
+
+        const moveImageLeft = () => {
+               
+        
+                const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
+        
+                if (imageAt > 4) {
+                    
+        
+                    const nextMove = moveCreatorImg + 26;
+                    creatorImgBlock.style.transform = "translate(" + nextMove + "vw)";
+        
+                    setmoveCreatorImg(nextMove);
+                    const addImage = imageAt - 1;
+                    setImageAt(addImage);
+        
+                }
+            }
 
             
-
-        
+        const moveImageLeft2 = () => {
+            
     
-
-    // const moveImageRight = () => {
-    //     console.log("creator right");
-    //     const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
-
-    //     if (imageAt < 7) {
-
-    //         const nextMove = moveCreatorImg - 26;
-    //         creatorImgBlock.style.transform = "translate(" + nextMove + "vw)";
-    //         setmoveCreatorImg(nextMove);
-
-    //         const addImage = imageAt + 1;
-    //         setImageAt(addImage);
-
-
-    //     }
-
-    // }
-
-    // const moveImageLeft = () => {
-    //     console.log("creator left");
-
-    //     const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
-
-    //     if (imageAt > 4) {
-    //         console.log("width =", window.innerWidth)
-
-    //         const nextMove = moveCreatorImg + 26;
-    //         creatorImgBlock.style.transform = "translate(" + nextMove + "vw)";
-
-    //         setmoveCreatorImg(nextMove);
-    //         const addImage = imageAt - 1;
-    //         setImageAt(addImage);
-
-    //     }
-    // }
+            const creatorImgBlock2 = document.getElementsByClassName('creator-img-block')[1];
+    
+            if (imageAt2 > 4) {
+                
+    
+                const nextMove2 = moveCreatorImg2 + 26;
+                creatorImgBlock2.style.transform = "translate(" + nextMove2 + "vw)";
+    
+                setmoveCreatorImg2(nextMove2);
+                const addImage = imageAt2 - 1;
+                setImageAt2(addImage);
+    
+            }
+        }
 
     const showCreatorDetail = (index) => {
-        console.log("showing");
+    
 
         const creatorDetail = document.getElementsByClassName('creator-details')[index];
         const projectThumb = document.getElementsByClassName('program-thumb')[index];
@@ -157,7 +203,7 @@ setInterval(() => {
     }
 
     const hideCreatorDetails = (index) => {
-        console.log("hiding");
+     
 
         const creatorDetail = document.getElementsByClassName('creator-details')[index];
         const projectThumb = document.getElementsByClassName('program-thumb')[index];
@@ -182,7 +228,7 @@ setInterval(() => {
             <h2>Success <b>Stories</b></h2>
 
             <div className='left-arrow arrow-img'>
-                <img src={Left} />
+                <img src={Left} onClick={()=>{moveImageLeft();setStopScroll(true)}}/>
             </div>
 
             <div className='creator-img-container'>
@@ -313,17 +359,17 @@ setInterval(() => {
 
 
                 </div>
-                <div className='right-arrow arrow-img'>
+                <div className='right-arrow arrow-img' onClick={()=>{moveImageRight();setStopScroll(true)}}>
                 <img src={Right} />
             </div>
-            <div className='second-left-arrow arrow-img'>
+            <div className='second-left-arrow arrow-img' onClick={()=>{moveImageLeft2();setStopScroll(true)}}>
                 <img src={Left} />
             </div>
 
 
                 
                 <div className='creator-img-block'>
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(0)} onMouseOut={() => hideCreatorDetails(0)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(6)} onMouseOut={() => hideCreatorDetails(6)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={Riya} />
                             <div class="program-thumb-content">
@@ -345,7 +391,7 @@ setInterval(() => {
                         </div>
 
                     </div>
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(1)} onMouseOut={() => hideCreatorDetails(1)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(7)} onMouseOut={() => hideCreatorDetails(7)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={ADITYA} />
                             <div class="program-thumb-content">
@@ -365,7 +411,7 @@ setInterval(() => {
                         </div>
                     </div>
 
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(2)} onMouseOut={() => hideCreatorDetails(2)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(8)} onMouseOut={() => hideCreatorDetails(8)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={Ritesh} />
                             <div class="program-thumb-content">
@@ -386,7 +432,7 @@ setInterval(() => {
                         </div>
                     </div>
 
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(3)} onMouseOut={() => hideCreatorDetails(3)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(9)} onMouseOut={() => hideCreatorDetails(9)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={TANVI} />
                             <div class="program-thumb-content">
@@ -407,7 +453,7 @@ setInterval(() => {
                         </div>
                     </div>
 
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(4)} onMouseOut={() => hideCreatorDetails(4)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(10)} onMouseOut={() => hideCreatorDetails(10)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={RAJENDRA} />
                             <div class="program-thumb-content">
@@ -426,7 +472,7 @@ setInterval(() => {
                         </div>
                     </div>
 
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(5)} onMouseOut={() => hideCreatorDetails(5)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(11)} onMouseOut={() => hideCreatorDetails(11)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={SAURABH} />
                             <div class="program-thumb-content">
@@ -450,7 +496,7 @@ setInterval(() => {
                 </div>
                 
             </div>
-            <div className='second-right-arrow arrow-img'>
+            <div className='second-right-arrow arrow-img' onClick={()=>{moveImageRight2();setStopScroll(true)}}>
                 <img src={Right} />
             </div>
         </div>

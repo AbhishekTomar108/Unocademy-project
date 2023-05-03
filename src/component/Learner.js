@@ -12,8 +12,11 @@ const Learner = () => {
 
     const [imageAt, setImageAt] = useState(2);
     const [imageMove, setImageMove] = useState(0);
+    const [stopScroll, setStopScroll] =  useState(false);
 
     useEffect(() => {
+
+        let scrollInterval =null;
 
         const leftArrow = document.getElementsByClassName('review-left-arrow')[0];
         const RightArrow = document.getElementsByClassName('review-right-arrow')[0];
@@ -35,6 +38,51 @@ const Learner = () => {
             RightArrow.style.cursor = "auto";
             RightArrow.style.opacity = "0.5";
         }
+
+        if(document.documentElement.clientWidth >= 901)
+        {
+            const reviews = document.getElementsByClassName('reviews')[0];
+     
+      const reviewImage = document.getElementsByClassName('review-thumb');
+    
+      let totalItems =  reviewImage.length;   
+        let currentIndex = 1;
+       let nextMove = 36;
+       let direction =1;
+        
+      
+   if(stopScroll===false){
+   
+    scrollInterval = window.setInterval(() => {
+       
+    currentIndex = (currentIndex + direction) % (totalItems);
+    console.log('current index ', currentIndex)
+    if (currentIndex === -1) {
+      currentIndex = (totalItems) - 1;
+     
+    }
+    reviews.style.transform = `translateX(-${currentIndex * nextMove}vw)`;
+
+    if (currentIndex === (totalItems) - 1 && direction === 1) {
+      direction = -1;
+    } else if (currentIndex === 0 && direction === -1) {
+      direction = 1;
+    }
+  }, 3000)// Change slide every 3 seconds
+  // Change slide every 3 seconds
+ }
+ 
+ else{
+    
+    console.log('else loop =',scrollInterval)
+    window.clearInterval(scrollInterval);
+ }
+
+        }
+
+        return () => {
+            window.clearInterval(scrollInterval);
+            }
 
     }, [imageAt])
 
@@ -69,8 +117,8 @@ const Learner = () => {
     return (
         <div className='learner'>
             <h2 class="section-heading text-center"> See what <b>Our Learners Say</b></h2>
-            <div className='review-left-arrow arrow-img' onClick={moveImageLeft}>
-                <img src={Left} />
+            <div className='review-left-arrow arrow-img' onClick={()=>{moveImageLeft();setStopScroll(true)}}>
+                <img src={Left}/>
             </div>
             <div className='reviews-container'>
                 <div className='reviews'>
@@ -205,7 +253,7 @@ const Learner = () => {
                 </div>
             </div>
 
-            <div className='review-right-arrow arrow-img' onClick={moveImageRight}>
+            <div className='review-right-arrow arrow-img'onClick={()=>{moveImageRight();setStopScroll(true)}}>
                 <img src={Right} />
             </div>
         </div>

@@ -1789,12 +1789,10 @@ a:focus {
 
 .form-container form .submit-btn-container {
   text-align: center;
-  opacity: 0.5;
+ 
 }
 
-.last-submit-btn-container{
-  opacity: 0.5;
-}
+
 
 .form-container form #submit-btn {
   background-color: #ff5421;

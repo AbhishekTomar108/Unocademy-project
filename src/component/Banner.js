@@ -16,7 +16,7 @@ const Banner = () => {
   const [mobile, setMobile] = useState('');
   const [location, setLocation] = useState('');
   const [mode, setMode] = useState('');
-  const [submitStatus, setSubmitStatus] = useState(true);
+
  
 
   
@@ -35,20 +35,7 @@ const Banner = () => {
 
   }
 
-  const checkAgree = () => {
-
-    const agreeCheck = document.getElementById('term');
-    const submitBtn = document.getElementsByClassName('submit-btn-container')[0];
-    if (agreeCheck.checked) {
-
-      submitBtn.style.opacity = "1";
-      setSubmitStatus(false)
-    }
-    else {
-      submitBtn.style.opacity = "0.5";
-      setSubmitStatus(true)
-    }
-  }
+ 
 
 
 
@@ -148,7 +135,7 @@ const Banner = () => {
   
             <div className='submit-btn-container'>
 
-              <input type='submit' disabled={submitStatus} id='submit-btn'/>
+              <input type='submit' id='submit-btn'/>
             </div>
           </form>
         </div>
