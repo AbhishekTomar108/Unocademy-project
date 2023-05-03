@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Unocademy-project/static/css/main.ac6c9a31.css",
+    "main.css": "/Unocademy-project/static/css/main.732a2912.css",
     "main.js": "/Unocademy-project/static/js/main.1e88d434.js",
     "static/js/787.a65a3956.chunk.js": "/Unocademy-project/static/js/787.a65a3956.chunk.js",
     "static/media/FullStack-Uncodemy.pdf": "/Unocademy-project/static/media/FullStack-Uncodemy.3986c4f5902380e03253.pdf",
@@ -102,12 +102,12 @@
     "static/media/mindtickle.png": "/Unocademy-project/static/media/mindtickle.4e83836c3bca3344513f.png",
     "static/media/download.svg": "/Unocademy-project/static/media/download.b05fb54e66eeeda2c138839863a19403.svg",
     "index.html": "/Unocademy-project/index.html",
-    "main.ac6c9a31.css.map": "/Unocademy-project/static/css/main.ac6c9a31.css.map",
+    "main.732a2912.css.map": "/Unocademy-project/static/css/main.732a2912.css.map",
     "main.1e88d434.js.map": "/Unocademy-project/static/js/main.1e88d434.js.map",
     "787.a65a3956.chunk.js.map": "/Unocademy-project/static/js/787.a65a3956.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac6c9a31.css",
+    "static/css/main.732a2912.css",
     "static/js/main.1e88d434.js"
   ]
 }
