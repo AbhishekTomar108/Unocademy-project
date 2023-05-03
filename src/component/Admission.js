@@ -7,10 +7,10 @@ import step4 from '../image/step-4.png'
 const Admission = () => {
 
 	const goToBottom = () => {
-		console.log("go to running");
+		
 		const gotoValue = (document.body.scrollHeight) - 800;
 	
-		console.log("go to = ", gotoValue);
+		
 		window.scrollTo({ top: gotoValue, left: 0, behavior: 'smooth' })
 	  }
   return (

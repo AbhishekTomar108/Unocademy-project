@@ -49,10 +49,10 @@ const Banner = () => {
   }
 
   const goToBottom = () => {
-    console.log("go to running");
+   
     const gotoValue = (document.body.scrollHeight) - 800;
 
-    console.log("go to = ", gotoValue);
+    
     window.scrollTo({ top: gotoValue, left: 0, behavior: 'smooth' })
   }
 
@@ -69,10 +69,10 @@ const Banner = () => {
 
 
    else{
-      console.log('last if runnig')
-      // const url = 'http://localhost/uncodemy/formSubmit.php';
+      
+    
 
-      console.log("mode ", mode);
+     
 
       let data = new FormData();
       data.append('name', name);
@@ -97,7 +97,7 @@ const Banner = () => {
 
         else{
           alert("sorry some error is occured")
-          console.log(response)
+        
         }
       }
       catch(error) {
@@ -124,7 +124,7 @@ const Banner = () => {
           <form method='#' onSubmit={submitHandle}>
             <input type='text' name='name' placeholder="Enter your Name*" required value={name} onChange={(e) => setName(e.target.value)} />
             <input type='email' name='email' placeholder="Enter your Email*" required value={email} onChange={(e) => setEmail(e.target.value)} />
-            <input type='tel' maxlength="10" minlength="10" name='mobile' placeholder="Enter your Phone No." pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required value={mobile} onChange={(e) => setMobile(e.target.value)} />
+            <input type='tel' maxlength="10" minlength="10" name='mobile' placeholder="Enter your Phone No." required value={mobile} onChange={(e) => setMobile(e.target.value)} />
             <input type='text' name='location' placeholder="Enter your Location" required value={location} onChange={(e) => setLocation(e.target.value)} />
             <select required  onChange={e => setMode(e.target.value)}>
               <option disabled selected value=''>Select the Training Mode</option>

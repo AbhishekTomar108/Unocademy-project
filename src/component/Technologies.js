@@ -21,10 +21,10 @@ import NETLIFY from "../image/netlify.png"
 
 const Technologies = () => {
     const goToBottom = ()=>{
-        console.log("go to running");
+       
         const gotoValue = (document.body.scrollHeight)-800;
   
-        console.log("go to = ", gotoValue);
+        
         window.scrollTo({top:gotoValue, left:0, behavior:'smooth'})
       }
   return (

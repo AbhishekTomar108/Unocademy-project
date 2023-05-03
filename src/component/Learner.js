@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Left from "../image/left.png";
-import Right from "../image/right.png";
+import Left from "../image/banner-left-arrow.png";
+import Right from "../image/banner-right-arrow.png";
 import star from '../image/star.png'
 import mani from '../image/mani.jpg'
 import mohit from '../image/mohit.jpg'
@@ -56,7 +56,7 @@ const Learner = () => {
     scrollInterval = window.setInterval(() => {
        
     currentIndex = (currentIndex + direction) % (totalItems);
-    console.log('current index ', currentIndex)
+   
     if (currentIndex === -1) {
       currentIndex = (totalItems) - 1;
      
@@ -74,7 +74,7 @@ const Learner = () => {
  
  else{
     
-    console.log('else loop =',scrollInterval)
+    
     window.clearInterval(scrollInterval);
  }
 
@@ -87,7 +87,7 @@ const Learner = () => {
     }, [imageAt])
 
     const moveImageLeft = () => {
-        console.log("learner left");
+       
 
         const reviews = document.getElementsByClassName('reviews')[0];
 
@@ -102,7 +102,7 @@ const Learner = () => {
     }
 
     const moveImageRight = () => {
-        console.log("learner right");
+        
         const reviews = document.getElementsByClassName('reviews')[0];
 
         if (imageAt < 8) {

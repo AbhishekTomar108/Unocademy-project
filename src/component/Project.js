@@ -16,7 +16,7 @@ const Project = () => {
         const leftArrow = document.getElementsByClassName('project-left-arrow')[0]
 
         if (imageAt > 4 && imageAt < 7) {
-            console.log("first if");
+        
             rightArrow.style.cursor = "pointer";
             leftArrow.style.cursor = "pointer";
 
@@ -26,14 +26,14 @@ const Project = () => {
         }
 
         if (imageAt === 4) {
-            console.log("second if");
+            
 
             leftArrow.style.cursor = "auto";
             leftArrow.style.opacity = "0.5";
         }
 
         if (imageAt === 7) {
-            console.log("third if");
+          
 
             rightArrow.style.cursor = "auto";
             rightArrow.style.opacity = "0.5";
@@ -42,7 +42,7 @@ const Project = () => {
     }, [imageAt])
 
     const moveImageRight = () => {
-        console.log("right running");
+        
         const projectCard = document.getElementsByClassName('project-card')[0];
 
         if (imageAt < 7) {
@@ -57,7 +57,7 @@ const Project = () => {
     }
 
     const moveImageLeft = () => {
-        console.log("left running");
+      
         const projectCard = document.getElementsByClassName('project-card')[0];
 
         if (imageAt > 4) {

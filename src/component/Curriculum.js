@@ -8,7 +8,7 @@ const Curriculum = () => {
         const progressBar = document.getElementsByClassName("progress-bar")[0];
         const currentmodule = document.getElementsByClassName('module')[point];
         const previousmodule = document.getElementsByClassName('module')[prevPoint];
-        console.log("point = ", prevPoint);
+       
 
         previousmodule.style.display = "none";
         currentmodule.style.display = "block";
@@ -39,7 +39,7 @@ const Curriculum = () => {
     
     const showForm=()=>{
 
-        console.log("hiding bannner");
+   
       
         const formContainer = document.getElementsByClassName('form-main')[0];
             formContainer.style.visibility = "visible";

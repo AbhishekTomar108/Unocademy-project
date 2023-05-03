@@ -19,8 +19,7 @@ import deloitte from "../image/deloitte.png"
 import hcl from "../image/hcl2.png"
 import kpmg from "../image/kpmg.png"
 import bloohash from "../image/bloohash.png"
-import stories7 from "../image/stories-7.jpg"
-import stories8 from "../image/stories-8.jpg"
+import Abhishek from "../image/stories-7.jpg"
 import abhilasha from "../image/abhilasha.jpg"
 import himanshu from "../image/himanshu.jpg"
 import infosys from "../image/infosys.png"
@@ -383,7 +382,7 @@ const Creator = () => {
                 <div className='creator-img-block'>
                     <div className='thumb-container' onMouseOver={() => showCreatorDetail(5)} onMouseOut={() => hideCreatorDetails(5)}>
                         <div class="program-thumb">
-                            <img class="creator-img" src={stories7} />
+                            <img class="creator-img" src={Abhishek} />
                             <div class="program-thumb-content">
                                 <h4> Abhishek Kumar </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>

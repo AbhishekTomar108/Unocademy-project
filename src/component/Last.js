@@ -14,11 +14,10 @@ const Last = () => {
 
     const submitHandle = async(e)=>{
       e.preventDefault();
-        console.log("name ",name);
       
       
        if(mobile.length!=10){
-        alert("Please enter correct mobile no.");
+        // alert("Please enter correct mobile no.");
         
        }
   
@@ -47,7 +46,7 @@ const Last = () => {
       
               else{
                 alert("sorry some error is occured")
-                console.log(response)
+              
               }
             }
             catch(error) {
@@ -77,7 +76,7 @@ const Last = () => {
       <form onSubmit={submitHandle}>
         <input required type='text' name='name' placeholder="Enter your Name*" value={name} onChange={(e)=>setName(e.target.value)}/>
         <input required type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-         <input required type='number' name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
+         <input required type='tel' maxlength="10" minlength="10" name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
        <input required type='text' name='location'placeholder="Enter your Location"  value={location} onChange={(e)=>setLocation(e.target.value)}/>
        <select required placeholder='select the training mode' onChange={e=>setMode(e.target.value)}>
         <option disabled selected value=''>Select the Training Mode</option>
