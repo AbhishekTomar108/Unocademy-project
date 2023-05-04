@@ -332,6 +332,7 @@ b{
   visibility: visible !important;
   width: fit-content !important;
   top: -60% !important;
+  right: auto !important;
 }
 
 
@@ -1750,6 +1751,7 @@ a:focus {
 .form-main {
   position: absolute;
   top: 19%;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: center;
