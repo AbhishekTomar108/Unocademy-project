@@ -90,7 +90,6 @@ button {
 }
 
 .banner-at-point {
-  width: 100%;
   margin-left: 10%;
 }
 
@@ -283,7 +282,7 @@ b{
 
 .placement-box-right {
   display: grid;
-  grid-template-columns: 57% 50%;
+  grid-template-columns: 57% 47%;
   column-gap: 45%;
   row-gap: 40%;
 }
@@ -331,7 +330,7 @@ b{
 .last-form-main{
   visibility: visible !important;
   width: fit-content !important;
-  top: -60% !important;
+  top: -15% !important;
   right: auto !important;
 }
 

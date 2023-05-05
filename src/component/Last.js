@@ -7,8 +7,7 @@ const Last = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [mobile, setMobile] = useState('');
-    const [location, setLocation] = useState('');
-    const [mode, setMode] = useState('');
+   
    
 
 
@@ -28,8 +27,7 @@ const Last = () => {
             data.append('name', name);
             data.append('email', email);
             data.append('mobile', mobile);
-            data.append('location', location);
-            data.append('mode', mode);
+           
   
             try{
               const response = await axios.post('https://albuminoid-contempt.000webhostapp.com/formSubmit.php', data);
@@ -38,9 +36,7 @@ const Last = () => {
               if(response.data===1){
                 window.location.href=pdfFile;
                      setEmail('')
-                      setLocation('')
                       setMobile('')
-                      setMode('')
                       setName('');
               }
       
@@ -77,12 +73,7 @@ const Last = () => {
         <input required type='text' name='name' placeholder="Enter your Name*" value={name} onChange={(e)=>setName(e.target.value)}/>
         <input required type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
          <input required type='tel' maxlength="10" minlength="10" name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
-       <input required type='text' name='location'placeholder="Enter your Location"  value={location} onChange={(e)=>setLocation(e.target.value)}/>
-       <select required placeholder='select the training mode' onChange={e=>setMode(e.target.value)}>
-        <option disabled selected value=''>Select the Training Mode</option>
-        <option>Online</option>
-        <option>Class room</option>
-       </select>
+      
 
        
         <div className='last-submit-btn-container'>

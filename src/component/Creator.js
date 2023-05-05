@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Left from "../image/banner-left-arrow.png";
 import Right from "../image/banner-right-arrow.png";
 import Riya from "../image/riyatiwari (1).jpg"
-import TANVI from "../image/tanvi.jpg"
+import TANVI from "../image/tanvi.jpg"  
 import Ritesh from "../image/riteshSingh.jpg"
 import ADITYA from "../image/adityaSingh.jpg"
 import RAJENDRA from "../image/rajendra.jpg"
@@ -28,6 +28,22 @@ import srm from "../image/srm.jpg"
 import sikkim from "../image/sikkim.png"
 import Amazon from "../image/Amazon_logo.svg.png"
 import tcs from "../image/tcs.png"
+import vishal from "../image/vishal.jpg"
+import shruti from "../image/shruti.jpg"
+import prashant from "../image/prashant.jpg"
+import babita from "../image/babita.jpg"
+import neelam from "../image/neelam.jpg"
+import arun from "../image/arun.jpg"
+import juhi from "../image/juhi.jpg"
+import deepak from "../image/deepak.jpg"
+import mindit from "../image/mindit.png"
+import appinventive from "../image/appinventive.png"
+import delloite from "../image/2560px-Deloitte.svg.png"
+import maruti from "../image/maruti.png"
+import rapidops from "../image/rapidops.png"
+import ibm from "../image/IBM_logo.svg.png"
+import techexactly from "../image/techexactly.jpeg"
+import poonam from "../image/riyatiwari.jpg"
 
 
 const Creator = () => {
@@ -47,7 +63,7 @@ const Creator = () => {
         const secondrightArrow = document.getElementsByClassName('second-right-arrow')[0]
         const secondleftArrow = document.getElementsByClassName('second-left-arrow')[0]
 
-        if (imageAt > 3 && imageAt < 5) {
+        if (imageAt > 3 && imageAt < 9) {
             rightArrow.style.cursor = "pointer";
             leftArrow.style.cursor = "pointer";
 
@@ -61,11 +77,11 @@ const Creator = () => {
             leftArrow.style.opacity = "0.5"
         }
 
-        if (imageAt === 5) {
+        if (imageAt === 9) {
             rightArrow.style.cursor = "auto";
             rightArrow.style.opacity = "0.5"
         }
-        if (imageAt2 > 3 && imageAt2 < 5) {
+        if (imageAt2 > 3 && imageAt2 < 9) {
             secondrightArrow.style.cursor = "pointer";
             secondleftArrow.style.cursor = "pointer";
 
@@ -79,7 +95,7 @@ const Creator = () => {
             secondleftArrow.style.opacity = "0.5"
         }
 
-        if (imageAt2 === 5) {
+        if (imageAt2 === 9) {
             secondrightArrow.style.cursor = "auto";
             secondrightArrow.style.opacity = "0.5"
         }
@@ -138,7 +154,7 @@ const Creator = () => {
            
             const creatorImgBlock = document.getElementsByClassName('creator-img-block')[0];
     
-            if (imageAt < 5) {
+            if (imageAt < 9) {
     
                 const nextMove = moveCreatorImg - 26;
                 creatorImgBlock.style.transform = "translate(" + nextMove + "vw)";
@@ -156,7 +172,7 @@ const Creator = () => {
     
             const creatorImgBlock2 = document.getElementsByClassName('creator-img-block')[1];
     
-            if (imageAt2 < 5) {
+            if (imageAt2 < 9) {
     
                 const nextMove2 = moveCreatorImg2 - 26;
                 creatorImgBlock2.style.transform = "translate(" + nextMove2 + "vw)";
@@ -349,9 +365,9 @@ const Creator = () => {
 
                     <div className='thumb-container' onMouseOver={() => showCreatorDetail(4)} onMouseOut={() => hideCreatorDetails(4)}>
                         <div class="program-thumb">
-                            <img class="creator-img" src={RAJENDRA} />
+                            <img class="creator-img" src={poonam} />
                             <div class="program-thumb-content">
-                                <h4> Rajendra Yadav </h4>
+                                <h4> Poonam </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
                                 <p className='college-img'> <img src={indianuniversity} className='college-img-2' /> &rarr;<img src={hcl} className='college-img-2' /> </p>
 
@@ -360,6 +376,78 @@ const Creator = () => {
                         <div className='creator-details'>
                             <div className='details'>
                                 "The turning point in my career came when I joined Uncodemy which really helped me get well-versed in almost every aspect of Software Testing. Uncodemy is a great platform to expand your career in your dream field. Thanks to my mentors Shivendra Sir, Shubham Sir, and Anam Ma'am for guiding & supporting me enough to be working at the world's largest company by revenue."
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(5)} onMouseOut={() => hideCreatorDetails(5)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={vishal} />
+                            <div class="program-thumb-content">
+                                <h4> Vishal Singh </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={amity} className='college-img-2' /> &rarr;<img src={mindit} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "I had a great experience with the Data Science course at Uncodemy. The instructors were very knowledgeable and the course content was well-structured and easy to follow. The projects were challenging but also fun, and they really helped me develop my skills in data analysis and machine learning. The community of students was also very supportive and made the learning experience even more enjoyable. Overall, I would definitely recommend this course to anyone who wants to learn about data science."
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(6)} onMouseOut={() => hideCreatorDetails(6)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={shruti} />
+                            <div class="program-thumb-content">
+                                <h4> Shruti </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={indianuniversity} className='college-img-2' /> &rarr;<img src={appinventive} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "I have done Automation testing course at Uncodemy. Best place for learning automation testing course (selenium). I am very much satisfied with the course and its content. Faculty with great experience and they are always available for answering queries even after course completion. Uncodemy provides you training to work on live projects. They also provide good placements. Will definitely refer to others. Thank you so much Uncodemy team and vishnu sir..!"
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(7)} onMouseOut={() => hideCreatorDetails(7)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={prashant} />
+                            <div class="program-thumb-content">
+                                <h4> Prashant </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={srm} className='college-img-2' /> &rarr;<img src={techexactly} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "As usual, I did some research on the internet and identified Uncodemy is a good institute for Selenium testing. Then went there and got trained by Bishnu Sir. It was a superb training institute. Now I am successfully able to automate any web application. But you need to follow the faculty regularly and should do exercises as explained by him. Guys!!! please go and join and explore more good opportunities in Automation testing rather than restrict yourself to Manual Testing."
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(8)} onMouseOut={() => hideCreatorDetails(8)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={babita} />
+                            <div class="program-thumb-content">
+                                <h4> Babita Singh </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={sikkim} className='college-img-2' /> &rarr;<img src={hcl} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "Great Experience with Uncodemy. All industrial Experts faculty teach and guide each and every student. I took Automation Testing Software classes here. All teachers are supporting here to teach and to make the candidates understand not just theoretically but practically..."
                             </div>
                             <hr className='program-thumb-content-hr'></hr>
 
@@ -380,7 +468,7 @@ const Creator = () => {
 
                 
                 <div className='creator-img-block'>
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(5)} onMouseOut={() => hideCreatorDetails(5)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(9)} onMouseOut={() => hideCreatorDetails(9)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={Abhishek} />
                             <div class="program-thumb-content">
@@ -402,7 +490,7 @@ const Creator = () => {
                         </div>
 
                     </div>
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(6)} onMouseOut={() => hideCreatorDetails(6)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(10)} onMouseOut={() => hideCreatorDetails(10)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={SAURABH} />
                             <div class="program-thumb-content">
@@ -424,7 +512,7 @@ const Creator = () => {
 
                    
 
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(7)} onMouseOut={() => hideCreatorDetails(7)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(11)} onMouseOut={() => hideCreatorDetails(11)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={abhilasha} />
                             <div class="program-thumb-content">
@@ -445,7 +533,7 @@ const Creator = () => {
                         </div>
                     </div>
 
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(8)} onMouseOut={() => hideCreatorDetails(8)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(12)} onMouseOut={() => hideCreatorDetails(12)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={himanshu} />
                             <div class="program-thumb-content">
@@ -465,7 +553,7 @@ const Creator = () => {
 
                     </div>
 
-                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(9)} onMouseOut={() => hideCreatorDetails(9)}>
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(13)} onMouseOut={() => hideCreatorDetails(13)}>
                         <div class="program-thumb">
                             <img class="creator-img" src={RAJENDRA} />
                             <div class="program-thumb-content">
@@ -478,6 +566,82 @@ const Creator = () => {
                         <div className='creator-details'>
                             <div className='details'>
                                 "The turning point in my career came when I joined Uncodemy which really helped me get well-versed in almost every aspect of Software Testing. Uncodemy is a great platform to expand your career in your dream field. Thanks to my mentors Shivendra Sir, Shubham Sir, and Anam Ma'am for guiding & supporting me enough to be working at the world's largest company by revenue."
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(14)} onMouseOut={() => hideCreatorDetails(14)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={neelam} />
+                            <div class="program-thumb-content">
+                                <h4> Neelam Nishad </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={ashoka} className='college-img-2' /> &rarr;<img src={delloite} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "I joined Uncodemy for Manual Testing and Automation Testing course and my trainer was Shivendra sir and bishnu sir. It is one of the best experience. The way he taught us was totally Amazing. He started everything from basics and he always make sure that each & every one of us get what he is trying to explain. Classes were very interactive. Due to Shivendra sir I got confidence in coding specifically in Java language & Automation frameworks. No matter whether you are from IT background or from Non- IT background you will going to get a lot of knowledge and confidence. At the end, I will just say that I was so lucky to join Uncodemy..!!"
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(15)} onMouseOut={() => hideCreatorDetails(15)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={arun} />
+                            <div class="program-thumb-content">
+                                <h4> Arun Pal </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={indianuniversity} className='college-img-2' /> &rarr;<img src={maruti} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "I joined Uncodemy Noida centre to pursue course in Data Acience and had a great experience. Experts available at the center are highly qualified as well as experienced with expertise in respective field. I enjoyed the studying environment as well as the support provided by the expertise. I developed new ideas and perspective about Data Analytics as well as developed a few. I would recommend you to join Uncodemy in order to gain knowledge and increase ability to understand different technologies."
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(16)} onMouseOut={() => hideCreatorDetails(16)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={juhi} />
+                            <div class="program-thumb-content">
+                                <h4> Juhi Sharma </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={galgotias} className='college-img-2' /> &rarr;<img src={rapidops} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "My experience with Uncodemy has been very enriching. Being a student from a completely non IT background has never been a difficulty because of their practical ways of teaching and hands on case studies. The faculty here is always there to guide and help the students in solving their doubts. Uncodemy also provides lifetime placement assistance. I would highly recommend anyone interested in the Data Science course and Data Analytics course to go to this institution. Thank You"
+                            </div>
+                            <hr className='program-thumb-content-hr'></hr>
+
+                        </div>
+                    </div>
+
+                    <div className='thumb-container' onMouseOver={() => showCreatorDetail(17)} onMouseOut={() => hideCreatorDetails(17)}>
+                        <div class="program-thumb">
+                            <img class="creator-img" src={deepak} />
+                            <div class="program-thumb-content">
+                                <h4> Deepak </h4>
+                                <hr className='program-thumb-content-hr-1'></hr>
+                                <p className='college-img'> <img src={nalanda} className='college-img-2' /> &rarr;<img src={ibm} className='college-img-2' /> </p>
+
+                            </div>
+                        </div>
+                        <div className='creator-details'>
+                            <div className='details'>
+                                "I got trained in MERN Stack development from Uncodemy, their teaching methodology is very practical, Industry relevant and interactive, our mentor Rahul Sir made the concepts very clear and simple, taught us the best ways and practices that I could never learn anywhere else before, mentors are supportive and friendly. I got good hands-on experience as they provide relevant assignments and projects, they will focus, analyze, teach, support each and every student. within short span of time over there I am able to build complex projects. it is the best place to learn MERN full Stack development Course. Thank You"
                             </div>
                             <hr className='program-thumb-content-hr'></hr>
 

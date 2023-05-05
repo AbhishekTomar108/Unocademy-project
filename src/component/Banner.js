@@ -14,14 +14,7 @@ const Banner = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
-  const [location, setLocation] = useState('');
-  const [mode, setMode] = useState('');
-
- 
-
   
-
- 
 
   const hideBanner = () => {
 
@@ -78,9 +71,6 @@ const Banner = () => {
       data.append('name', name);
       data.append('email', email);
       data.append('mobile', mobile);
-      data.append('location', location);
-      data.append('mode', mode);
-
 
       try{
         const response = await axios.post('https://albuminoid-contempt.000webhostapp.com/formSubmit.php', data);
@@ -89,10 +79,8 @@ const Banner = () => {
         if(response.data===1){
           window.location.href=pdfFile;
                setEmail('')
-                setLocation('')
-                setMobile('')
-                setMode('')
-                setName('');
+               setMobile('')
+               setName('');
         }
 
         else{
@@ -125,12 +113,7 @@ const Banner = () => {
             <input type='text' name='name' placeholder="Enter your Name*" required value={name} onChange={(e) => setName(e.target.value)} />
             <input type='email' name='email' placeholder="Enter your Email*" required value={email} onChange={(e) => setEmail(e.target.value)} />
             <input type='tel' maxlength="10" minlength="10" name='mobile' placeholder="Enter your Phone No." required value={mobile} onChange={(e) => setMobile(e.target.value)} />
-            <input type='text' name='location' placeholder="Enter your Location" required value={location} onChange={(e) => setLocation(e.target.value)} />
-            <select required  onChange={e => setMode(e.target.value)}>
-              <option disabled selected value=''>Select the Training Mode</option>
-              <option value='online'>Online</option>
-              <option value='classRoom'>Class room</option>
-            </select>
+           
 
   
             <div className='submit-btn-container'>

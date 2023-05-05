@@ -86,6 +86,7 @@ const PlacementStat = () => {
         </div>
         </div>
 
+      <div className='company-container'>
         <div className='company'>
         <h2>Companies that trust Uncodemy learners</h2>
         <div className='company-logo-moving'>
@@ -127,6 +128,7 @@ const PlacementStat = () => {
             
             </ul> 
             </marquee>
+        </div>
         </div>
         </div>
     </div>
