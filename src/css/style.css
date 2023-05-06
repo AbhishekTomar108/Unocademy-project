@@ -258,6 +258,30 @@ b{
   transform: translate(-50%, -50%);
 } */
 
+.last-star {
+  font-size: x-large;
+  width: 50px;
+  display: inline-block;
+  color: gray;
+}
+.last-star:last-child {
+  margin-right: 0;
+}
+.last-star:before {
+  content:'\2605';
+}
+.last-star.on {
+  color: gold;
+}
+.last-star.half:after {
+  content:'\2605';
+  color: gold;
+  position: absolute;
+  margin-left: -20px;
+  width: 10px;
+  overflow: hidden;
+}
+
 .placement-container {
   background-image: url(/src/image/placement.jpg);
   background-size: cover;
@@ -278,6 +302,10 @@ b{
 .placement-box-left h1 {
   margin: 0;
   font-weight: 500;
+}
+
+.placement-box-left{
+  margin-bottom: 20px;
 }
 
 .placement-box-right {
@@ -613,8 +641,8 @@ b{
 }
 
 .star-section img {
-  height: 17px;
-  width: 17px;
+  height: 20px;
+  width: 11vw;
 }
 
 .company-icon img {

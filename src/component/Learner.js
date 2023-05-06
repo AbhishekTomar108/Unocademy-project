@@ -7,6 +7,11 @@ import mohit from '../image/mohit.jpg'
 import sanoj from '../image/sanoj.jpg'
 import nitin from '../image/nitin.jpg'
 import david from '../image/david.jpg'
+import rajendra from '../image/rajendra.jpg'
+import himanshu from '../image/himanshu.jpg'
+import deepak from '../image/deepak.jpg'
+import abhilasha from '../image/abhilasha.jpg'
+import saurabh from '../image/saurabh.jpg'
 
 const Learner = () => {
 
@@ -21,7 +26,7 @@ const Learner = () => {
         const leftArrow = document.getElementsByClassName('review-left-arrow')[0];
         const RightArrow = document.getElementsByClassName('review-right-arrow')[0];
 
-        if (imageAt > 2 && imageAt < 8) {
+        if (imageAt > 2 && imageAt < 10) {
             leftArrow.style.cursor = "pointer";
             RightArrow.style.cursor = "pointer";
 
@@ -34,7 +39,7 @@ const Learner = () => {
             leftArrow.style.opacity = "0.5";
         }
 
-        if (imageAt === 8) {
+        if (imageAt === 10) {
             RightArrow.style.cursor = "auto";
             RightArrow.style.opacity = "0.5";
         }
@@ -105,7 +110,7 @@ const Learner = () => {
         
         const reviews = document.getElementsByClassName('reviews')[0];
 
-        if (imageAt < 8) {
+        if (imageAt < 10) {
             const nextmove = imageMove - 36;
             reviews.style.transform = "translate(" + nextmove + "vw)";
             setImageMove(nextmove);
@@ -255,11 +260,11 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                            <img src={david}/>
+                            <img src={deepak}/>
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                <h3>Raja Singh k</h3>
+                                <h3>Deepak</h3>
                                 </div>
                                 <div className="star-img-group">
                                     <img src={star} />
@@ -280,11 +285,11 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                            <img src={david}/>
+                            <img src={himanshu}/>
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                <h3>Abhishek Singh</h3>
+                                <h3>Himanshu</h3>
                                 </div>
                                 <div className="star-img-group">
                                     <img src={star} />
@@ -307,11 +312,11 @@ const Learner = () => {
                     <div class="review-thumb">
                         <div class="media">
                             <div class="review-img">
-                            <img src={david}/>
+                            <img src={rajendra}/>
                             </div>
                             <div class="media-body align-self-center">
                                 <div class="review-title">
-                                <h3>Mithun Mohli</h3>
+                                <h3>Rajendra</h3>
                                 </div>
                                 <div className="star-img-group">
                                     <img src={star} />
@@ -324,6 +329,56 @@ const Learner = () => {
                                 <hr></hr>
                                 <p>
                                     "Uncodemy is the Best learning institute for web development courses. I have completed MERN Stack Developement course in Noida from Uncodemy. Trainers and other faculties are very supportive and co-operative. Its been a great learning experience for me. I suggest Uncodemy for everyone who wants build there carrier in web development field. I'm very much thankful to Ajay Sir, Anam Mam, and Pradyumn Sir fot their support."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-thumb">
+                        <div class="media">
+                            <div class="review-img">
+                            <img src={abhilasha}/>
+                            </div>
+                            <div class="media-body align-self-center">
+                                <div class="review-title">
+                                <h3>Abhilasha</h3>
+                                </div>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                </div>
+
+                                <hr></hr>
+                                <p>
+                                    "I got trained in JAVA Full Stack development from Uncodemy, their teaching methodology is very practical, Industry relevant and interactive, our mentor Rahul Sir made the concepts very clear and simple, taught us the best ways and practices that I could never learn anywhere else before, mentors are supportive and friendly. I got good hands-on experience as they provide relevant assignments and projects, they will focus, analyze, teach, support each and every student. within short span of time over there I am able to build complex projects. it is the best place to learn MERN full Stack development Course. Thank You"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-thumb">
+                        <div class="media">
+                            <div class="review-img">
+                            <img src={saurabh}/>
+                            </div>
+                            <div class="media-body align-self-center">
+                                <div class="review-title">
+                                <h3>saurabh</h3>
+                                </div>
+                                <div className="star-img-group">
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                    <img src={star} />
+                                </div>
+
+                                <hr></hr>
+                                <p>
+                                    "I joined Uncodemy as a Python full Stack course. I was fully satisfied with this solutions by the way of teaching skills given by trainer Ajay sir. while coming to the placement, HR Anam mam who always motivate and gave confident to got placed and other staff like Pooja mam and udit sir are very friendly regarding to discuss anything. A very big thanks to the whole Uncodemy team for the support."
                                 </p>
                             </div>
                         </div>

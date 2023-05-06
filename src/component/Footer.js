@@ -7,6 +7,8 @@ import facebookIcon from "../image/facebook-icon-2.png"
 import JustDialIcon from "../image/just-dial-icon.jpg"
 import urban from "../image/urban.jpg"
 import instagram from "../image/insta1.png"
+import halfStar from "../image/half-star-2.png"
+import star4 from "../image/4.9-star.jpg"
 
 const Footer = () => {
   return (
@@ -32,11 +34,7 @@ const Footer = () => {
                     <div className='review-section'>
                         <div className='star-review-group'>
                         <div className='star-section'>
-                            <img src={star}/>
-                            <img src={star}/>
-                            <img src={star}/>
-                            <img src={star}/>
-                            <img src={star}/>
+                           <img src={star4}/>
                         </div>
                         <div className='review-text top-text-review'>
                             4.9 out of 5 based on 10112 votes

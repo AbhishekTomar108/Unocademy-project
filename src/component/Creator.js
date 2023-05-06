@@ -27,7 +27,7 @@ import galgotias from "../image/galgotias.png"
 import srm from "../image/srm.jpg"
 import sikkim from "../image/sikkim.png"
 import Amazon from "../image/Amazon_logo.svg.png"
-import tcs from "../image/tcs.png"
+import mamaearth from "../image/mamaearth.png"
 import vishal from "../image/vishal.jpg"
 import shruti from "../image/shruti.jpg"
 import prashant from "../image/prashant.jpg"
@@ -375,7 +375,7 @@ const Creator = () => {
                         </div>
                         <div className='creator-details'>
                             <div className='details'>
-                                "The turning point in my career came when I joined Uncodemy which really helped me get well-versed in almost every aspect of Software Testing. Uncodemy is a great platform to expand your career in your dream field. Thanks to my mentors Shivendra Sir, Shubham Sir, and Anam Ma'am for guiding & supporting me enough to be working at the world's largest company by revenue."
+                                "I joined for selenium automation and manual testing in Uncodemy institute on August month and my vision towards software industry is change felt like easy now Because the teaching style is too good. Explanation is easy to understand and the trainer will help us for any difficulty and problem. Really very nice place to get more technical skills and even job too."
                             </div>
                             <hr className='program-thumb-content-hr'></hr>
 
@@ -474,7 +474,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Abhishek Kumar </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'><img src={galgotias} className='college-img-2' /> &rarr; <img src={tcs} className='college-img-2' /> </p>
+                                <p className='college-img'><img src={galgotias} className='college-img-2' /> &rarr; <img src={mamaearth} className='college-img-2' /> </p>
                             </div>
 
                         </div>
