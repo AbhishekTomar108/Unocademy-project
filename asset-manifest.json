@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Unocademy-project/static/css/main.eee41c2d.css",
-    "main.js": "/Unocademy-project/static/js/main.5ecc346b.js",
+    "main.css": "/Unocademy-project/static/css/main.4589448c.css",
+    "main.js": "/Unocademy-project/static/js/main.76d9e950.js",
     "static/js/787.a65a3956.chunk.js": "/Unocademy-project/static/js/787.a65a3956.chunk.js",
     "static/media/FullStack-Uncodemy.pdf": "/Unocademy-project/static/media/FullStack-Uncodemy.3986c4f5902380e03253.pdf",
     "static/media/icon-multiple.svg": "/Unocademy-project/static/media/icon-multiple.cd65990611656a2079e6.svg",
@@ -21,7 +21,6 @@
     "static/media/learning.jpg": "/Unocademy-project/static/media/learning.f44604f910740ab1629a.jpg",
     "static/media/nitin.jpg": "/Unocademy-project/static/media/nitin.4d85f380596d6093e050.jpg",
     "static/media/adityaSingh.jpg": "/Unocademy-project/static/media/adityaSingh.664f5402cef10847ca18.jpg",
-    "static/media/tcs.png": "/Unocademy-project/static/media/tcs.4cb06eaa89d5e494dbae.png",
     "static/media/fullstack-img.png": "/Unocademy-project/static/media/fullstack-img.92e740bf24fd4356eb34.png",
     "static/media/clock.jpg": "/Unocademy-project/static/media/clock.1ba9b81dcb06b26c480c.jpg",
     "static/media/phonepe.png": "/Unocademy-project/static/media/phonepe.1e9eeddfdcb9c478c774.png",
@@ -59,6 +58,7 @@
     "static/media/deepak.jpg": "/Unocademy-project/static/media/deepak.9563f02aac8c07e111eb.jpg",
     "static/media/bootstrap.png": "/Unocademy-project/static/media/bootstrap.9cc938d1c1c7ae7297ea.png",
     "static/media/samsung.png": "/Unocademy-project/static/media/samsung.d0b0555eae0543bf3b7f.png",
+    "static/media/mamaearth.png": "/Unocademy-project/static/media/mamaearth.c540ad1f03e3d2b4d514.png",
     "static/media/shruti.jpg": "/Unocademy-project/static/media/shruti.770e555947a2a0d600b2.jpg",
     "static/media/2560px-Deloitte.svg.png": "/Unocademy-project/static/media/2560px-Deloitte.svg.72470a3618f4d7086d88.png",
     "static/media/parcel.png": "/Unocademy-project/static/media/parcel.dd571a17f05884575345.png",
@@ -75,6 +75,7 @@
     "static/media/mongodb.png": "/Unocademy-project/static/media/mongodb.479432de633a4886d3dc.png",
     "static/media/nvidia.png": "/Unocademy-project/static/media/nvidia.558cd614c9e9b8f19f4a.png",
     "static/media/e-commerce.jpg": "/Unocademy-project/static/media/e-commerce.7af986a18d5b020e0e46.jpg",
+    "static/media/4.9-star.jpg": "/Unocademy-project/static/media/4.9-star.c70f146bde8ee9549f21.jpg",
     "static/media/step-4.png": "/Unocademy-project/static/media/step-4.03d3d95ef95b76ac2b1e.png",
     "static/media/netflix.png": "/Unocademy-project/static/media/netflix.77ba64d8813d5a26e7e7.png",
     "static/media/ola.png": "/Unocademy-project/static/media/ola.6b93eb1dafb81ae5006d.png",
@@ -108,6 +109,7 @@
     "static/media/nalanda.png": "/Unocademy-project/static/media/nalanda.471ded853f6f4d0734f3.png",
     "static/media/mysql.png": "/Unocademy-project/static/media/mysql.4676ad983d6bd3e9fac9.png",
     "static/media/tracking.jpg": "/Unocademy-project/static/media/tracking.19c162f9530a940a993f.jpg",
+    "static/media/half-star-2.png": "/Unocademy-project/static/media/half-star-2.9065f746f1fd0fa56408.png",
     "static/media/step-3.png": "/Unocademy-project/static/media/step-3.cc712ff2bb0e5dc4f426.png",
     "static/media/sikkim.png": "/Unocademy-project/static/media/sikkim.5a8ec7d7a35aaab1caaa.png",
     "static/media/kpmg.png": "/Unocademy-project/static/media/kpmg.e108033e3b6447807e89.png",
@@ -115,12 +117,12 @@
     "static/media/mindtickle.png": "/Unocademy-project/static/media/mindtickle.4e83836c3bca3344513f.png",
     "static/media/download.svg": "/Unocademy-project/static/media/download.b05fb54e66eeeda2c138839863a19403.svg",
     "index.html": "/Unocademy-project/index.html",
-    "main.eee41c2d.css.map": "/Unocademy-project/static/css/main.eee41c2d.css.map",
-    "main.5ecc346b.js.map": "/Unocademy-project/static/js/main.5ecc346b.js.map",
+    "main.4589448c.css.map": "/Unocademy-project/static/css/main.4589448c.css.map",
+    "main.76d9e950.js.map": "/Unocademy-project/static/js/main.76d9e950.js.map",
     "787.a65a3956.chunk.js.map": "/Unocademy-project/static/js/787.a65a3956.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eee41c2d.css",
-    "static/js/main.5ecc346b.js"
+    "static/css/main.4589448c.css",
+    "static/js/main.76d9e950.js"
   ]
 }
