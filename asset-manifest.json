@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Unocademy-project/static/css/main.4589448c.css",
-    "main.js": "/Unocademy-project/static/js/main.04316639.js",
+    "main.css": "/Unocademy-project/static/css/main.13efbd4b.css",
+    "main.js": "/Unocademy-project/static/js/main.2f634a4d.js",
     "static/js/787.a65a3956.chunk.js": "/Unocademy-project/static/js/787.a65a3956.chunk.js",
     "static/media/FullStack-Uncodemy.pdf": "/Unocademy-project/static/media/FullStack-Uncodemy.3986c4f5902380e03253.pdf",
     "static/media/icon-multiple.svg": "/Unocademy-project/static/media/icon-multiple.cd65990611656a2079e6.svg",
@@ -117,12 +117,12 @@
     "static/media/mindtickle.png": "/Unocademy-project/static/media/mindtickle.4e83836c3bca3344513f.png",
     "static/media/download.svg": "/Unocademy-project/static/media/download.b05fb54e66eeeda2c138839863a19403.svg",
     "index.html": "/Unocademy-project/index.html",
-    "main.4589448c.css.map": "/Unocademy-project/static/css/main.4589448c.css.map",
-    "main.04316639.js.map": "/Unocademy-project/static/js/main.04316639.js.map",
+    "main.13efbd4b.css.map": "/Unocademy-project/static/css/main.13efbd4b.css.map",
+    "main.2f634a4d.js.map": "/Unocademy-project/static/js/main.2f634a4d.js.map",
     "787.a65a3956.chunk.js.map": "/Unocademy-project/static/js/787.a65a3956.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4589448c.css",
-    "static/js/main.04316639.js"
+    "static/css/main.13efbd4b.css",
+    "static/js/main.2f634a4d.js"
   ]
 }
