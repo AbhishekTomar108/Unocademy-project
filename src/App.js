@@ -14,14 +14,7 @@ import "./css/icon.css"
 import Last from "./component/Last.js"
 import Footer from "./component/Footer.js"
 
-import {
-  // BrowserRouter as Router,
-  BrowserRouter,
-  Routes,
-  Route,
-  HashRouter
- 
-} from "react-router-dom";
+
 
 
 function App() {
@@ -30,11 +23,8 @@ function App() {
     <div>
    
   <Nav/>
-<HashRouter>
+
   <Banner/>
-  {/* <Routes>
-    <Route exact path="/footer" element={<Footer/>}/>
-  </Routes> */}
   <PlacementStat/>
   <Bootcamp/>
   <Creator/>
@@ -47,7 +37,7 @@ function App() {
   <Last/>
  
   <Footer/>
-  </HashRouter>
+
 
     </div>
   );

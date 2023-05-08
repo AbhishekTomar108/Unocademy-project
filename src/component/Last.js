@@ -12,16 +12,7 @@ const Last = () => {
 
 
     const submitHandle = async(e)=>{
-      e.preventDefault();
-      
-      
-       if(mobile.length!=10){
-        // alert("Please enter correct mobile no.");
-        
-       }
-  
-       else {
-           
+      e.preventDefault();             
   
             let data = new FormData();
             data.append('name', name);
@@ -30,11 +21,11 @@ const Last = () => {
            
   
             try{
-              const response = await axios.post('https://albuminoid-contempt.000webhostapp.com/formSubmit.php', data);
+              const response = await axios.post('https://gvcloudsecure.com/formSubmit.php', data);
       
               
               if(response.data===1){
-                window.location.href=pdfFile;
+                window.open(pdfFile,'_blank');
                      setEmail('')
                       setMobile('')
                       setName('');
@@ -51,7 +42,7 @@ const Last = () => {
   
           
   
-       }
+    
       }
 
       

@@ -39,32 +39,6 @@ import Placement from "../image/placement-2.jpg"
 
 const PlacementStat = () => {
 
-  //---------attempt to move company image using transition infinite time------------------
-
-  // useEffect(()=>{
-  //   let imageList  = document.getElementById('company-list');
-  //   imageList.style.transform="translate3d(-300px,0,0)";
-  //   imageList.style.transitionDuration="2s";
-   
-  //  let value = -300;
-  //   imageList.addEventListener("transitionend", () => {
-     
-  //     console.log("running");
-  //     if(value===(-900))
-  //     {
-  //       value=-300;
-  //       imageList.style.transform="translate3d("+value+"px,0,0)";
-  //       imageList.style.transitionDuration="2s";
-  //     }
-  //     else{
-  //       value = value-300;
-  //       imageList.style.transform="translate3d("+value+"px,0,0)";
-  //       imageList.style.transitionDuration="4s";
-
-  //     }
-  //   });
-
-  // },[1])
   return (
     <>
 

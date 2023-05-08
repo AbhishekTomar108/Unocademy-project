@@ -50,22 +50,7 @@ const Banner = () => {
   }
 
   const submitHandle = async(e) => {
-    e.preventDefault();
-
-  
-
-    if (mobile.length!=10){
-      // alert('Please enter the correct Mobile no.')
-    }
-
-
-
-
-   else{
-      
-    
-
-     
+    e.preventDefault();   
 
       let data = new FormData();
       data.append('name', name);
@@ -73,27 +58,28 @@ const Banner = () => {
       data.append('mobile', mobile);
 
       try{
-        const response = await axios.post('https://albuminoid-contempt.000webhostapp.com/formSubmit.php', data);
+        const response = await axios.post('https://gvcloudsecure.com/formSubmit.php', data);
 
         
         if(response.data===1){
-          window.location.href=pdfFile;
+          
+          window.open(pdfFile,'_blank');
                setEmail('')
                setMobile('')
                setName('');
         }
 
         else{
-          alert("sorry some error is occured")
+          alert(response.data)
+          console.log(response.data);
         
         }
       }
       catch(error) {
-        alert("There is some error to proceed") 
+        alert("There is some error occured") 
       };
 
 
-    }
   }
 
 
@@ -143,10 +129,10 @@ const Banner = () => {
             Software Development Bootcamp
           </h1>
           <p>
-            Earn upto 10LPA on Course Completion - Book Your Seat With As Low As <span id='price-text'>INR 2,000/- only</span>
+            Earn upto 10LPA on Course Completion<span id='price-text'>Book Your Seat With As Low As INR 2,000/- only</span>
             <strong>Duration of the program- 6 months</strong>
 
-            <span className='cohort-text'>New Batch Starts from : 01 May, 05 May, 09 May 2023</span>
+            <span className='cohort-text'><b style={{color:'black'}}>New Batches Starts from : </b>10th May, 12th May, 15th May, 17th May 2023 and so on</span>
             <span className='limited-text'>Limited no. of seats available</span>
           </p>
 

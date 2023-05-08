@@ -117,17 +117,6 @@ button {
   font-weight: 700;
   color: #666;
 }
-/* .banner-at-point li::after {
-  position: absolute;
-  content: "";
-  top: 4px;
-  right: 10px;
-  color: #ffffff;
-  background-image: url(../image/banner-right-arrow.png);
-  width: 6px;
-  height: 10px;
-  background-position: -2px -19px;
-} */
 
 .banner-at-point li:last-child {
   padding-right: 0;
@@ -150,6 +139,7 @@ button {
   max-width: 50%;
 }
 .banner-lower-box .lower-box-left h2 {
+  color: #ff5421;
   font-size: 16px;
   text-align: initial;
 }
@@ -176,7 +166,7 @@ b{
   line-height: 25px;
   color: #666666;
   font-weight: 400;
-  max-width: 375px;
+  max-width: 100%;
 }
 
 .banner-lower-box .lower-box-left p strong {
@@ -200,7 +190,7 @@ b{
 
 .btn-group {
   width: 82vw;
-  margin: -50px auto 0 auto;
+  margin: -35px auto 0 auto;
   display: flex;
   column-gap: 20px;
 }
@@ -251,12 +241,7 @@ b{
   border-radius: 10px;
 }
 
-/* .lower-box-right span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+
 
 .last-star {
   font-size: x-large;
@@ -472,10 +457,7 @@ b{
   color: #111111;
 }
 
-/* .icons {
-  background-image: url(file:///C:/Uncodemy-project/Unocademy-project/src/image/icon.svg);
-  background-repeat: no-repeat;
-} */
+
 
 .icon-benefit-1 {
   background-position: 0 -226px;
@@ -529,7 +511,6 @@ b{
 }
 
 .creator-details-container {
-  /*   overflow: hidden; */
   position: relative;
 }
 
@@ -584,9 +565,7 @@ b{
   margin: 0;
 }
 
-/* .program-thumb:hover{
-  opacity: 0.5;
-} */
+
 
 .creator-img {
   height: 280px;
@@ -627,8 +606,8 @@ b{
 
 .icon-review-container {
   display: flex;
-  margin-top: 52px;
-  column-gap: 30px;
+  margin-top: 70px;
+  justify-content: space-between;
 }
 
 .review-section .review-text {
@@ -642,7 +621,7 @@ b{
 
 .star-section img {
   height: 20px;
-  width: 11vw;
+  width: 10vw;
 }
 
 .company-icon img {
@@ -807,10 +786,7 @@ b{
 }
 
 .module-container {
-  
-  /* width: 63vw;
-  margin: auto; */
-  background: #ffffff;
+    background: #ffffff;
   box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
   padding: 20px 65px;
   border-radius: 10px;
@@ -860,9 +836,7 @@ b{
   color: #666666;
 }
 
-/* .topics-covered {
-  margin-top: 40px;
-} */
+
 
 .topics-covered h4 {
   position: relative;
@@ -1130,8 +1104,6 @@ b{
 }
 
 .table {
-  /* width: 100%;
-    margin-bottom: 1rem; */
   color: #212529;
 }
 
@@ -1340,14 +1312,7 @@ table {
   display: flex;
   justify-content: center;
 }
-/* 
-.pricing-summary .summary-1{
-    margin-bottom: 50px;
-    background: #fff;
-    position: relative;
-    box-shadow: 0px 0px 18px rgba(24, 39, 75, 0.1);
-    border-radius: 8px;
-} */
+
 
 .price-thumb {
   width: 70%;
@@ -1388,18 +1353,6 @@ table {
   font-weight: 400;
 }
 
-/* .thumb-3 span::before{
-    background-position: -1px -787px;
-    content: '';
-    background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 66vw;
-    top: 50%;
-    width: 10px;
-    height: 7px;
-    transform: translateY(-50%);
-} */
 
 .thumb-3 button {
   background: #e95454 !important;
@@ -1849,12 +1802,12 @@ a:focus {
 }
 
 .uncodemy-logo {
-  height: 50px;
-    width: 8rem;
+  height: 60px;
+  width: 8rem;
 }
 
 .header-uncodemy-logo {
-  height: 30px;
+  height: 2rem;
 }
 
 .footer-form-container form {
