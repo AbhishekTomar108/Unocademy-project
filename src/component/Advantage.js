@@ -13,7 +13,7 @@ const Advantage = () => {
                         <th class="first-column"></th>
                         <th>Video Course</th>
                         <th>Bootcamps</th>
-                        <th>UnCodemy</th>
+                        <th>Uncodemy</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,7 +44,7 @@ const Advantage = () => {
                         <td align="center"><i class="icons icon-wrong"></i></td>
                         <td align="center"><i class="icons icon-tick"></i></td>
                     </tr>
-                    {/* <tr>
+                    <tr>
                         <td class="first-column">
                         <h3 class="title">
                         Career guidance sessions
@@ -52,7 +52,7 @@ const Advantage = () => {
                         <td align="center"><i class="icons icon-wrong"></i></td>
                         <td align="center"><i class="icons icon-tick"></i></td>
                         <td align="center"><i class="icons icon-tick"></i></td>
-                    </tr> */}
+                    </tr>
                     <tr>
                         <td class="first-column">
                         <h3 class="title">

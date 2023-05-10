@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+
 import WALMART from "../image/walmart.png"
 import COGNIZANT from "../image/Cognizant's_logo.svg.png"
 import MINDTREE from "../image/mindtree.png"
@@ -32,7 +32,7 @@ import qualcomm from "../image/qualcomm.png"
 import ola from "../image/ola.png"
 import hcl from "../image/hcl.png"
 import wakefit from "../image/wakefit.png"
-import Placement from "../image/placement-2.jpg"
+
 
 
 

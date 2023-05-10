@@ -132,7 +132,7 @@ const Banner = () => {
             Earn upto 10LPA on Course Completion<span id='price-text'>Book Your Seat With As Low As INR 2,000/- only</span>
             <strong>Duration of the program- 6 months</strong>
 
-            <span className='cohort-text'><b style={{color:'black'}}>New Batches Starts from : </b>10th May, 12th May, 15th May, 17th May 2023 and so on</span>
+            <span className='cohort-text'><b style={{color:'black'}}>New Batches Starts from : </b>10th May, 12th May, 15th May, 17th May 2023 and So On.</span>
             <span className='limited-text'>Limited no. of seats available</span>
           </p>
 

@@ -1,14 +1,13 @@
 import React from 'react'
 import Uncodemy from "../image/Uncodemy-logo-07.png"
-import star from "../image/star.png"
+ import star from "../image/star.png"
 import googleIcon from "../image/google-icon.png"
 import sulekhaIcon from "../image/sulekha-icon.png"
 import facebookIcon from "../image/facebook-icon-2.png"
 import JustDialIcon from "../image/just-dial-icon.jpg"
 import urban from "../image/urban.jpg"
 import instagram from "../image/insta1.png"
-import halfStar from "../image/half-star-2.png"
-import star4 from "../image/4.9-star.jpg"
+import star2 from "../image/half-star.png"
 
 const Footer = () => {
   return (
@@ -20,7 +19,7 @@ const Footer = () => {
             <div class="top-footer">
                 <div class="row">
                     <div class="col-md-3 company-logo-icon-container">
-                    <a href="https://www.uncodemy.com/" target='_blank'><img src={Uncodemy} className='uncodemy-logo' /></a>
+                    <img src={Uncodemy} className='uncodemy-logo' />
                      
                         <div class="social-icons">
                             <a href="https://www.facebook.com/uncodemyofficial/" target="_blank"><i class="icons icon-footer-fb"></i></a>
@@ -34,7 +33,11 @@ const Footer = () => {
                     <div className='review-section'>
                         <div className='star-review-group'>
                         <div className='star-section'>
-                           <img src={star4}/>
+                        <img src={star}/>
+                            <img src={star}/>
+                            <img src={star}/>
+                            <img src={star}/>
+                            <img src={star2}/>
                         </div>
                         <div className='review-text top-text-review'>
                             4.9 out of 5 based on 10112 votes
@@ -84,7 +87,7 @@ const Footer = () => {
             </div>
             <div class="bottom-footer">
                 <p>
-                    Copyright © 2020.  All rights reserved.
+                    Copyright © 2023. All rights reserved.<span style={{color:'#ff5421'}}>Uncodemy</span>
                 </p>
             </div>
         </div>

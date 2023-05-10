@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Left from "../image/banner-left-arrow.png";
 import Right from "../image/banner-right-arrow.png";
 import Riya from "../image/riyatiwari (1).jpg"
-import TANVI from "../image/tanvi.jpg"  
+import TANVI from "../image/tanvi.png"  
 import Ritesh from "../image/riteshSingh.jpg"
 import ADITYA from "../image/adityaSingh.jpg"
 import RAJENDRA from "../image/rajendra.jpg"
@@ -44,6 +44,13 @@ import rapidops from "../image/rapidops.png"
 import ibm from "../image/IBM_logo.svg.png"
 import techexactly from "../image/techexactly.jpeg"
 import poonam from "../image/riyatiwari.jpg"
+import ripensapps from "../image/ripensapps.png"
+import hcltech from "../image/hcltech.png"
+import niit from "../image/niit.png"
+import integral from "../image/integral.png"
+import imsghaziabad from "../image/imsghaziabad.png"
+import nsut from "../image/nsut.png"
+import grelogic from "../image/grelogic.png"
 
 
 const Creator = () => {
@@ -285,7 +292,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Riya Tiwari </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'><img src={amity} className='college-img-2' /> &rarr; <img src={wipro} className='college-img-2' /> </p>
+                                <p className='college-img'><img src={amity} className='college-img-2' /> &rarr; <img src={infosys} className='college-img-2' /> </p>
                             </div>
 
                         </div>
@@ -307,7 +314,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Aditya Singh </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'> <img src={lpu} className='college-img-2' /> &rarr;<img src={deloitte} className='college-img-2' /> </p>
+                                <p className='college-img'> <img src={lpu} className='college-img-2' /> &rarr;<img src={Amazon} className='college-img-2' /> </p>
 
                             </div>
                         </div>
@@ -348,7 +355,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Tanvi </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'><img src={ashoka} className='college-img-2' /> &rarr; <img src={adobe} className='college-img-2' /> </p>
+                                <p className='college-img'><img src={imsghaziabad} className='college-img-2' /> &rarr; <img src={delloite} className='college-img-2' /> </p>
 
 
                             </div>
@@ -369,7 +376,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Poonam </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'> <img src={indianuniversity} className='college-img-2' /> &rarr;<img src={hcl} className='college-img-2' /> </p>
+                                <p className='college-img'> <img src={integral} style={{height:"48px",width:"auto"}} className='college-img-2' /> &rarr;<img src={hcl} className='college-img-2' /> </p>
 
                             </div>
                         </div>
@@ -496,7 +503,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Saurabh Mishra </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'><img src={techno} className='college-img-2' /> &rarr; <img src={kpmg} className='college-img-2' /> </p>
+                                <p className='college-img'><img src={niit} className='college-img-2' /> &rarr; <img src={kpmg} className='college-img-2' /> </p>
 
                             </div>
                         </div>
@@ -539,7 +546,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Himanshu Tyagi </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'><img src={srm} className='college-img-2' /> &rarr; <img src={Amazon} className='college-img-2' /> </p>
+                                <p className='college-img'><img src={grelogic} className='college-img-2' /> &rarr; <img src={ripensapps} className='college-img-2' /> </p>
 
                             </div>
                         </div>
@@ -559,7 +566,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Rajendra Yadav </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'> <img src={indianuniversity} className='college-img-2' /> &rarr;<img src={hcl} className='college-img-2' /> </p>
+                                <p className='college-img'> <img src={nsut} style={{height:"48px",width:"auto"}} className='college-img-2' /> &rarr;<img src={hcltech} className='college-img-2' /> </p>
 
                             </div>
                         </div>

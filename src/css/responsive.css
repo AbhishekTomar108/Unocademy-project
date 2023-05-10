@@ -8,10 +8,6 @@
     font-size: 1.3rem;
   }
 
-  .star-section img{
-    width: 21vw;
-  }
-
   #write-to-us-btn {
     display: none;
   }
@@ -479,9 +475,7 @@
     width: 90%;
   }
 
-  /* .star-section img{
-    width: 35vw;
-  } */
+
 
  
 }
@@ -542,6 +536,11 @@
 
 
 @media screen and (max-width: 340px) {
+
+  .icon-review-container{
+   justify-content: space-around;
+
+  }
 
   .admission ul li .content{
     font-size: 7px;

@@ -30,7 +30,7 @@ h2 {
   padding-right: 10%;
   justify-content: space-between;
   padding-left: 10%;
-  min-height: 60px;
+  min-height: 64px;
 }
 
 .header h1 {
@@ -77,10 +77,7 @@ button {
   border: 1px solid #3fc350;
 }
 
-.icon {
-  background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite-new1.svg);
-  background-repeat: no-repeat;
-}
+
 
 .whatsapp-icon {
   height: 21px;
@@ -606,7 +603,7 @@ b{
 
 .icon-review-container {
   display: flex;
-  margin-top: 70px;
+  margin-top: 75px;
   justify-content: space-between;
 }
 
@@ -620,8 +617,7 @@ b{
 }
 
 .star-section img {
-  height: 20px;
-  width: 10vw;
+  height: 17px;
 }
 
 .company-icon img {
@@ -1523,43 +1519,6 @@ table {
   margin-bottom: 70px;
 }
 
-.faq .faq-summary {
-  padding: 0;
-}
-
-.faq-summary .faq-list.faq-collection {
-  padding: 0;
-  box-shadow: none;
-}
-
-.faq-summary .faq-list:last-child {
-  margin-bottom: 0;
-}
-
-.faq-summary .faq-list {
-  background: #ffffff;
-  box-shadow: 0px 4px 18px rgba(24, 39, 75, 0.05);
-  border-radius: 8px;
-  padding: 40px 57px;
-  margin-bottom: 80px;
-}
-
-.faq-summary .faq-list.faq-collection .card {
-  background: #ffffff;
-  box-shadow: 1px 1px 5px 1px rgb(12 23 32 / 10%);
-  border-radius: 4px;
-  padding: 0 0;
-  border: none;
-  margin-bottom: 24px;
-}
-
-.faq-summary .card {
-  border: 0;
-  border-bottom: 1px solid rgba(181, 181, 181, 0.45);
-  background-color: #ffffff;
-  border-radius: 0;
-  z-index: 1;
-}
 
 .card {
   position: relative;
@@ -1575,13 +1534,7 @@ table {
   border-radius: 0.25rem;
 }
 
-.faq-summary .card .card-header {
-  border-radius: 0;
-  background-color: transparent;
-  padding: 0;
-  border: 0;
-  margin-bottom: 0;
-}
+
 
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -1614,49 +1567,6 @@ a:focus {
   display: none;
 }
 
-.faq-summary .card .card-header .card-link.collapsed:before {
-  background-position: -701px -774px;
-}
-
-.faq-summary .card .card-header .card-link:before {
-  content: "";
-  position: absolute;
-  top: 35px;
-  right: 0;
-  pointer-events: none;
-  background-position: -603px -773px;
-  width: 37px;
-  height: 37px;
-  background-image: url(https://www.upgrad.com/bootcamps/images/icon-sprite.svg);
-}
-
-.question {
-  width: 85vw;
-  margin: 100px auto 0 auto;
-}
-
-.faq-summary .faq-list.faq-collection .card .card-body {
-  padding: 0 30px 20px 30px;
-  font-size: 16px;
-  color: #666666;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-.faq-summary .faq-list.faq-collection .card .card-body h4 {
-  font-weight: 500;
-  font-size: 16px;
-  color: #111111;
-  position: relative;
-  line-height: 30px;
-}
-
-.faq-summary .faq-list.faq-collection .card .card-body p {
-  margin: 5px 0 18px 0;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 18px;
-  font-size: 14px;
-}
 
 .top-footer .row {
   margin: 0;
