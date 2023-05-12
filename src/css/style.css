@@ -205,16 +205,50 @@ b{
   border: none;
 }
 
+.associates-logo{
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-around;
+  background: white;
+  align-items: center;
+}
+
+.associates-logo img{
+  width: 20%;
+}
+
+.associates-logo span{
+  border: 2px solid rgb(190, 190, 190);
+  height: 80%;
+}
+
+/* .associates-logo img::before{
+  border-right: 2px solid black;
+} */
+
+.full-stack-logo{
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.certified-logo img{
+  width: 100%;
+  border-radius: 8px;
+}
+
 .lower-box-right {
-  width: 578px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   border-radius: 10px;
   position: relative;
 }
 
 .video-thumbnail {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: block;
   border-radius: 10px;

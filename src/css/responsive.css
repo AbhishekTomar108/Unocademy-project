@@ -45,6 +45,7 @@
   .lower-box-right {
     width: fit-content;
     margin: auto;
+    height: auto;
   }
 
   .btn-group {
