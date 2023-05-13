@@ -4,6 +4,21 @@
     padding-left: 2%;
   }
 
+  .associates-logo{
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .certified-logo{
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .dash-line{
+    width: 10px;
+    /* margin: 0; */
+  }
+
   .header h1 {
     font-size: 1.3rem;
   }
@@ -588,6 +603,13 @@
 .last-form-main{
   top: -23% !important;
 }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px){
+  .certified-logo{
+    justify-content: space-between;
+    column-gap: 0;
+  }
 }
 
 @media screen and (min-width:901px) and (max-width:960px){

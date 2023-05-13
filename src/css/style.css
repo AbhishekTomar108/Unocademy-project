@@ -187,7 +187,7 @@ b{
 
 .btn-group {
   width: 82vw;
-  margin: -35px auto 0 auto;
+  margin: -55px auto 0 auto;
   display: flex;
   column-gap: 20px;
 }
@@ -208,8 +208,7 @@ b{
 .associates-logo{
   display: flex;
   border-radius: 8px;
-  justify-content: space-around;
-  background: white;
+  column-gap: 20px;
   align-items: center;
 }
 
@@ -230,12 +229,26 @@ b{
   height: 60%;
   display: flex;
   justify-content: center;
+  margin-top: -30px;
+  margin-bottom: 25px;
 }
 
 .certified-logo img{
-  width: 100%;
-  border-radius: 8px;
-}
+  width: 12%;
+  }
+
+  .dash-line{
+    width: 5px;
+    height: 2px;
+    background: black;
+    margin: 0 30px 0 45px;
+  }
+
+  .certified-logo{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+  }
 
 .lower-box-right {
   width: 450px;

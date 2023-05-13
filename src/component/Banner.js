@@ -4,10 +4,13 @@ import cross from "../image/cross-1.png"
 import rightArrow from "../image/banner-right-arrow.png"
 import fullStack from "../image/full-stack-banner-image.png"
 import certified from "../image/certified.png"
-import nsdca from "../image/nsdca.png"
-import fututreSkills from "../image/fututre-skills.jpg"
-import nasscom from "../image/nasscom-2.jpg"
-import uncodemylogobanner from "../image/uncodemy-logo-banner.png"
+import nsdca from "../image/nsdca_preview_rev_1.png"
+import fututreSkills from "../image/fututre-skills_preview_rev_1.png"
+import nasscom from "../image/nasscom-2_preview_rev_1.png"
+import microsoftpartner from "../image/microsoft-partner_preview_rev_1.png"
+import googlepartner from "../image/google-partner.png"
+import iabac from "../image/iabac_preview_rev_1.png"
+import iso from "../image/iso.svg"
 import download from "../image/download.svg"
 import pdfFile from '../pdf/FullStack-Uncodemy.pdf'
 
@@ -145,20 +148,23 @@ const Banner = () => {
         </div>
         <div className='lower-box-right'>
           <div className='associates-logo'>
-            <img src={uncodemylogobanner}/>
-            <span></span>
-            <img src={nasscom}/>
-            <span></span>
+            <img src={nasscom} style={{width:'25%'}}/>
+            {/* <span></span> */}
             <img src={fututreSkills}/>
-            <span></span>
-            <img src={nsdca}/>
+            {/* <span></span> */}
+            <img src={nsdca} style={{width:'25%'}}/>
+            <img src={googlepartner}></img>
           </div>
           <div className='full-stack-logo'>
           <img class="video-thumbnail" src={fullStack} />
        </div>
 
        <div className='certified-logo'>
-       <img src={certified} />
+       <span style={{color:"black"}}>Certified By</span>
+       <span className='dash-line'></span>
+       <img src={iso}></img>
+       <img src={iabac}></img>
+       <img src={microsoftpartner} style={{width:"25%"}} ></img>
 
         </div>
         </div>
