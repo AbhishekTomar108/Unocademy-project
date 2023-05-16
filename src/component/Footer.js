@@ -6,7 +6,7 @@ import sulekhaIcon from "../image/sulekha-icon.png"
 import facebookIcon from "../image/facebook-icon-2.png"
 import JustDialIcon from "../image/just-dial-icon.jpg"
 import urban from "../image/urban.jpg"
-import instagram from "../image/insta1.png"
+import instagram from "../image/insta2.png"
 import star2 from "../image/half-star.png"
 
 const Footer = () => {
@@ -23,10 +23,10 @@ const Footer = () => {
                      
                         <div class="social-icons">
                             <a href="https://www.facebook.com/uncodemyofficial/" target="_blank"><i class="icons icon-footer-fb"></i></a>
+                            <a href="https://www.instagram.com/uncodemyofficial/?hl=en" target="_blank" id='insta-a'><img src={instagram} class="icons icon-footer-img"/></a>
                             <a href="https://twitter.com/uncodemy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="icons icon-footer-tw"></i></a>
                             <a href="https://in.linkedin.com/company/uncodemy" target="_blank"><i class="icons icon-footer-in"></i></a>
                             <a href="https://www.youtube.com/channel/UCDR66fGjZxvdZl7g3x0xbWw" target="_blank"><i class="icons icon-footer-yt"></i></a>
-                            <a href="https://www.instagram.com/uncodemyofficial/?hl=en" target="_blank" id='insta-a'><img src={instagram} class="icons icon-footer-img"/></a>
                         </div>
                     </div>
                     <div class="col-md-6 offset-md-3">

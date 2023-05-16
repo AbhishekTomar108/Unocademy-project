@@ -20,7 +20,7 @@ const Advantage = () => {
                     <tr>
                         <td class="first-column">
                         <h3 class="title">
-                            Lab Facility
+                            Lab Facilities
                         </h3></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>
                         <td align="center"><i class="icons icon-wrong"></i></td>

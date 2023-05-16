@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import cross from "../image/cross-1.png"
 import rightArrow from "../image/banner-right-arrow.png"
-import fullStack from "../image/full-stack-banner-image.png"
-import certified from "../image/certified.png"
+import fullStack from "../image/full-stack-banner-image (2).png"
 import nsdca from "../image/nsdca_preview_rev_1.png"
 import fututreSkills from "../image/fututre-skills_preview_rev_1.png"
 import nasscom from "../image/nasscom-2_preview_rev_1.png"
@@ -23,6 +22,18 @@ const Banner = () => {
   const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
   
+  const numberOnly =()=> {
+    // Get element by id which passed as parameter within HTML element event
+    var element = document.getElementById('flight_number2');
+    // This removes any other character but numbers as entered by user
+    element.value = element.value.replace(/[^0-9]/gi, "");
+
+    if (element.value.length < 10) {
+      element.setCustomValidity('Phone number must have at least 10 digits.');
+    } else {
+      element.setCustomValidity('');
+    }
+}
 
   const hideBanner = () => {
 
@@ -106,7 +117,7 @@ const Banner = () => {
           <form method='#' onSubmit={submitHandle}>
             <input type='text' name='name' placeholder="Enter your Name*" required value={name} onChange={(e) => setName(e.target.value)} />
             <input type='email' name='email' placeholder="Enter your Email*" required value={email} onChange={(e) => setEmail(e.target.value)} />
-            <input type='tel' maxlength="10" minlength="10" name='mobile' placeholder="Enter your Phone No." required value={mobile} onChange={(e) => setMobile(e.target.value)} />
+            <input required type='tel' maxlength="10" minlength="10" name='mobile' onInput={numberOnly} id="flight_number2" placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
            
 
   
@@ -140,7 +151,7 @@ const Banner = () => {
             Earn upto 10LPA on Course Completion<span id='price-text'>Book Your Seat With As Low As INR 2,000/- only</span>
             <strong>Duration of the program- 6 months</strong>
 
-            <span className='cohort-text'><b style={{color:'black'}}>New Batches Starts from : </b>10th May, 12th May, 15th May, 17th May 2023 and So On.</span>
+            <span className='cohort-text'><b style={{color:'black'}}>New Batches Starts from : </b>18th May, 22th May, 25th May 2023 & So On.</span>
             <span className='limited-text'>Limited no. of seats available</span>
           </p>
 

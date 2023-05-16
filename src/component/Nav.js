@@ -5,8 +5,14 @@ import Uncodemy from "../image/uncodemy-logo.jpg"
 import whatsapp from "../image/whatsapp.png"
 
 const Nav = () => {
+
+  
   return (
+    <>
+   
+    
     <div className='nav'>
+     
     <div className='header'>
    <img className='header-uncodemy-logo' src={Uncodemy}/>
        <div></div>
@@ -17,6 +23,7 @@ const Nav = () => {
       </div>
        <hr style={{margin:"0"}}/>
        </div>
+       </>
   )
 }
 

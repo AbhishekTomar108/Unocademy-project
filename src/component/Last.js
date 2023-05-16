@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import axios from "axios"
 import pdfFile from '../pdf/FullStack-Uncodemy.pdf'
 import contact from '../image/contact-1.png'
+import Swal from 'sweetalert2'
 
 const Last = () => {
     const [name, setName] = useState('');
@@ -9,7 +10,19 @@ const Last = () => {
     const [mobile, setMobile] = useState('');
    
    
+   const numberOnly =()=> {
+      // Get element by id which passed as parameter within HTML element event
+      var element = document.getElementById('flight_number');
+      // This removes any other character but numbers as entered by user
+      element.value = element.value.replace(/[^0-9]/gi, "");
 
+      if (element.value.length < 10) {
+        element.setCustomValidity('Phone number must have at least 10 digits.');
+      } else {
+        element.setCustomValidity('');
+      }
+  }
+    
 
     const submitHandle = async(e)=>{
       e.preventDefault();             
@@ -25,7 +38,13 @@ const Last = () => {
       
               
               if(response.data===1){
-                window.open(pdfFile,'_blank');
+                Swal.fire({
+                  icon: 'success',
+                  title: 'Congratulation!',
+                  html:`You are one step closer to become a <span style="color:#ff5124">Full Stack Developer</span>. Our Team will connect you soon with Detail Information`,
+                  showConfirmButton: false,
+                  timer: 8000
+                })
                      setEmail('')
                       setMobile('')
                       setName('');
@@ -41,6 +60,7 @@ const Last = () => {
             };
   
           
+ 
   
     
       }
@@ -63,7 +83,8 @@ const Last = () => {
       <form onSubmit={submitHandle}>
         <input required type='text' name='name' placeholder="Enter your Name*" value={name} onChange={(e)=>setName(e.target.value)}/>
         <input required type='email' name='email' placeholder="Enter your Email*" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-         <input required type='tel' maxlength="10" minlength="10" name='mobile' placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
+
+         <input required type='tel' maxlength="10" minlength="10" name='mobile' onInput={numberOnly} id="flight_number" placeholder="Enter your Phone No." value={mobile} onChange={(e)=>setMobile(e.target.value)}/>
       
 
        

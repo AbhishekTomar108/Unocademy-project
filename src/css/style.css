@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+
+.swal2-title{
+  color: red;
+}
+
 .nav {
   margin-top: 16px;
   width: 100vw;
@@ -994,15 +999,14 @@ b{
 
 .icon-footer-img{
   
-  width: 22px;
-  height: 22px;
+  height: 1.6rem;
   border-radius: 10px;
   
 }
 
-#insta-a{
+/* #insta-a{
   margin-right: 0;
-}
+} */
 
 .project-thumb .proj-name {
   font-size: 30px;

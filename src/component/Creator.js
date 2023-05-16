@@ -51,6 +51,7 @@ import integral from "../image/integral.png"
 import imsghaziabad from "../image/imsghaziabad.png"
 import nsut from "../image/nsut.png"
 import grelogic from "../image/grelogic.png"
+import runex from "../image/runex.png"
 
 
 const Creator = () => {
@@ -290,7 +291,7 @@ const Creator = () => {
                         <div class="program-thumb">
                             <img class="creator-img" src={Riya} />
                             <div class="program-thumb-content">
-                                <h4> Riya Tiwari </h4>
+                                <h4>Abhilasha Rathi</h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
                                 <p className='college-img'><img src={amity} className='college-img-2' /> &rarr; <img src={infosys} className='college-img-2' /> </p>
                             </div>
@@ -353,7 +354,7 @@ const Creator = () => {
                         <div class="program-thumb">
                             <img class="creator-img" src={TANVI} />
                             <div class="program-thumb-content">
-                                <h4> Tanvi </h4>
+                                <h4> Tanvi Singh</h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
                                 <p className='college-img'><img src={imsghaziabad} className='college-img-2' /> &rarr; <img src={delloite} className='college-img-2' /> </p>
 
@@ -374,7 +375,7 @@ const Creator = () => {
                         <div class="program-thumb">
                             <img class="creator-img" src={poonam} />
                             <div class="program-thumb-content">
-                                <h4> Poonam </h4>
+                                <h4> Riya Tiwari </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
                                 <p className='college-img'> <img src={integral} style={{height:"48px",width:"auto"}} className='college-img-2' /> &rarr;<img src={hcl} className='college-img-2' /> </p>
 
@@ -481,7 +482,7 @@ const Creator = () => {
                             <div class="program-thumb-content">
                                 <h4> Abhishek Kumar </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
-                                <p className='college-img'><img src={galgotias} className='college-img-2' /> &rarr; <img src={mamaearth} className='college-img-2' /> </p>
+                                <p className='college-img'><img src={runex} className='college-img-2' /> &rarr; <img src={mamaearth} className='college-img-2' /> </p>
                             </div>
 
                         </div>
@@ -523,7 +524,7 @@ const Creator = () => {
                         <div class="program-thumb">
                             <img class="creator-img" src={abhilasha} />
                             <div class="program-thumb-content">
-                                <h4> Abhilasha Rathi </h4>
+                                <h4> Neha Sharma </h4>
                                 <hr className='program-thumb-content-hr-1'></hr>
                                 <p className='college-img'><img src={sikkim} className='college-img-2' /> &rarr; <img src={infosys} className='college-img-2' /> </p>
 
@@ -532,7 +533,7 @@ const Creator = () => {
                         </div>
                         <div className='creator-details'>
                             <div className='details'>
-                                "Its a good place for mean stack development training course in noida. Aslo supportive staff and provides placement, develops the communication and development skills. Very good trainers and placement. Thank You Uncodemy.."
+                                "Its a good place for Java Full stack development training course in noida. Aslo supportive staff and provides placement, develops the communication and development skills. Very good trainers and placement. Thank You Uncodemy.."
                             </div>
 
                             <hr className='program-thumb-content-hr'></hr>
